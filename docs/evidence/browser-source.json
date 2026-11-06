@@ -1,0 +1,75 @@
+{
+  "timestamp": "2026-11-06T11:16:11.724Z",
+  "executable": "source",
+  "runDir": "D:\\MyData\\MyApp-AI\\CodexAPP\\MyStudySystem\\.test-runs\\آزمون مرورگر 1793963753232",
+  "results": [
+    {
+      "name": "fresh profile, explicit seed, local requests only",
+      "status": "pass"
+    },
+    {
+      "name": "mixed Persian/English clipboard paste preserves exact text",
+      "status": "pass"
+    },
+    {
+      "name": "Jalali leap year/year boundary and keyboard focus restoration",
+      "status": "pass"
+    },
+    {
+      "name": "date-only and Tehran datetime stored independently",
+      "status": "pass"
+    },
+    {
+      "name": "lost HTTP response after commit, retry is idempotent",
+      "status": "pass"
+    },
+    {
+      "name": "two tabs conflict, retained draft, latest dialog and dirty-tab exit guard",
+      "status": "pass"
+    },
+    {
+      "name": "study marker and selected highlight persist",
+      "status": "pass"
+    },
+    {
+      "name": "review answer absent from DOM/accessibility before reveal, grades are preview only",
+      "status": "pass"
+    },
+    {
+      "name": "Persian search variants and content rendered without script execution",
+      "status": "pass"
+    },
+    {
+      "name": "3 screens x 2 themes x 2 widths x 2 simulated zoom levels, no horizontal overflow",
+      "status": "pass"
+    },
+    {
+      "name": "dark theme text-token contrast >= 4.5",
+      "status": "pass"
+    },
+    {
+      "name": "calendar modal keyboard containment and Escape",
+      "status": "pass"
+    },
+    {
+      "name": "missing CSRF rejected and deferred media endpoint absent",
+      "status": "pass"
+    },
+    {
+      "name": "full exit removes session and releases backend",
+      "status": "pass"
+    },
+    {
+      "name": "Edge fresh profile reopen preserves text, dates, bookmark, theme and menu",
+      "status": "pass"
+    },
+    {
+      "name": "duplicate launch reuses active data owner",
+      "status": "pass"
+    },
+    {
+      "name": "Chrome has no uncaught page errors; Edge keyboard review and shutdown",
+      "status": "pass"
+    }
+  ]
+}

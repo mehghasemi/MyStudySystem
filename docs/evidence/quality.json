@@ -1,0 +1,130 @@
+{
+  "results": [
+    {
+      "name": "installed Persian font renders",
+      "status": "pass",
+      "detail": [
+        {
+          "familyName": "IRANSans",
+          "postScriptName": "IRANSans",
+          "isCustomFont": false,
+          "glyphCount": 21
+        }
+      ]
+    },
+    {
+      "name": "local Vazirmatn fallback renders without IranSans",
+      "status": "pass",
+      "detail": [
+        {
+          "familyName": "Vazirmatn",
+          "postScriptName": "Vazirmatn-Regular",
+          "isCustomFont": true,
+          "glyphCount": 21
+        }
+      ]
+    },
+    {
+      "name": "light text-token contrast >=4.5",
+      "status": "pass",
+      "detail": [
+        {
+          "a": "--ink",
+          "b": "--paper",
+          "ratio": 14.28161685115401
+        },
+        {
+          "a": "--muted",
+          "b": "--paper",
+          "ratio": 5.9653678733548885
+        },
+        {
+          "a": "--muted",
+          "b": "--bg",
+          "ratio": 5.5033841298510975
+        },
+        {
+          "a": "--accent",
+          "b": "--paper",
+          "ratio": 6.825096543978522
+        },
+        {
+          "a": "--error",
+          "b": "--paper",
+          "ratio": 7.262274397979249
+        }
+      ]
+    },
+    {
+      "name": "dark text-token contrast >=4.5",
+      "status": "pass",
+      "detail": [
+        {
+          "a": "--ink",
+          "b": "--paper",
+          "ratio": 12.28370004372087
+        },
+        {
+          "a": "--muted",
+          "b": "--paper",
+          "ratio": 7.931923716686424
+        },
+        {
+          "a": "--muted",
+          "b": "--bg",
+          "ratio": 9.280020624640766
+        },
+        {
+          "a": "--accent",
+          "b": "--paper",
+          "ratio": 8.584820324021754
+        },
+        {
+          "a": "--error",
+          "b": "--paper",
+          "ratio": 8.682261145334998
+        }
+      ]
+    },
+    {
+      "name": "29/30/31 days and Tehran 02:59/03:00 boundary",
+      "status": "pass",
+      "detail": {
+        "leap": 30,
+        "nonLeap": 29,
+        "longMonth": 31,
+        "shortMonth": 30,
+        "newYear": "2025-03-21",
+        "before": "2026-11-06T23:29:00.000Z",
+        "after": "2026-11-06T23:30:00.000Z"
+      }
+    },
+    {
+      "name": "two original PDFs: extract -> actual clipboard Paste -> exact persisted text",
+      "status": "pass",
+      "detail": [
+        {
+          "pdf": "sample-1.pdf",
+          "characters": 119
+        },
+        {
+          "pdf": "sample-2.pdf",
+          "characters": 104
+        }
+      ]
+    },
+    {
+      "name": "normal Persian query finds extracted PDF text",
+      "status": "pass"
+    },
+    {
+      "name": "keyboard-only Tab/Enter typing, Jalali selection and Ctrl+S",
+      "status": "pass"
+    },
+    {
+      "name": "server error preserves editor and retry succeeds",
+      "status": "pass"
+    }
+  ],
+  "runDir": "D:\\MyData\\MyApp-AI\\CodexAPP\\MyStudySystem\\.test-runs\\کیفیت 1793964114050"
+}

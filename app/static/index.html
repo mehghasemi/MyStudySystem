@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="fa" dir="rtl" data-theme="light">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>سیستم مطالعه من</title><link rel="stylesheet" href="/style.css"><script type="module" src="/ui.js"></script></head>
+<body>
+<a class="skip" href="#main">رفتن به محتوای اصلی</a>
+<div class="shell">
+  <aside class="sidebar" aria-label="ناوبری اصلی">
+    <div class="brand"><span class="brand-mark" aria-hidden="true">م</span><span class="nav-text">سیستم مطالعه من<small>جایی برای فهمیدن و به‌کاربستن</small></span></div>
+    <button id="collapse" class="quiet" aria-expanded="true" title="جمع یا باز کردن منو (Alt+M)"><span aria-hidden="true">☰</span><span class="nav-text">جمع کردن منو</span></button>
+    <nav>
+      <button data-route="home" aria-current="page" title="امروز"><span aria-hidden="true">◷</span><span class="nav-text">امروز</span></button>
+      <button data-route="capture" title="ثبت سریع"><span aria-hidden="true">＋</span><span class="nav-text">ثبت سریع</span></button>
+      <button data-route="study" title="مطالعه"><span aria-hidden="true">▤</span><span class="nav-text">مطالعه</span></button>
+      <button data-route="review" title="مرور آزمایشی"><span aria-hidden="true">↻</span><span class="nav-text">مرور آزمایشی</span></button>
+      <button data-route="search" title="جست‌وجو"><span aria-hidden="true">⌕</span><span class="nav-text">جست‌وجو</span></button>
+      <button data-route="help" title="راهنما"><span aria-hidden="true">؟</span><span class="nav-text">راهنما</span></button>
+    </nav>
+    <div class="sidebar-bottom"><span class="nav-text">نسخهٔ آزمایشی G0<small>فقط برای دادهٔ ساختگی</small></span></div>
+  </aside>
+  <div class="workspace">
+    <header class="topbar"><div><span class="local-dot" aria-hidden="true"></span> فضای شخصی روی این رایانه <time id="clock"></time></div><div class="toolbar"><button id="theme" class="quiet">حالت تاریک</button><button id="quit" class="quiet">خروج کامل</button></div></header>
+    <div id="globalStatus" class="statusbar" role="status" aria-live="polite">در حال بازکردن فضای مطالعه…</div>
+    <main id="main" tabindex="-1">
+      <section id="home" aria-labelledby="homeHeading">
+        <div class="page-heading"><div><p class="eyebrow">امروز، یک قدم کوچک</p><h1 id="homeHeading">از همان‌جا ادامه بده.</h1><p class="muted">چند دقیقه مطالعه، یک برداشت روشن، یک بار یادآوری.</p></div><span class="stamp">نمونهٔ G0</span></div>
+        <div id="welcome" class="paper welcome"><h2>فضای مطالعهٔ آزمایشی شما آماده است</h2><p>دو کتاب ساختگی و چند یادداشت بسازید تا ثبت، خواندن و یادآوری را امتحان کنید. داده‌ای از فایل‌های شخصی شما خوانده نمی‌شود.</p><button id="seed" class="primary">ایجاد دادهٔ آزمایشی</button><p class="hint">یا از «ثبت سریع» یک متن آزمایشی بنویسید.</p></div>
+        <div id="homeContent" hidden>
+          <div class="continue-panel"><div class="book-spine" aria-hidden="true"><span>مکث<br>پیش از<br>واکنش</span><small>کتاب آزمایشی</small></div><div class="continue-copy"><p class="eyebrow">ادامهٔ آخرین مطالعه</p><h2 id="continueTitle">مکث پیش از واکنش</h2><p>گاهی چند ثانیه مکث، فرصتی برای انتخاب است.</p><p class="muted">نشانگر مطالعه: صفحهٔ <strong id="continuePage">۴۷</strong></p><button class="primary" data-route="study">ادامهٔ مطالعه</button></div></div>
+          <div class="home-actions"><div><h2>از حافظه شروع کن</h2><p>پیش از بازخوانی، ببین چه چیزی مانده است.</p><button data-route="review">مرور آزمایشی</button></div><div><h2>یک برداشت تازه</h2><p>بی‌نیاز از انتخاب پوشه یا موضوع بنویس.</p><button data-route="capture">ثبت سریع</button></div></div>
+        </div>
+        <p class="scope-note">این نسخه برای بررسی تجربهٔ مطالعه است؛ برنامهٔ کامل مرور در تحویل بعدی ساخته می‌شود.</p>
+      </section>
+
+      <section id="capture" hidden aria-labelledby="captureHeading">
+        <div class="page-heading"><div><p class="eyebrow">از فکر به نوشته</p><h1 id="captureHeading">ثبت سریع</h1><p class="muted">آنچه ارزش نگه‌داشتن دارد، با زبان خودت بنویس.</p></div><button id="newNote">یادداشت تازه</button></div>
+        <div class="editor-layout"><div class="paper editor">
+          <form id="noteForm">
+            <label for="noteTitle">عنوان یادداشت</label><input id="noteTitle" maxlength="250" autocomplete="off" placeholder="مثلاً: امروز چه چیزی یاد گرفتم؟" required>
+            <div class="field-head"><label for="noteBody">متن و برداشت من</label><label class="inline-label" for="direction">جهت متن <select id="direction"><option value="auto">خودکار</option><option value="rtl">راست به چپ</option><option value="ltr">چپ به راست</option></select></label></div>
+            <textarea id="noteBody" dir="auto" rows="10" maxlength="200000" placeholder="اینجا بنویس یا متن را بچسبان…" required aria-describedby="pasteHint"></textarea><p id="pasteHint" class="hint">متن ساده حفظ می‌شود؛ نشانه‌هایی مانند # و ** به قالب تبدیل نمی‌شوند.</p>
+            <div class="date-fields"><div><label>تاریخ آزمایشی</label><button id="duePicker" type="button" class="date-button">انتخاب تاریخ شمسی</button><button id="clearDue" type="button" class="text-button">پاک کردن تاریخ</button></div><div><label>تاریخ و ساعت آزمایشی</label><button id="timePicker" type="button" class="date-button">انتخاب تاریخ و ساعت</button><button id="clearTime" type="button" class="text-button">پاک کردن زمان</button></div></div>
+            <p class="hint">این تاریخ‌ها ذخیره می‌شوند؛ در G0 اعلان یا زمان‌بندی خودکار ندارند. ساعت به وقت تهران است.</p>
+            <div class="save-row"><button id="saveNote" class="primary" type="submit">ذخیرهٔ یادداشت</button><span id="saveStatus" role="status">هنوز تغییری نکرده است</span><span id="charCount" class="hint">۰ نویسه</span></div>
+            <div id="saveError" class="error" role="alert" hidden></div>
+            <div id="conflictActions" class="actions" hidden><button id="showLatest" type="button">دیدن آخرین نسخه</button><button id="saveSeparate" type="button">ذخیره به‌عنوان نسخهٔ جدا</button></div>
+          </form>
+        </div><aside class="note-shelf"><h2>نوشته‌های ذخیره‌شده</h2><div id="noteList"></div><p class="hint">ذخیره روی همین رایانه انجام می‌شود.</p></aside></div>
+      </section>
+
+      <section id="study" hidden aria-labelledby="studyHeading">
+        <div class="page-heading"><div><p class="eyebrow">فرصتی برای خواندن</p><h1 id="studyHeading">مطالعه</h1></div><button data-route="capture">ثبت یک برداشت</button></div>
+        <div id="studyEmpty" class="empty" hidden>هنوز کتاب آزمایشی ندارید. از صفحهٔ امروز دادهٔ آزمایشی بسازید.</div>
+        <div id="studyContent" class="study-layout"><article class="paper reading"><div class="reading-heading"><span class="tag">متن منبع · ساختگی</span><span id="studyTopic" class="muted">موضوع خشم</span></div><h2 id="bookTitle"></h2><div class="bookmark-row"><label for="bookPage">ادامه از صفحهٔ</label><input id="bookPage" type="number" min="1" max="100000" inputmode="numeric"><button id="savePage">ثبت جای مطالعه</button><span id="pageStatus" role="status"></span></div><div id="bookBody" class="prose" dir="auto"></div><div class="reading-footer"><p>عبارتی از متن را انتخاب کن تا جدا نگه داری.</p><button id="highlight">ثبت گزیدهٔ انتخاب‌شده</button></div><h3>گزیده‌ها</h3><div id="highlightList"></div></article><aside class="study-shelf"><details open><summary>منابع این نمونه</summary><div id="sourceList"></div></details><div class="margin-note"><span aria-hidden="true">“</span><p>بعد از هر بند مکث کن؛ اگر قرار بود برای کسی توضیح بدهی، چه می‌گفتی؟</p><small>پیشنهاد مطالعه</small></div></aside></div>
+      </section>
+
+      <section id="review" hidden aria-labelledby="reviewHeading">
+        <div class="page-heading"><div><p class="eyebrow">پیش از بازخوانی</p><h1 id="reviewHeading">یک بار از حافظه</h1></div><span class="tag">مرور آزمایشی · بدون ثبت نتیجه</span></div>
+        <div class="paper recall"><div id="reviewEmpty" hidden>برای مرور، ابتدا یک یادداشت آزمایشی ذخیره کن.</div><div id="reviewContent"><label for="reviewSelect">انتخاب مطلب آزمایشی</label><select id="reviewSelect"></select><p id="reviewCue" class="cue">دربارهٔ موضوع خشم چه چیزی به یاد داری؟</p><p class="muted">شفاهی فکر کن یا چند کلمه بنویس. لازم نیست پاسخ کامل باشد.</p><label for="recallBody">یادآوری من <span class="hint">(اختیاری)</span></label><textarea id="recallBody" rows="3" dir="auto" placeholder="پیش از دیدن مطلب، چه چیزی به یاد دارم؟"></textarea><div class="actions"><button id="reveal" class="primary">نمایش مطلب</button><button id="saveRecall">ذخیرهٔ یادآوری به‌عنوان یادداشت</button></div><div id="answerArea" hidden><hr><h2 tabindex="-1" id="answerHeading">حالا با مطلب مقایسه کن</h2><div id="answerBody" class="prose" dir="auto"></div><p class="muted">پیش‌نمایش سه انتخاب در مرحلهٔ اول مرور؛ انتخاب شما در G0 نتیجه یا موعدی ثبت نمی‌کند.</p><div id="gradeButtons" class="grades"></div><p id="gradePreview" role="status"></p><button id="hideAnswer">پنهان کردن مطلب</button></div></div></div>
+      </section>
+
+      <section id="search" hidden aria-labelledby="searchHeading"><div class="page-heading"><div><p class="eyebrow">دوباره پیدایش کن</p><h1 id="searchHeading">جست‌وجو در نوشته‌ها</h1><p class="muted">جست‌وجوی آزمایشی در عنوان، متن کتاب‌ها، یادداشت‌ها و گزیده‌ها.</p></div></div><form id="searchForm" class="search-form"><label for="query">عبارت جست‌وجو</label><div class="actions"><input id="query" type="search" placeholder="مثلاً مکث یا يادگيري"><button class="primary">جست‌وجو</button></div></form><p id="searchStatus" role="status"></p><div id="results"></div></section>
+
+      <section id="help" hidden aria-labelledby="helpHeading"><div class="page-heading"><div><p class="eyebrow">راهنمای همین نسخه</p><h1 id="helpHeading">یک دور کوتاه در برنامه</h1></div><span class="stamp">G0-r1</span></div><div class="paper guide"><ol><li>در «امروز»، «ایجاد دادهٔ آزمایشی» را بزنید؛ دو کتاب و یادداشت‌های ساختگی ساخته می‌شوند.</li><li>در «ثبت سریع» متن فارسی و انگلیسی بچسبانید، تاریخ شمسی انتخاب و ذخیره کنید. وضعیت «ذخیره شد» را ببینید.</li><li>در «مطالعه» کتاب را بخوانید، جای مطالعه را ثبت و از یک عبارت گزیده بسازید.</li><li>در «مرور آزمایشی» اول از حافظه تلاش کنید و بعد «نمایش مطلب» را بزنید. نتیجه‌های مرور فقط پیش‌نمایش‌اند.</li><li>از «خروج کامل» استفاده کنید و دوباره فایل اجرایی را باز کنید؛ متن و تاریخ باید باقی باشند. بستن تب به‌تنهایی برنامهٔ محلی را متوقف نمی‌کند.</li></ol><h2>اگر ذخیره نشد</h2><p>متن در همان صفحه می‌ماند. خطا را بخوانید و دوباره ذخیره کنید. در تعارض دو تب می‌توانید آخرین متن را ببینید و نوشتهٔ خود را جدا ذخیره کنید.</p><h2>محدودهٔ آزمایشی</h2><p>این نمونه برای دادهٔ ساختگی است. بکاپ، بازیابی و صوت در این نسخه وجود ندارند. برنامهٔ کامل مرور، مدیریت کتابخانه و سایر امکانات در تحویل‌های بعدی ساخته می‌شوند.</p><p>پوشهٔ برنامه باید قابل‌نوشتن و خارج از OneDrive و پوشه‌های همگام‌سازی باشد. مسیرهای ناشناخته را خودتان بررسی کنید.</p><label for="dataPath">محل دادهٔ این اجرا</label><input id="dataPath" dir="ltr" readonly><p class="hint">میانبرها: Ctrl+S ذخیرهٔ یادداشت، Alt+M جمع‌کردن منو؛ Tab حرکت و Enter انتخاب. در تقویم کلیدهای جهت حرکت بین روزها را انجام می‌دهند.</p></div></section>
+    </main>
+    <footer>سیستم مطالعه من <span>ذخیرهٔ محلی · رابط آزمایشی G0</span></footer>
+  </div>
+</div>
+<dialog id="calendar" aria-labelledby="calendarTitle"><div class="dialog-head"><h2 id="calendarTitle">انتخاب تاریخ شمسی</h2><button id="calendarClose" aria-label="بستن تقویم">×</button></div><div class="calendar-controls"><button id="previousMonth" aria-label="ماه قبل">ماه قبل</button><label>ماه <select id="calendarMonth"></select></label><label>سال <select id="calendarYear"></select></label><button id="nextMonth" aria-label="ماه بعد">ماه بعد</button></div><div class="weekdays" aria-hidden="true"><span>ش</span><span>ی</span><span>د</span><span>س</span><span>چ</span><span>پ</span><span>ج</span></div><div id="calendarDays" class="calendar-days" role="group" aria-label="روزهای ماه"></div><div id="calendarTime" class="calendar-time" hidden><label for="hour">ساعت تهران</label><input id="hour" type="number" min="0" max="23" value="9"><span>:</span><label class="sr-only" for="minute">دقیقه</label><input id="minute" type="number" min="0" max="59" value="0"></div><p id="calendarSelection" role="status"></p><p id="calendarError" class="error" role="alert" hidden></p><div class="actions"><button id="calendarApply" class="primary">انتخاب تاریخ</button><button id="calendarToday">امروز</button></div><p class="hint">بازهٔ نمونه: ۱۳۹۰ تا ۱۴۵۰. زمان با منطقهٔ تهران ذخیره می‌شود.</p></dialog>
+<dialog id="confirmDialog" aria-labelledby="confirmTitle"><h2 id="confirmTitle">بررسی پیش از ادامه</h2><p id="confirmText"></p><div class="actions"><button id="confirmAccept" class="primary">ادامه</button><button id="confirmCancel">انصراف</button></div></dialog>
+<dialog id="latestDialog" aria-labelledby="latestTitle"><h2 id="latestTitle">آخرین نسخهٔ ذخیره‌شده</h2><p>نوشتهٔ شما در فرم اصلی حفظ شده است؛ می‌توانید آن را به‌عنوان نسخهٔ جدا ذخیره کنید.</p><pre id="latestText" class="prose" dir="auto"></pre><button id="closeLatest">برگشت به نوشتهٔ من</button></dialog>
+</body></html>

@@ -1,0 +1,12 @@
+.venv/
+build/
+dist/
+data/
+.test-runs/
+__pycache__/
+*.pyc
+*.spec
+*.db
+*.sqlite*
+*.log
+.tools/

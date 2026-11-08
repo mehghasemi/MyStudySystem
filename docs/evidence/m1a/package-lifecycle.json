@@ -1,0 +1,39 @@
+{
+  "results": [
+    {
+      "name": "ZIP allowlist and all manifest hashes verified",
+      "status": "pass",
+      "sha256": "ec2473d59878d98cd4f8d6a6c93eea4915d6a8511edf0f9554ef986d353e0c1d",
+      "source_id": "b2abc041a3d99091187e22bf8bb95557ac2c56fffc51e9faabdca2e0bcf2e177"
+    },
+    {
+      "name": "launcher creates sibling data with different cwd and no system Python PATH",
+      "status": "pass"
+    },
+    {
+      "name": "Host and Origin rejection verified on packaged executable",
+      "status": "pass"
+    },
+    {
+      "name": "full exit releases app; compatible app replacement preserves existing DB and dates",
+      "status": "pass"
+    },
+    {
+      "name": "real G0 app upgrade preserves text/page/date; old executable refuses schema 3 unchanged",
+      "status": "pass"
+    },
+    {
+      "name": "future schema refused by real executable without modifying DB",
+      "status": "pass"
+    },
+    {
+      "name": "packaged startup refuses known Sync directory before creating DB",
+      "status": "pass"
+    },
+    {
+      "name": "Windows read-only DB: write rejected and original bytes unchanged",
+      "status": "pass"
+    }
+  ],
+  "test_directory": "D:\\MyData\\MyApp-AI\\CodexAPP\\MyStudySystem\\.test-runs\\چرخه بسته 1794020288603828200"
+}

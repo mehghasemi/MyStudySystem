@@ -37,6 +37,12 @@ class Application:
 
     def _action(self, route, obj):
         s = self.store
+        if route == 'catalog':
+            from catalog import command
+            return command(s,obj)
+        if route == 'review':
+            from review import command
+            return command(s,obj)
         if route == 'save':
             return s.save(obj)
         if route == 'seed':
@@ -46,13 +52,16 @@ class Application:
                 if key in obj:
                     s.setting(key, obj[key])
             return {'ok': True}
+        if route == 'source-save':
+            return s.save_source(obj)
         if route == 'bookmark':
-            page = int(obj['page'])
-            if not 1 <= page <= 100000:
-                raise Problem('شمارهٔ صفحه باید بین ۱ و ۱۰۰۰۰۰ باشد.')
-            with s.connect() as c:
-                c.execute('UPDATE sources SET page=? WHERE id=?', (page, obj['id']))
-            return {'ok': True}
+            return s.bookmark(obj)
+        if route == 'read-source':
+            return s.touch_source(obj)
+        if route == 'draft':
+            return s.draft(obj)
+        if route == 'discard-draft':
+            return s.discard_draft(obj)
         if route == 'highlight':
             body = obj.get('body', '').strip()
             if not body or len(body) > 20000:
@@ -82,7 +91,7 @@ class Handler(BaseHTTPRequestHandler):
         super().setup()
         self.connection.settimeout(5)
 
-    server_version = 'MyStudySystem/G0'
+    server_version = 'MyStudySystem/M1a'
 
     def log_message(self, *args):
         pass  # No note text, file paths, session tokens or request URLs in logs.
@@ -141,12 +150,25 @@ class Handler(BaseHTTPRequestHandler):
                 return
             if url.path == '/api/state':
                 self.respond({**self.app.store.state(), 'csrf': self.app.csrf})
+            elif url.path == '/api/document':
+                from catalog import one,config,resolve,EXT
+                with self.app.store.connect() as c:
+                    ref=one(c,'file_refs',query.get('id',[''])[0])
+                    file=resolve(self.app.store,config(c)['root'],ref['rel'])
+                mime=EXT.get(file.suffix.lower())
+                if not mime or not file.is_file():raise Problem('فایل در دسترس نیست.',404)
+                with file.open('rb') as stream:
+                    self.send_headers(200,mime,os.fstat(stream.fileno()).st_size)
+                    import shutil
+                    shutil.copyfileobj(stream,self.wfile,128*1024)
             elif url.path == '/api/search':
                 phrase = normalized(query.get('q', [''])[0])
                 state = self.app.store.state()
-                self.respond({'results': [{**n, 'kind': kind} for kind in ('notes', 'sources', 'highlights') for n in state[kind] if phrase in normalized(n.get('title', '') + ' ' + n['body'])][:100]})
+                found=[dict(id=t['id'],title=t['label'],body='موضوع',kind='topics') for t in state['catalog']['topics'] if t['status']=='active' and phrase in normalized(t['label'])]
+                found.extend({**n,'kind':kind} for kind in ('notes','sources','highlights') for n in state[kind] if n.get('status','active')=='active' and phrase in normalized(n.get('title','')+' '+n['body']))
+                self.respond({'results':found[:100]})
             else:
-                files = {'/': 'index.html', '/style.css': 'style.css', '/ui.js': 'ui.js', '/calendar.js': 'calendar.js', '/Vazirmatn.ttf': 'Vazirmatn.ttf'}
+                files = {'/': 'index.html', '/style.css': 'style.css', '/ui.js': 'ui.js', '/catalog.js':'catalog.js', '/calendar.js': 'calendar.js', '/Vazirmatn.ttf': 'Vazirmatn.ttf'}
                 if url.path not in files:
                     raise Problem('صفحه پیدا نشد.', 404)
                 self.serve_file(ASSETS / files[url.path])
@@ -174,12 +196,19 @@ def start():
     parser = argparse.ArgumentParser()
     parser.add_argument('--data', type=Path)
     parser.add_argument('--no-browser', action='store_true')
+    parser.add_argument('--allow-sync', action='store_true')
     parser.add_argument('--port', type=int, default=0)
     args = parser.parse_args()
     home = Path(sys.executable).resolve().parent if getattr(sys, 'frozen', False) else Path(__file__).resolve().parent
     data = (args.data or home.parent / 'data').resolve()
-    if sync_risks(data):
-        raise Problem('پوشهٔ data در مسیر همگام‌سازی شناسایی شد. بسته را به پوشهٔ محلی خارج از Sync منتقل کنید. برای مسیر ناشناخته نیز خودتان این موضوع را بررسی کنید.')
+    if sync_risks(data) and not args.allow_sync:
+        message = ('پوشهٔ مطالعه در مسیر همگام‌سازی است. در زمان ذخیره، ممکن است نسخهٔ ناقص به فضای ابری منتقل شود.\n\n'
+                   'برای استفادهٔ نوبتی، هنگام مطالعه سینک را موقتاً متوقف کنید. پس از «خروج کامل»، سینک را فعال کنید و پیش از بازکردن روی دستگاه دیگر، منتظر تکمیل آن بمانید.\n\n'
+                   'برنامه در همین پوشه باز شود؟')
+        if args.no_browser:
+            raise Problem('برای اجرای آگاهانه در مسیر سینک از --allow-sync استفاده کنید.')
+        if ctypes.windll.user32.MessageBoxW(None, message, 'سیستم مطالعه من', 0x00000004 | 0x00000100 | 0x00180000) != 6:
+            return
     data.mkdir(parents=True, exist_ok=True)
     lock = (data / 'instance.lock').open('a+b')
     if lock.seek(0, 2) == 0:

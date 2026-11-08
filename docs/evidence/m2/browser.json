@@ -1,0 +1,42 @@
+[
+  {
+    "name": "M1b executable to M2 upgrade preserves notes, source text, progress, excerpts and review schedule",
+    "status": "pass"
+  },
+  {
+    "name": "Persian hierarchical topics created using keyboard",
+    "status": "pass"
+  },
+  {
+    "name": "topic reader shows original full notes and excerpt once, with independent multiple-source locators and source filter",
+    "status": "pass"
+  },
+  {
+    "name": "multi-source synthesis saved directly into topic",
+    "status": "pass"
+  },
+  {
+    "name": "file picker links real synthetic PDF under Persian folder and authenticated reader serves original bytes",
+    "status": "pass"
+  },
+  {
+    "name": "previewed folder rename updates disk and PDF references",
+    "status": "pass"
+  },
+  {
+    "name": "future reading queue stores source without a new note",
+    "status": "pass"
+  },
+  {
+    "name": "Persian search opens topic reading view",
+    "status": "pass"
+  },
+  {
+    "name": "32 layout combinations across 4 workspaces in both themes and two CSS zoom levels",
+    "status": "pass"
+  },
+  {
+    "name": "Edge restart preserves topic synthesis, queue and moved PDF path; no unhandled browser errors",
+    "status": "pass"
+  }
+]

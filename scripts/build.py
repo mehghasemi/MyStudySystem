@@ -9,7 +9,7 @@ import zipfile
 from datetime import datetime, timezone
 
 ROOT = Path(__file__).resolve().parents[1]
-OUT = ROOT / 'dist' / 'MyStudySystem-G0-r1-win'
+OUT = ROOT / 'build' / 'Candidate'
 APP = OUT / 'app'
 RUNTIME = APP / 'runtime'
 PYTHON = Path(sys.base_prefix)
@@ -29,7 +29,7 @@ def build():
     def copy(source, dest):
         shutil.copyfile(source,dest)
         allowed.add(dest)
-    approved = ['main.py','store.py','static/index.html','static/style.css','static/ui.js','static/calendar.js','static/Vazirmatn.ttf','static/OFL.txt']
+    approved = ['main.py','store.py','review.py','catalog.py','static/catalog.js','static/index.html','static/style.css','static/ui.js','static/calendar.js','static/Vazirmatn.ttf','static/OFL.txt']
     for relative in approved:
         dest = APP / relative
         dest.parent.mkdir(parents=True, exist_ok=True)
@@ -56,21 +56,12 @@ def build():
         if source.exists():copy(source,OUT/source.name)
     source_files=approved+['../scripts/Launcher.cs','../scripts/build.py']
     sources={name:sha(ROOT/'app'/name) for name in source_files}
-    manifest={'version':'G0-r1','schema':2,'prd':'3.12','python':sys.version,'sqlite':__import__('sqlite3').sqlite_version,'built_at':datetime.now(timezone.utc).isoformat(),'source_sha256':sources,'source_id':hashlib.sha256(json.dumps(sources,sort_keys=True).encode()).hexdigest(),'files':{p.relative_to(OUT).as_posix():sha(p) for p in sorted(allowed)}}
+    manifest={'version':'M2-r1','schema':5,'prd':'3.12','python':sys.version,'sqlite':__import__('sqlite3').sqlite_version,'built_at':datetime.now(timezone.utc).isoformat(),'source_sha256':sources,'source_id':hashlib.sha256(json.dumps(sources,sort_keys=True).encode()).hexdigest(),'files':{p.relative_to(OUT).as_posix():sha(p) for p in sorted(allowed)}}
     (OUT/'BUILD_MANIFEST.json').write_text(json.dumps(manifest,indent=2),encoding='utf-8')
     allowed.add(OUT/'BUILD_MANIFEST.json')
-    archive=OUT.with_suffix('.zip')
-    with zipfile.ZipFile(archive,'w',zipfile.ZIP_DEFLATED) as z:
-        for p in sorted(allowed):
-            if p.is_file():
-                relative=p.relative_to(OUT)
-                assert relative.parts[0] in {'app','README.md','USER_GUIDE.md','BUILD_MANIFEST.json'}
-                assert p.suffix.lower() not in {'.sqlite','.db','.log','.mp3','.m4a'}
-                assert '__pycache__' not in relative.parts
-                z.write(p,relative.as_posix())
-    digest=sha(archive)
-    archive.with_suffix('.zip.sha256').write_text(digest+'  '+archive.name+'\n',encoding='ascii')
-    print(json.dumps({'zip':str(archive),'sha256':digest,'bytes':archive.stat().st_size,'source_id':manifest['source_id']},indent=2))
+    for name in ['Update-StudySystem.ps1','Update-StudySystem.bat']:
+        shutil.copyfile(ROOT/'scripts'/name,OUT/name)
+    print('Candidate prepared:',OUT)
 
 
 if __name__=='__main__':build()

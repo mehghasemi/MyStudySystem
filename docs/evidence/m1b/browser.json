@@ -1,0 +1,38 @@
+[
+  {
+    "name": "real app upgrade from r3 preserves existing notes, sections, sources, bookmarks and excerpts without automatic scheduling",
+    "status": "pass"
+  },
+  {
+    "name": "explicit keyboard enrollment and neutral cue",
+    "status": "pass"
+  },
+  {
+    "name": "read only reveals original content without consuming quota",
+    "status": "pass"
+  },
+  {
+    "name": "Edge fresh profile resumes durable answer after full exit",
+    "status": "pass"
+  },
+  {
+    "name": "lost grade response retries once; second real tab cannot record stale grade and retains answer",
+    "status": "pass"
+  },
+  {
+    "name": "result plus Jalali date commits one attempt and advances stage",
+    "status": "pass"
+  },
+  {
+    "name": "Undo restores previous due, turn and quota while retaining answer and reflection",
+    "status": "pass"
+  },
+  {
+    "name": "review reflows in eight width/theme/CSS zoom combinations",
+    "status": "pass"
+  },
+  {
+    "name": "clean exit with no uncaught browser errors",
+    "status": "pass"
+  }
+]

@@ -76,7 +76,7 @@ class StorageTests(unittest.TestCase):
         self.assertFalse(self.store.db.exists())
     def test_transaction_interruption_keeps_committed_text(self):
         self.store.save(self.note())
-        code="import sqlite3,sys,os;c=sqlite3.connect(sys.argv[1]);c.execute('BEGIN IMMEDIATE');c.execute(\"UPDATE notes SET body='uncommitted'\");os._exit(23)"
+        code="import sqlite3,sys,os;c=sqlite3.connect(sys.argv[1]);c.execute('BEGIN IMMEDIATE');c.execute(\"UPDATE note_sections SET content_text='uncommitted'\");os._exit(23)"
         result=subprocess.run([sys.executable,'-c',code,str(self.store.db)],capture_output=True)
         self.assertEqual(result.returncode,23)
         self.assertEqual(self.store.state()['notes'][0]['body'],self.note()['body'])

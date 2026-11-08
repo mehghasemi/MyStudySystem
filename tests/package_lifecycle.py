@@ -15,7 +15,7 @@ import urllib.error
 import zipfile
 
 ROOT=Path(__file__).resolve().parents[1]
-archive=ROOT/'dist/MyStudySystem-G0-r1-win.zip'
+archive=ROOT/'dist/MyStudySystem-M1a-r3-win.zip'
 base=ROOT/'.test-runs'/('چرخه بسته '+str(time.time_ns()))
 base.mkdir(parents=True)
 results=[]
@@ -32,10 +32,10 @@ def extract(target):
             assert not name.endswith(('.db','.sqlite','.mp3','.m4a','.log'))
         z.extractall(target)
 
-def start(target):
+def start(target, *args):
     global process
     env={**os.environ,'PATH':str(Path(os.environ['WINDIR'])/'System32'),'PYTHONHOME':'','PYTHONPATH':''}
-    process=subprocess.Popen([str(target/'app/MyStudySystem.exe'),'--no-browser'],cwd=os.environ['TEMP'],env=env)
+    process=subprocess.Popen([str(target/'app/MyStudySystem.exe'),'--no-browser',*args],cwd=os.environ['TEMP'],env=env)
     session=target/'data/session.json'
     for _ in range(150):
         if session.exists():
@@ -91,6 +91,40 @@ try:
     assert all(current[k]==note[k] for k in ['title','body','due','at_utc'])
     stop(client,origin,state)
     passed('full exit releases app; compatible app replacement preserves existing DB and dates')
+    prior=base/'قبلی';prior.mkdir()
+    with zipfile.ZipFile(ROOT/'dist/MyStudySystem-M1a-r2-win.zip') as z:z.extractall(prior)
+    client,origin,state,info=start(prior)
+    post(client,origin,state,'source-save',dict(id='reading',title='کتاب نمونه',body='اصل متن',revision=0,operation_id='book'))
+    post(client,origin,state,'bookmark',dict(id='reading',page=47,chapter='فصل اول',revision=1,operation_id='page'))
+    post(client,origin,state,'save',dict(note,source_id='reading',sections={'personal':'برداشت من'}))
+    stop(client,origin,state)
+    src=(prior/'app').resolve();dst=(prior/'app-r2').resolve()
+    assert src.is_relative_to(base.resolve()) and dst.is_relative_to(base.resolve())
+    src.rename(dst);shutil.copytree(replacement/'app',src)
+    client,origin,state,info=start(prior)
+    assert state['version']=='M1a-r3' and len(state['notes'])==len(state['sources'])==1
+    assert state['notes'][0]['body']==note['body'] and state['notes'][0]['sections']['personal']=='برداشت من' and state['notes'][0]['source_id']=='reading'
+    assert state['sources'][0]['page']==47 and state['sources'][0]['body']=='اصل متن'
+    stop(client,origin,state)
+    passed('r2 to r3 keeps personal library, note sections, reference and reading page')
+    # Upgrade a real G0 package with persisted data, not a reconstructed schema fixture.
+    upgrade=base/'ارتقای G0';upgrade.mkdir()
+    with zipfile.ZipFile(ROOT/'dist/MyStudySystem-G0-r1-win.zip') as z:z.extractall(upgrade)
+    client,origin,state,info=start(upgrade)
+    post(client,origin,state,'seed',{});post(client,origin,state,'save',note);stop(client,origin,state)
+    old=(upgrade/'app').resolve();keep=(upgrade/'app-g0').resolve()
+    assert old.is_relative_to(base.resolve()) and keep.is_relative_to(base.resolve())
+    old.rename(keep);shutil.copytree(replacement/'app',upgrade/'app')
+    client,origin,state,info=start(upgrade)
+    assert state['schema']==3
+    current=next(n for n in state['notes'] if n['id']=='lifecycle')
+    assert all(current[k]==note[k] for k in ['title','body','due','at_utc'])
+    assert next(s for s in state['sources'] if s['id']=='book-1')['page']==47
+    stop(client,origin,state)
+    before=(upgrade/'data/study.sqlite').read_bytes()
+    p=subprocess.run([str(keep/'MyStudySystem.exe'),'--no-browser','--data',str(upgrade/'data')],timeout=15)
+    assert p.returncode==1 and (upgrade/'data/study.sqlite').read_bytes()==before
+    passed('real G0 app upgrade preserves text/page/date; old executable refuses schema 3 unchanged')
     # Retain unsupported or corrupt database bytes exactly; do not create an empty replacement.
     db=target/'data/study.sqlite'
     with sqlite3.connect(db) as c:c.execute('PRAGMA user_version=999')
@@ -101,7 +135,12 @@ try:
     blocked=base/'OneDrive'/'نمونه';extract(blocked)
     p=subprocess.run([str(blocked/'app/MyStudySystem.exe'),'--no-browser'],timeout=15)
     assert p.returncode==1 and not (blocked/'data/study.sqlite').exists()
-    passed('packaged startup refuses known Sync directory before creating DB')
+    passed('unattended Sync path requires explicit choice before creating DB')
+    client,origin,state,info=start(blocked,'--allow-sync');post(client,origin,state,'save',note);stop(client,origin,state)
+    client,origin,state,info=start(blocked,'--allow-sync')
+    assert next(n for n in state['notes'] if n['id']==note['id'])['body']==note['body']
+    stop(client,origin,state)
+    passed('explicit Sync path choice allows save and reopen in same folder')
     # Real Windows read-only attribute on an existing database yields a write error, not deletion.
     readonly=base/'آزمون فقط خواندنی';extract(readonly)
     client,origin,state,info=start(readonly);post(client,origin,state,'seed',{});stop(client,origin,state)
@@ -117,5 +156,5 @@ except Exception as e:
     results.append({'name':str(e),'status':'fail'});raise
 finally:
     if process and process.poll() is None:process.terminate()
-    (ROOT/'docs/evidence/package-lifecycle.json').write_text(json.dumps({'results':results,'test_directory':str(base)},ensure_ascii=False,indent=2),encoding='utf-8')
+    (ROOT/'docs/evidence/m1a/package-lifecycle-r3.json').write_text(json.dumps({'results':results,'test_directory':str(base)},ensure_ascii=False,indent=2),encoding='utf-8')
     print(f"RESULT {sum(r['status']=='pass' for r in results)} pass; {sum(r['status']=='fail' for r in results)} fail")

@@ -9,3 +9,10 @@
 @container(max-width:760px){#collapse{display:none}}
 
 body{container-type:inline-size}
+
+#bookChapter{width:min(100%,180px)}#sourceBody{margin-top:.3rem}#noteExtras{margin:1rem 0}#noteExtras textarea{margin-bottom:1rem}#draftList{margin-bottom:1.5rem;font-size:.85rem}#coverTitle{overflow-wrap:anywhere;font-size:1.1rem}#sourceStatus,#draftStatus{font-size:.8rem}#library label{margin-top:.7rem}
+
+#rvRepeat{width:auto;min-height:auto}#rvHistory{white-space:pre-wrap}#rvEnroll label{margin-top:1rem}
+.catalog-article{border-block-start:1px solid var(--line);padding-block:1rem;overflow-wrap:anywhere}.catalog-article small{display:block;margin-block:.7rem;color:var(--muted)}#organize .actions{margin-block:1rem}#organize label{margin-block-start:.75rem}#organize details button,#orgFolders button,#fileBrowser button{margin:.3rem}#topicTree ul,#folderTree ul{padding-inline-start:1rem;list-style:none;border-inline-start:1px solid var(--line)}#organize button[aria-pressed=true]{background:var(--tint);border-color:var(--accent)}#orgTopics{grid-template-columns:minmax(170px,1fr) minmax(0,3fr)}@container(max-width:850px){#orgTopics{grid-template-columns:1fr}}#fileBrowser{max-height:18rem;overflow:auto}
+
+.sidebar,.sidebar nav,#orgTopics>*,#orgTopics select{min-width:0}.sidebar nav{max-width:100%}@container(max-width:760px){.shell,.shell.collapsed{grid-template-columns:minmax(0,1fr)}#orgTopics{grid-template-columns:minmax(0,1fr)}}

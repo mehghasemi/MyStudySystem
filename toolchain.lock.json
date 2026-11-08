@@ -1,9 +1,9 @@
 {
-  "product": "MyStudySystem-G0-r1",
+  "product": "MyStudySystem-M1a-r3",
   "runtime": {"implementation": "CPython", "version": "3.14.7", "platform": "win_amd64", "third_party_python_packages": []},
   "build": {"launcher": ".NET Framework C# compiler v4.0.30319, x64 winexe", "distribution": "isolated bundled CPython, not system Python"},
   "test": {"node": "24.19.0", "playwright": "1.64.1", "channels": ["chrome", "msedge"]},
   "font": {"family": "Vazirmatn", "version": "33.003", "license": "OFL-1.1", "file": "app/static/Vazirmatn.ttf"},
   "network_at_runtime": "none, loopback only",
-  "build_file_hashes": "dist/MyStudySystem-G0-r1-win/BUILD_MANIFEST.json"
+  "build_file_hashes": "dist/MyStudySystem-M1a-r3-win/BUILD_MANIFEST.json"
 }

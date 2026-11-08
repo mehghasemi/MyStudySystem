@@ -1,0 +1,61 @@
+{
+  "results": [
+    {
+      "name": "keyboard book creation and exact clipboard text without Note or HTML execution",
+      "status": "pass"
+    },
+    {
+      "name": "page and chapter persist independently of excerpt location",
+      "status": "pass"
+    },
+    {
+      "name": "automatic note save with sections and book reference",
+      "status": "pass"
+    },
+    {
+      "name": "Jalali date selection persists independent of note content",
+      "status": "pass"
+    },
+    {
+      "name": "lost HTTP response retries same operation exactly once",
+      "status": "pass"
+    },
+    {
+      "name": "stale tab rejects overwrite, shows latest and saves independent copy",
+      "status": "pass"
+    },
+    {
+      "name": "source edits have independent stale-tab protection and separate copy",
+      "status": "pass"
+    },
+    {
+      "name": "home continues last explicitly opened book",
+      "status": "pass"
+    },
+    {
+      "name": "durable incomplete draft survives browser context close and explicit reopen",
+      "status": "pass"
+    },
+    {
+      "name": "delete dialog traps keyboard focus and Escape cancels",
+      "status": "pass"
+    },
+    {
+      "name": "preview review keeps answer absent from DOM and accessibility tree before reveal",
+      "status": "pass"
+    },
+    {
+      "name": "32 layout combinations: 4 screens, two themes, widths 1024/1280, CSS zoom 100/200",
+      "status": "pass"
+    },
+    {
+      "name": "full shutdown and Edge reopen preserve sections, source text, page, chapter and theme",
+      "status": "pass"
+    },
+    {
+      "name": "Chrome and new tabs have no uncaught page errors",
+      "status": "pass"
+    }
+  ],
+  "runDir": "D:\\MyData\\MyApp-AI\\CodexAPP\\MyStudySystem\\.test-runs\\آزمون مرورگر 1794021817035"
+}

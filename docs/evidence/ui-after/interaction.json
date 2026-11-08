@@ -1,0 +1,43 @@
+{
+  "loading": "در حال بازکردن فضای مطالعه…",
+  "initialShifts": [
+    {
+      "v": 0.0002690540313720703,
+      "input": false
+    },
+    {
+      "v": 0.016013574600219727,
+      "input": false
+    }
+  ],
+  "filePicker": "Study ۱۲۳.txt",
+  "enrollReturn": "rvAddNote",
+  "dateReturn": "duePicker",
+  "trap": "confirmAccept",
+  "quitReturn": "quit",
+  "latestReturn": "showLatest",
+  "reachable": [
+    "home",
+    "capture",
+    "library",
+    "organize",
+    "study",
+    "review",
+    "search",
+    "help"
+  ],
+  "filterBefore": {
+    "x": 49,
+    "y": 411.203125,
+    "width": 718,
+    "height": 38
+  },
+  "filterAfter": {
+    "x": 49,
+    "y": 411.203125,
+    "width": 718,
+    "height": 38
+  },
+  "emptyFilter": "مطلبی با این فیلتر پیدا نشد.",
+  "tableCount": 0
+}

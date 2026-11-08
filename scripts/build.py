@@ -9,7 +9,7 @@ import zipfile
 from datetime import datetime, timezone
 
 ROOT = Path(__file__).resolve().parents[1]
-OUT = ROOT / 'build' / 'Candidate'
+OUT = ROOT / 'build' / 'ReleaseCandidate'
 APP = OUT / 'app'
 RUNTIME = APP / 'runtime'
 PYTHON = Path(sys.base_prefix)
@@ -29,7 +29,7 @@ def build():
     def copy(source, dest):
         shutil.copyfile(source,dest)
         allowed.add(dest)
-    approved = ['main.py','store.py','review.py','catalog.py','static/catalog.js','static/index.html','static/style.css','static/ui.js','static/calendar.js','static/Vazirmatn.ttf','static/OFL.txt']
+    approved = ['main.py','store.py','review.py','daily.py','static/daily.js','catalog.py','static/catalog.js','static/index.html','static/style.css','static/ui.js','static/calendar.js','static/Vazirmatn.ttf','static/OFL.txt']
     for relative in approved:
         dest = APP / relative
         dest.parent.mkdir(parents=True, exist_ok=True)
@@ -56,7 +56,7 @@ def build():
         if source.exists():copy(source,OUT/source.name)
     source_files=approved+['../scripts/Launcher.cs','../scripts/build.py']
     sources={name:sha(ROOT/'app'/name) for name in source_files}
-    manifest={'version':'M2-r1','schema':5,'prd':'3.12','python':sys.version,'sqlite':__import__('sqlite3').sqlite_version,'built_at':datetime.now(timezone.utc).isoformat(),'source_sha256':sources,'source_id':hashlib.sha256(json.dumps(sources,sort_keys=True).encode()).hexdigest(),'files':{p.relative_to(OUT).as_posix():sha(p) for p in sorted(allowed)}}
+    manifest={'version':'M3-r1','schema':6,'prd':'3.12','python':sys.version,'sqlite':__import__('sqlite3').sqlite_version,'built_at':datetime.now(timezone.utc).isoformat(),'source_sha256':sources,'source_id':hashlib.sha256(json.dumps(sources,sort_keys=True).encode()).hexdigest(),'files':{p.relative_to(OUT).as_posix():sha(p) for p in sorted(allowed)}}
     (OUT/'BUILD_MANIFEST.json').write_text(json.dumps(manifest,indent=2),encoding='utf-8')
     allowed.add(OUT/'BUILD_MANIFEST.json')
     for name in ['Update-StudySystem.ps1','Update-StudySystem.bat']:

@@ -1,0 +1,38 @@
+[
+  {
+    "name": "real M2-r2 to M3 upgrade preserves notes, sections, sources, progress, catalog and review",
+    "status": "pass"
+  },
+  {
+    "name": "normalized Persian section search opens original note and renders mixed snippet safely",
+    "status": "pass"
+  },
+  {
+    "name": "note-linked action, Jalali date and completion result from Today",
+    "status": "pass"
+  },
+  {
+    "name": "short study resumes note, manual minutes and self-rating shown separately",
+    "status": "pass"
+  },
+  {
+    "name": "settings and policy preview/apply retain scheduled date; SQLite health check succeeds",
+    "status": "pass"
+  },
+  {
+    "name": "real grade follows new policy and daily cap",
+    "status": "pass"
+  },
+  {
+    "name": "explicit batch preview and commit; 7/30-day forecast totals agree with scheduled targets",
+    "status": "pass"
+  },
+  {
+    "name": "32 desktop reflow checks in dark and light themes",
+    "status": "pass"
+  },
+  {
+    "name": "Edge fresh profile preserves result, review settings and policy after complete shutdown",
+    "status": "pass"
+  }
+]

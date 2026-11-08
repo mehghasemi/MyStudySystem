@@ -73,7 +73,7 @@ class M1Tests(unittest.TestCase):
     def test_g0_upgrade_preserves_all_and_old_writer_refuses(self):
         path=self.path/'legacy';self.legacy(path);new=Store(path,ROOT/'app/static');n=new.state()['notes'][0]
         self.assertEqual(n['revision'],7);self.assertEqual(n['body'],'متن عینی\n**خام**');self.assertEqual(new.state()['sources'][0]['page'],47)
-        self.assertEqual(Store.version(new.db),5)
+        self.assertEqual(Store.version(new.db),6)
     def test_failed_upgrade_rolls_back_schema_and_original_text(self):
         path=self.path/'failure';old=self.legacy(path)
         original=Store.upgrade

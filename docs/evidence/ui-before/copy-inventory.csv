@@ -1,0 +1,551 @@
+﻿فایل,سطر,محل,عنصر یا متن,تصمیم پیشنهادی,دلیل و ارزش,ریسک
+index.html,3,html#. / head#. / title#.,سیستم مطالعه من,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,5,html#. / body#. / a#.skip,رفتن به محتوای اصلی,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,7,aside#.sidebar@aria-label,ناوبری اصلی,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,8,div#.shell / aside#.sidebar / div#.brand / span#.brand-mark,م,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,8,div#.shell / aside#.sidebar / div#.brand / span#.nav-text,سیستم مطالعه من,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,8,aside#.sidebar / div#.brand / span#.nav-text / small#.,جایی برای فهمیدن و به‌کاربستن,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,9,button#collapse.quiet@title,جمع یا باز کردن منو (Alt+M),نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,9,div#.shell / aside#.sidebar / button#collapse.quiet / span#.nav-text,جمع کردن منو,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,11,button#.@title,امروز,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,11,aside#.sidebar / nav#. / button#. / span#.nav-text,امروز,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,12,button#.@title,ثبت سریع,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,12,aside#.sidebar / nav#. / button#. / span#.nav-text,ثبت سریع,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,13,button#.@title,کتابخانه,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,13,aside#.sidebar / nav#. / button#. / span#.nav-text,کتابخانه,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,14,button#.@title,مطالعات من,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,14,aside#.sidebar / nav#. / button#. / span#.nav-text,مطالعات من,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,15,button#.@title,مطالعه,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,15,aside#.sidebar / nav#. / button#. / span#.nav-text,مطالعه,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,16,button#.@title,مرور,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,16,aside#.sidebar / nav#. / button#. / span#.nav-text,مرور,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,17,button#.@title,جست‌وجو,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,17,aside#.sidebar / nav#. / button#. / span#.nav-text,جست‌وجو,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,18,button#.@title,راهنما,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,18,aside#.sidebar / nav#. / button#. / span#.nav-text,راهنما,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,20,div#.shell / aside#.sidebar / div#.sidebar-bottom / span#.nav-text,M2,انتقال به دربارهٔ برنامه,شناسهٔ نگارش,کم
+index.html,20,aside#.sidebar / div#.sidebar-bottom / span#.nav-text / small#.,کتابخانهٔ شخصی,انتقال به راهنما,محدوده یا هویت محصول,کم
+index.html,23,div#.shell / div#.workspace / header#.topbar / div#.,فضای شخصی روی این رایانه,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,23,div#.workspace / header#.topbar / div#.toolbar / button#theme.quiet,حالت تاریک,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,23,div#.workspace / header#.topbar / div#.toolbar / button#quit.quiet,خروج کامل,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,24,body#. / div#.shell / div#.workspace / div#globalStatus.statusbar,در حال بازکردن فضای مطالعه…,نگه‌داشتن؛ کم‌فضا در حالت عادی,اعلان زندهٔ عملیات و خطا,زیاد
+index.html,27,section#home. / div#.page-heading / div#. / p#.eyebrow,امروز، یک قدم کوچک,ادغام با عنوان یا حذف پس از نمونه,تشخیص بخش؛ در کنار h1 غالباً تکراری,کم
+index.html,27,section#home. / div#.page-heading / div#. / h1#homeHeading.,از همان‌جا ادامه بده.,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,27,section#home. / div#.page-heading / div#. / p#.muted,چند دقیقه مطالعه، یک برداشت روشن، یک بار یادآوری.,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,27,main#main. / section#home. / div#.page-heading / span#.stamp,M1-ب,انتقال به دربارهٔ برنامه,شناسهٔ نگارش,کم
+index.html,28,main#main. / section#home. / div#welcome.paper welcome / h2#.,اولین کتابت را ثبت کن,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,28,main#main. / section#home. / div#welcome.paper welcome / p#.,نام کتاب را بنویس؛ متن منبع را می‌توانی بعداً اضافه کنی.,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,28,main#main. / section#home. / div#welcome.paper welcome / button#.primary,ثبت کتاب,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,28,main#main. / section#home. / div#welcome.paper welcome / button#.,ثبت یادداشت,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,30,div#homeContent. / div#.continue-panel / div#.book-spine / span#coverTitle.,کتاب من,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,30,div#homeContent. / div#.continue-panel / div#.book-spine / small#.,ادامهٔ مطالعه,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,30,div#homeContent. / div#.continue-panel / div#.continue-copy / p#.eyebrow,ادامهٔ آخرین مطالعه,ادغام با عنوان یا حذف پس از نمونه,تشخیص بخش؛ در کنار h1 غالباً تکراری,کم
+index.html,30,div#homeContent. / div#.continue-panel / div#.continue-copy / h2#continueTitle.,مکث پیش از واکنش,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,30,div#homeContent. / div#.continue-panel / div#.continue-copy / p#.,هر بار چند صفحه، با فرصت فکر کردن.,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,30,div#homeContent. / div#.continue-panel / div#.continue-copy / p#.muted,نشانگر مطالعه: صفحهٔ,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,30,div#homeContent. / div#.continue-panel / div#.continue-copy / button#continueStudy.primary,ادامهٔ مطالعه,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,31,div#homeContent. / div#.home-actions / div#. / h2#.,از حافظه شروع کن,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,31,div#homeContent. / div#.home-actions / div#. / p#.,پیش از بازخوانی، ببین چه چیزی مانده است.,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,31,div#homeContent. / div#.home-actions / div#. / button#.,مرور,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,31,div#homeContent. / div#.home-actions / div#. / h2#.,یک برداشت تازه,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,31,div#homeContent. / div#.home-actions / div#. / p#.,بی‌نیاز از انتخاب پوشه یا موضوع بنویس.,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,31,div#homeContent. / div#.home-actions / div#. / button#.,ثبت سریع,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,33,div#.workspace / main#main. / section#home. / p#.scope-note,ثبت کتاب و یادداشت و ادامهٔ مطالعه فعال‌اند. بکاپ و بازیابی در این نسخه وجود ندارند.,انتقال به راهنما,محدوده یا هویت محصول,کم
+index.html,37,section#capture. / div#.page-heading / div#. / p#.eyebrow,از فکر به نوشته,ادغام با عنوان یا حذف پس از نمونه,تشخیص بخش؛ در کنار h1 غالباً تکراری,کم
+index.html,37,section#capture. / div#.page-heading / div#. / h1#captureHeading.,ثبت سریع,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,37,section#capture. / div#.page-heading / div#. / p#.muted,آنچه ارزش نگه‌داشتن دارد، با زبان خودت بنویس.,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,37,main#main. / section#capture. / div#.page-heading / button#newNote.,یادداشت تازه,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,40,div#.editor-layout / div#.paper editor / form#noteForm. / label#.,عنوان یادداشت,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,40,input#noteTitle.@placeholder,مثلاً: امروز چه چیزی یاد گرفتم؟,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,41,div#.paper editor / form#noteForm. / div#.field-head / label#.,متن و برداشت من,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,41,div#.paper editor / form#noteForm. / div#.field-head / label#.inline-label,جهت متن,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,41,div#.field-head / label#.inline-label / select#direction. / option#.,خودکار,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,41,div#.field-head / label#.inline-label / select#direction. / option#.,راست به چپ,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,41,div#.field-head / label#.inline-label / select#direction. / option#.,چپ به راست,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,42,textarea#noteBody.@placeholder,اینجا بنویس یا متن را بچسبان…,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,42,div#.editor-layout / div#.paper editor / form#noteForm. / p#pasteHint.hint,متن ساده حفظ می‌شود؛ نشانه‌هایی مانند # و ** به قالب تبدیل نمی‌شوند.,راهنمای زمینه‌ای؛ متن ایمنی کنار عمل بماند,پیشگیری از خطای ورود یا توضیح تکمیلی,متوسط
+index.html,43,div#.paper editor / form#noteForm. / details#noteExtras. / summary#.,خلاصه، برداشت و کاربرد (اختیاری),نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,44,div#.paper editor / form#noteForm. / details#noteExtras. / label#.,خلاصهٔ منبع,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,45,div#.paper editor / form#noteForm. / details#noteExtras. / label#.,برداشت شخصی,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,46,div#.paper editor / form#noteForm. / details#noteExtras. / label#.,کاربرد عملی,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,47,div#.paper editor / form#noteForm. / div#newNoteTopics. / label#.,موضوع‌های یادداشت تازه (اختیاری),نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,47,div#.editor-layout / div#.paper editor / form#noteForm. / label#.,کتاب مرتبط (اختیاری),نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,47,div#.editor-layout / div#.paper editor / form#noteForm. / label#.,محل ارجاع، مثلاً صفحهٔ ۱۲,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,47,div#.editor-layout / div#.paper editor / form#noteForm. / button#openNoteSource.,خواندن کتاب مرتبط,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,48,form#noteForm. / div#.date-fields / div#. / label#.,تاریخ یادداشت,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,48,form#noteForm. / div#.date-fields / div#. / button#duePicker.date-button,انتخاب تاریخ شمسی,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,48,form#noteForm. / div#.date-fields / div#. / button#clearDue.text-button,پاک کردن تاریخ,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,48,form#noteForm. / div#.date-fields / div#. / label#.,تاریخ و ساعت یادداشت,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,48,form#noteForm. / div#.date-fields / div#. / button#timePicker.date-button,انتخاب تاریخ و ساعت,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,48,form#noteForm. / div#.date-fields / div#. / button#clearTime.text-button,پاک کردن زمان,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,49,div#.editor-layout / div#.paper editor / form#noteForm. / p#.hint,این تاریخ‌ها ذخیره می‌شوند؛ در این نسخه اعلان یا زمان‌بندی خودکار ندارند. ساعت به وقت تهران است.,راهنمای زمینه‌ای؛ متن ایمنی کنار عمل بماند,پیشگیری از خطای ورود یا توضیح تکمیلی,متوسط
+index.html,50,div#.paper editor / form#noteForm. / div#.save-row / button#saveNote.primary,ذخیرهٔ یادداشت,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,50,div#.paper editor / form#noteForm. / div#.save-row / span#saveStatus.,هنوز تغییری نکرده است,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,50,div#.paper editor / form#noteForm. / div#.save-row / span#charCount.hint,۰ نویسه,راهنمای زمینه‌ای؛ متن ایمنی کنار عمل بماند,پیشگیری از خطای ورود یا توضیح تکمیلی,متوسط
+index.html,52,div#.paper editor / form#noteForm. / div#conflictActions.actions / button#showLatest.,دیدن آخرین نسخه,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,52,div#.paper editor / form#noteForm. / div#conflictActions.actions / button#saveSeparate.,ذخیره به‌عنوان نسخهٔ جدا,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,53,div#.editor-layout / div#.paper editor / form#noteForm. / button#orgNote.,موضوع‌ها، پوشه و ارجاع‌های یادداشت,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,53,div#.editor-layout / div#.paper editor / form#noteForm. / button#rvAddNote.,برنامهٔ مرور این یادداشت,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,54,section#capture. / div#.editor-layout / aside#.note-shelf / h2#.,پیش‌نویس‌های ناتمام,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,54,section#capture. / div#.editor-layout / aside#.note-shelf / h2#.,ورودی و نوشته‌های ذخیره‌شده,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,54,section#capture. / div#.editor-layout / aside#.note-shelf / p#.hint,ذخیره روی همین رایانه انجام می‌شود.,راهنمای زمینه‌ای؛ متن ایمنی کنار عمل بماند,پیشگیری از خطای ورود یا توضیح تکمیلی,متوسط
+index.html,58,section#library. / div#.page-heading / div#. / p#.eyebrow,کتاب‌های در دست مطالعه,ادغام با عنوان یا حذف پس از نمونه,تشخیص بخش؛ در کنار h1 غالباً تکراری,کم
+index.html,58,section#library. / div#.page-heading / div#. / h1#libraryHeading.,کتابخانه,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,58,section#library. / div#.page-heading / div#. / p#.muted,متن کتاب و برداشت خودت را جدا نگه دار.,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,58,main#main. / section#library. / div#.page-heading / button#newBook.,منبع تازه,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,60,div#.editor-layout / div#.paper editor / form#bookForm. / label#.,نوع منبع,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,60,div#.editor-layout / div#.paper editor / form#bookForm. / label#.,عنوان منبع,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,61,form#bookForm. / div#.date-fields / div#. / label#.,نویسنده,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,61,form#bookForm. / div#.date-fields / div#. / label#.,ناشر,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,62,div#.editor-layout / div#.paper editor / form#bookForm. / label#.,نشانی وب (اختیاری),نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,62,div#.paper editor / form#bookForm. / div#webFields. / label#.,نام وب‌سایت,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,62,div#.paper editor / form#bookForm. / div#webFields. / button#accessedDate.,تاریخ دسترسی,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,62,div#.paper editor / form#bookForm. / div#webFields. / button#clearAccessed.,پاک کردن تاریخ دسترسی,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,62,div#.editor-layout / div#.paper editor / form#bookForm. / label#.,متن منبع (اختیاری),نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,62,div#.editor-layout / div#.paper editor / form#bookForm. / p#sourceBodyHint.hint,متن تایپ‌شده یا چسبانده‌شده عیناً ذخیره می‌شود. برای کتاب کاغذی، نام کتاب کافی است.,راهنمای زمینه‌ای؛ متن ایمنی کنار عمل بماند,پیشگیری از خطای ورود یا توضیح تکمیلی,متوسط
+index.html,63,div#.paper editor / form#bookForm. / div#.save-row / button#saveBook.primary,ذخیرهٔ منبع,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,63,div#.paper editor / form#bookForm. / div#.save-row / button#orgSource.,فایل‌ها و دسته‌بندی منبع,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,63,div#.paper editor / form#bookForm. / div#.save-row / button#readBook.,شروع مطالعه کوتاه,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,63,div#.paper editor / form#bookForm. / div#sourceConflict.actions / button#sourceLatest.,دیدن آخرین نسخه,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,63,div#.paper editor / form#bookForm. / div#sourceConflict.actions / button#sourceSeparate.,ذخیره به‌عنوان کتاب جدا,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,64,div#.editor-layout / div#.paper editor / details#. / summary#.,بایگانی یا حذف کتاب,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,64,div#.editor-layout / div#.paper editor / details#. / p#.hint,متن و ارجاع یادداشت‌ها حفظ می‌شود. بازیابی کتاب حذف‌شده هنوز در دسترس نیست.,راهنمای زمینه‌ای؛ متن ایمنی کنار عمل بماند,پیشگیری از خطای ورود یا توضیح تکمیلی,متوسط
+index.html,64,div#.editor-layout / div#.paper editor / details#. / button#archiveBook.,بایگانی کتاب,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,64,div#.editor-layout / div#.paper editor / details#. / button#deleteBook.,حذف از فهرست,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,64,section#library. / div#.editor-layout / aside#.note-shelf / h2#.,منابع ثبت‌شده,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,64,section#library. / div#.editor-layout / aside#.note-shelf / label#.,نمایش,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,64,div#.editor-layout / aside#.note-shelf / select#libraryFilter. / option#.,در دست مطالعه,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,64,div#.editor-layout / aside#.note-shelf / select#libraryFilter. / option#.,بایگانی‌شده,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,64,section#library. / div#.editor-layout / aside#.note-shelf / label#.,جست‌وجوی نام یا برچسب,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,64,section#library. / div#.editor-layout / aside#.note-shelf / label#.,نوع,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,64,section#library. / div#.editor-layout / aside#.note-shelf / label#.,وضعیت فایل,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,64,div#.editor-layout / aside#.note-shelf / select#libFile. / option#.,همه,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,64,div#.editor-layout / aside#.note-shelf / select#libFile. / option#.,در دسترس,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,64,div#.editor-layout / aside#.note-shelf / select#libFile. / option#.,یافت نشد,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,64,div#.editor-layout / aside#.note-shelf / select#libFile. / option#.,بدون فایل,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,67,section#study. / div#.page-heading / div#. / p#.eyebrow,فرصتی برای خواندن,ادغام با عنوان یا حذف پس از نمونه,تشخیص بخش؛ در کنار h1 غالباً تکراری,کم
+index.html,67,section#study. / div#.page-heading / div#. / h1#studyHeading.,مطالعه,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,67,section#study. / div#.page-heading / div#.actions / button#noteFromBook.,ثبت یک برداشت,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,67,section#study. / div#.page-heading / div#.actions / button#editCurrentBook.,ویرایش کتاب,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,68,div#.workspace / main#main. / section#study. / div#studyEmpty.empty,هنوز کتابی ندارید. از کتابخانه یک کتاب ثبت کنید.,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,69,div#studyContent.study-layout / article#.paper reading / div#.reading-heading / span#.tag,متن کتاب,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,69,div#studyContent.study-layout / article#.paper reading / div#.reading-heading / span#studyTopic.muted,موضوع خشم,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,69,div#studyContent.study-layout / article#.paper reading / div#.bookmark-row / label#.,ادامه از صفحهٔ,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,69,div#studyContent.study-layout / article#.paper reading / div#.bookmark-row / label#.,فصل,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,69,div#studyContent.study-layout / article#.paper reading / div#.bookmark-row / button#savePage.,ثبت جای مطالعه,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,69,div#studyContent.study-layout / article#.paper reading / div#.bookmark-row / button#reloadPage.,دیدن جای ثبت‌شده در تب دیگر,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,69,div#studyContent.study-layout / article#.paper reading / div#.reading-footer / p#.,عبارتی از متن را انتخاب کن تا جدا نگه داری.,انتقال به راهنما,محدوده یا هویت محصول,کم
+index.html,69,div#studyContent.study-layout / article#.paper reading / div#.reading-footer / button#highlight.,ثبت گزیدهٔ انتخاب‌شده,انتقال به راهنما,محدوده یا هویت محصول,کم
+index.html,69,section#study. / div#studyContent.study-layout / article#.paper reading / h3#.,گزیده‌ها,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,69,div#studyContent.study-layout / aside#.study-shelf / details#. / summary#.,کتاب‌های من,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,69,div#studyContent.study-layout / aside#.study-shelf / div#.margin-note / p#.,بعد از هر بند مکث کن؛ اگر قرار بود برای کسی توضیح بدهی، چه می‌گفتی؟,جمع‌شدن,پیشنهاد آموزشی در صورت نیاز,کم
+index.html,69,div#studyContent.study-layout / aside#.study-shelf / div#.margin-note / small#.,پیشنهاد مطالعه,جمع‌شدن,پیشنهاد آموزشی در صورت نیاز,کم
+index.html,73,section#organize. / div#.page-heading / div#. / h1#orgHeading.,مطالعات من,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,73,section#organize. / div#.page-heading / div#. / p#.muted,نوشته‌ها و گزیده‌ها را کنار هم بخوانید.,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,74,div#.actions@aria-label,نماهای مطالعات,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,74,main#main. / section#organize. / div#.actions / button#.,موضوع‌ها,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,74,main#main. / section#organize. / div#.actions / button#.,پوشه‌ها و فایل‌ها,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,74,main#main. / section#organize. / div#.actions / button#.,نوشته‌ها و گزیده‌ها,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,74,main#main. / section#organize. / div#.actions / button#.,بعداً بخوانم,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,76,section#organize. / div#orgTopics.study-layout / aside#.study-shelf / label#.,پیدا کردن موضوع,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,77,div#orgTopics.study-layout / aside#.study-shelf / details#. / summary#.,ساخت و ویرایش موضوع,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,77,div#orgTopics.study-layout / aside#.study-shelf / details#. / label#.,عنوان,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,77,div#orgTopics.study-layout / aside#.study-shelf / details#. / label#.,موضوع والد,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,77,div#orgTopics.study-layout / aside#.study-shelf / details#. / button#topicCreate.,ساخت موضوع,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,77,div#orgTopics.study-layout / aside#.study-shelf / details#. / button#topicChange.,ویرایش موضوع انتخابی,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,77,div#orgTopics.study-layout / aside#.study-shelf / details#. / button#topicRemove.,حذف از درخت,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,78,section#organize. / div#orgTopics.study-layout / article#.paper reading / h2#topicHeading.,مطالعهٔ موضوعی,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,78,section#organize. / div#orgTopics.study-layout / article#.paper reading / label#.,فیلتر منبع,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,78,section#organize. / div#orgTopics.study-layout / article#.paper reading / label#.,ترتیب خواندن,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,78,div#orgTopics.study-layout / article#.paper reading / select#topicOrder. / option#.,زمان ثبت,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,78,div#orgTopics.study-layout / article#.paper reading / select#topicOrder. / option#.,آخرین تغییر,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,79,div#orgTopics.study-layout / article#.paper reading / details#. / summary#.,جمع‌بندی تازه برای این موضوع,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,79,div#orgTopics.study-layout / article#.paper reading / details#. / label#.,عنوان یادداشت,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,79,div#orgTopics.study-layout / article#.paper reading / details#. / label#.,جمع‌بندی من,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,79,div#orgTopics.study-layout / article#.paper reading / details#. / label#.,منابع جمع‌بندی (انتخاب چندگانه),نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,79,div#orgTopics.study-layout / article#.paper reading / details#. / button#saveSummary.,ذخیرهٔ جمع‌بندی در موضوع,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,80,section#organize. / div#orgFolders. / div#.paper / h2#.,پوشه‌های کتابخانه در ویندوز,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,80,section#organize. / div#orgFolders. / div#.paper / label#.,مسیر کامل پوشهٔ مادر فایل‌ها,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,80,section#organize. / div#orgFolders. / div#.paper / button#setRoot.,بررسی و انتخاب ریشه,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,80,section#organize. / div#orgFolders. / div#.paper / label#.,نام پوشه,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,80,section#organize. / div#orgFolders. / div#.paper / label#.,پوشهٔ والد,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,80,div#orgFolders. / div#.paper / div#.actions / button#folderCreate.,ساخت یا اتصال پوشه,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,80,div#orgFolders. / div#.paper / div#.actions / button#folderMove.,پیش‌نمایش تغییرنام یا انتقال,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,80,div#orgFolders. / div#.paper / div#.actions / button#folderRelink.,اتصال مجدد پس از جابه‌جایی در ویندوز,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,80,div#orgFolders. / div#.paper / div#.actions / button#folderArchive.,بایگانی پوشه,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,80,div#orgFolders. / div#.paper / div#.actions / button#folderRecover.,بررسی انتقال ناتمام,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,81,main#main. / section#organize. / div#orgItems.paper / h2#.,نوشته‌ها و گزیده‌ها,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,81,main#main. / section#organize. / div#orgItems.paper / label#.,نوع مطلب,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,81,section#organize. / div#orgItems.paper / select#itemKind. / option#.,همه,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,81,section#organize. / div#orgItems.paper / select#itemKind. / option#.,یادداشت,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,81,section#organize. / div#orgItems.paper / select#itemKind. / option#.,گزیده,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,81,section#organize. / div#orgItems.paper / select#itemKind. / option#.,منبع,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,81,section#organize. / div#orgItems.paper / select#itemKind. / option#.,ورودی یادداشت‌ها,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,81,section#organize. / div#orgItems.paper / select#itemKind. / option#.,گزیده‌های بدون طبقه‌بندی,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,81,section#organize. / div#orgItems.paper / select#itemKind. / option#.,گزیده‌های بدون منبع,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,82,section#organize. / div#orgItems.paper / details#. / summary#.,فیلتر و ترتیب نمایش,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,82,section#organize. / div#orgItems.paper / details#. / label#.,عنوان، متن یا برچسب,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,82,section#organize. / div#orgItems.paper / details#. / label#.,منبع,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,82,section#organize. / div#orgItems.paper / details#. / label#.,موضوع,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,82,section#organize. / div#orgItems.paper / details#. / label#.,نوع منبع,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,82,section#organize. / div#orgItems.paper / details#. / label#.,وضعیت مرور,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,82,div#orgItems.paper / details#. / select#itemReview. / option#.,همه,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,82,div#orgItems.paper / details#. / select#itemReview. / option#.,فعال,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,82,div#orgItems.paper / details#. / select#itemReview. / option#.,متوقف,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,82,div#orgItems.paper / details#. / select#itemReview. / option#.,بدون برنامه,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,82,div#orgItems.paper / details#. / select#itemReview. / option#.,پایان‌یافته,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,82,section#organize. / div#orgItems.paper / details#. / button#itemDate.,روز ثبت,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,82,section#organize. / div#orgItems.paper / details#. / button#itemDateClear.,پاک کردن تاریخ,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,82,section#organize. / div#orgItems.paper / details#. / label#.,گروه‌بندی,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,82,div#orgItems.paper / details#. / select#itemGroup. / option#.,بدون گروه‌بندی,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,82,div#orgItems.paper / details#. / select#itemGroup. / option#.,موضوع,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,82,div#orgItems.paper / details#. / select#itemGroup. / option#.,برچسب,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,82,div#orgItems.paper / details#. / select#itemGroup. / option#.,منبع,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,82,div#orgItems.paper / details#. / select#itemGroup. / option#.,نوع منبع,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,82,div#orgItems.paper / details#. / select#itemGroup. / option#.,روز ثبت,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,82,div#orgItems.paper / details#. / select#itemGroup. / option#.,وضعیت مرور,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,82,section#organize. / div#orgItems.paper / details#. / label#.,مرتب‌سازی,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,82,div#orgItems.paper / details#. / select#itemOrder. / option#.,زمان ثبت,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,82,div#orgItems.paper / details#. / select#itemOrder. / option#.,عنوان منبع,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,82,div#orgItems.paper / details#. / select#itemOrder. / option#.,موضوع,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,82,div#orgItems.paper / details#. / select#itemOrder. / option#.,موعد مرور,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,82,main#main. / section#organize. / div#orgItems.paper / label#.,انتخاب مطلب,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,83,section#organize. / div#orgItems.paper / details#itemTools. / summary#.,دسته‌بندی و پیوندهای این مطلب,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,84,section#organize. / div#orgItems.paper / details#itemTools. / label#.,موضوع,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,84,section#organize. / div#orgItems.paper / details#itemTools. / button#addTopic.,اتصال به موضوع,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,84,section#organize. / div#orgItems.paper / details#itemTools. / label#.,برچسب,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,84,section#organize. / div#orgItems.paper / details#itemTools. / button#tagAdd.,ثبت برچسب,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,85,section#organize. / div#orgItems.paper / details#itemTools. / label#.,پوشه,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,85,section#organize. / div#orgItems.paper / details#itemTools. / button#placeItem.,ثبت جای مطلب,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,86,section#organize. / div#orgItems.paper / details#itemTools. / label#.,ارجاع به منبع,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,86,section#organize. / div#orgItems.paper / details#itemTools. / label#.,محل ارجاع (صفحه، فصل یا نشانی),نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,86,section#organize. / div#orgItems.paper / details#itemTools. / button#citeAdd.,افزودن ارجاع,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,87,section#organize. / div#orgItems.paper / details#itemTools. / label#.,مسیر فایل زیر پوشهٔ مادر,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,87,input#filePath.@placeholder,کتاب‌ها/نمونه.pdf,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,87,section#organize. / div#orgItems.paper / details#itemTools. / button#browseFile.,انتخاب از پوشهٔ مادر,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,87,section#organize. / div#orgItems.paper / details#itemTools. / button#attachFile.,پیوند فایل,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,88,section#organize. / div#orgItems.paper / details#itemTools. / label#.,متن گزیدهٔ دستی,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,88,section#organize. / div#orgItems.paper / details#itemTools. / label#.,محل گزیده,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,88,section#organize. / div#orgItems.paper / details#itemTools. / button#manualAdd.,ثبت گزیدهٔ دستی,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,88,section#organize. / div#orgItems.paper / details#itemTools. / button#selectExcerpt.,ثبت عبارت انتخاب‌شده از متن بالا,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,89,div#orgItems.paper / details#itemTools. / div#.actions / button#orgReview.,برنامهٔ مرور,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,89,div#orgItems.paper / details#itemTools. / div#.actions / button#archiveNote.,بایگانی یادداشت,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,89,div#orgItems.paper / details#itemTools. / div#.actions / button#deleteNote.,حذف نرم یادداشت,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,90,main#main. / section#organize. / div#orgQueue.paper / h2#.,بعداً بخوانم,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,90,main#main. / section#organize. / div#orgQueue.paper / label#.,منبع,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,90,main#main. / section#organize. / div#orgQueue.paper / label#.,وضعیت,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,90,main#main. / section#organize. / div#orgQueue.paper / label#.,چرا بخوانم؟,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,90,main#main. / section#organize. / div#orgQueue.paper / label#.,اولویت (۱ تا ۵),نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,90,main#main. / section#organize. / div#orgQueue.paper / button#queueDate.,تاریخ شروع پیشنهادی,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,90,main#main. / section#organize. / div#orgQueue.paper / button#clearQueueDate.,پاک کردن تاریخ,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,90,main#main. / section#organize. / div#orgQueue.paper / button#queueSave.,ذخیره در فهرست,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,90,main#main. / section#organize. / div#orgQueue.paper / label#.,فیلتر وضعیت,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,92,section#review. / div#.page-heading / div#. / h1#reviewHeading.,مرور و یادآوری,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,92,main#main. / section#review. / div#.page-heading / button#rvQueue.,شروع از صف امروز,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,93,main#main. / section#review. / div#.paper recall / p#rvEmpty.,برای شروع، یک یادداشت ذخیره‌شده یا گزیده را به مرور اضافه کنید.,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,94,section#review. / div#.paper recall / div#rvPanel. / label#.,مطلب برنامه‌ریزی‌شده,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,96,div#.paper recall / div#rvPanel. / div#.actions / button#rvStart.primary,انجام مرور اکنون,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,96,div#.paper recall / div#rvPanel. / div#.actions / button#rvRead.,فقط بازخوانی,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,97,div#.paper recall / div#rvPanel. / div#rvAttempt. / label#.,یادآوری من (اختیاری),نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,98,div#rvPanel. / div#rvAttempt. / div#.actions / button#rvSaveDraft.,ذخیرهٔ پیش‌نویس پاسخ,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,98,div#rvPanel. / div#rvAttempt. / div#.actions / button#reveal.primary,نمایش مطلب,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,99,div#.paper recall / div#rvPanel. / div#answerArea. / h2#answerHeading.,مقایسه با مطلب,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,100,div#rvPanel. / div#answerArea. / div#rvResult. / button#rvDate.,تغییر تاریخ نتیجه,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,100,div#rvPanel. / div#answerArea. / div#rvResult. / button#rvCommit.primary,ثبت نتیجه,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,101,div#rvPanel. / div#answerArea. / details#. / summary#.,برداشت تازه از این مطلب,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,101,div#rvPanel. / div#answerArea. / details#. / label#.,متن برداشت,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,101,div#rvPanel. / div#answerArea. / details#. / button#rvReflect.,ثبت برداشت جداگانه,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,101,div#.paper recall / div#rvPanel. / div#answerArea. / button#hideAnswer.,بستن مطلب,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,102,div#.paper recall / div#rvPanel. / details#. / summary#.,مدیریت برنامهٔ مرور,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,102,div#rvPanel. / details#. / div#.actions / button#rvPause.,توقف موقت,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,102,div#rvPanel. / details#. / div#.actions / button#rvResume.,ادامهٔ برنامه,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,102,div#rvPanel. / details#. / div#.actions / button#rvSnooze.,تعویق,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,102,div#rvPanel. / details#. / div#.actions / button#rvReschedule.,تغییر موعد,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,102,div#rvPanel. / details#. / div#.actions / button#rvCancel.,پایان برنامه,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,102,div#rvPanel. / details#. / div#.actions / button#rvUndo.,برگشت آخرین نتیجه,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,103,main#main. / section#review. / div#.paper recall / button#rvReload.,دریافت وضعیت تازه,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,104,div#.workspace / main#main. / dialog#rvEnroll. / h2#rvEnrollTitle.,افزودن به مرور,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,104,div#.workspace / main#main. / dialog#rvEnroll. / label#.,سرنخ دلخواه (اختیاری),نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,104,div#.workspace / main#main. / dialog#rvEnroll. / p#.,اولین مرور برای فردا پیشنهاد می‌شود.,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,104,div#.workspace / main#main. / dialog#rvEnroll. / label#.,تکرار هر ۶۰ روز پس از آخرین مرحله,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,104,div#.workspace / main#main. / dialog#rvEnroll. / button#rvEnrollDate.,تغییر تاریخ,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,104,main#main. / dialog#rvEnroll. / div#.actions / button#rvEnrollOk.primary,ثبت برنامه,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,104,main#main. / dialog#rvEnroll. / div#.actions / button#rvEnrollClose.,انصراف,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,105,section#search. / div#.page-heading / div#. / p#.eyebrow,دوباره پیدایش کن,ادغام با عنوان یا حذف پس از نمونه,تشخیص بخش؛ در کنار h1 غالباً تکراری,کم
+index.html,105,section#search. / div#.page-heading / div#. / h1#searchHeading.,جست‌وجو در نوشته‌ها,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,105,section#search. / div#.page-heading / div#. / p#.muted,جست‌وجو در عنوان، متن کتاب‌ها، یادداشت‌ها و گزیده‌ها.,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,105,main#main. / section#search. / form#searchForm.search-form / label#.,عبارت جست‌وجو,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,105,input#query.@placeholder,مثلاً مکث یا يادگيري,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,105,section#search. / form#searchForm.search-form / div#.actions / button#.primary,جست‌وجو,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,107,section#help. / div#.page-heading / div#. / p#.eyebrow,راهنمای همین نسخه,ادغام با عنوان یا حذف پس از نمونه,تشخیص بخش؛ در کنار h1 غالباً تکراری,کم
+index.html,107,section#help. / div#.page-heading / div#. / h1#helpHeading.,یک دور کوتاه در برنامه,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,107,main#main. / section#help. / div#.page-heading / span#.stamp,M2-r1,انتقال به دربارهٔ برنامه,شناسهٔ نگارش,کم
+index.html,107,section#help. / div#.paper guide / ol#. / li#.,در «کتابخانه» نام کتاب و متن منبع را ثبت کنید؛ برای کتاب کاغذی متن اختیاری است.,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,107,section#help. / div#.paper guide / ol#. / li#.,در «ثبت سریع» متن فارسی و انگلیسی بچسبانید، تاریخ شمسی انتخاب و ذخیره کنید. وضعیت «ذخیره شد» را ببینید.,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,107,section#help. / div#.paper guide / ol#. / li#.,در «مطالعه» کتاب را بخوانید، جای مطالعه را ثبت و از یک عبارت گزیده بسازید.,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,107,section#help. / div#.paper guide / ol#. / li#.,در «مرور» اول از حافظه تلاش کنید و بعد «نمایش مطلب» را بزنید. با انتخاب نتیجه و تأیید موعد، برنامهٔ مرور به‌روز می‌شود.,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,107,section#help. / div#.paper guide / ol#. / li#.,از «خروج کامل» استفاده کنید و دوباره فایل اجرایی را باز کنید؛ متن و تاریخ باید باقی باشند. بستن تب به‌تنهایی برنامهٔ محلی را متوقف نمی‌کند.,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,107,main#main. / section#help. / div#.paper guide / h2#.,اگر ذخیره نشد,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,107,main#main. / section#help. / div#.paper guide / p#.,متن در همان صفحه می‌ماند. پیش‌نویس یادداشت پس از پیام «پیش‌نویس روی رایانه ثبت شد» از فهرست پیش‌نویس‌ها در اجرای بعد قابل بازکردن است. خطا را بخوانید و دوباره ذخیره کنید. در تعارض دو تب می‌توانید آخرین متن را ببینید و نوشتهٔ خود را جدا ذخیره کنید.,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,107,main#main. / section#help. / div#.paper guide / h2#.,امکانات این نگارش,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,107,main#main. / section#help. / div#.paper guide / p#.,کتاب‌ها، یادداشت‌ها و جای مطالعهٔ شما در پوشهٔ data ذخیره می‌شوند. بکاپ، بازیابی و صوت در این نسخه وجود ندارند. برای مرور، ابتدا از داخل یادداشت یا کنار گزیده آن را به برنامه اضافه کنید.,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,107,main#main. / section#help. / div#.paper guide / p#.,در مسیر سینک، هنگام مطالعه همگام‌سازی را مکث کنید و پس از خروج کامل دوباره فعال کنید. پیش از تغییر دستگاه منتظر تکمیل سینک بمانید.,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,107,main#main. / section#help. / div#.paper guide / label#.,محل دادهٔ این اجرا,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,107,main#main. / section#help. / div#.paper guide / p#.hint,میانبرها: Ctrl+S ذخیرهٔ یادداشت، Alt+M جمع‌کردن منو؛ Tab حرکت و Enter انتخاب. در تقویم کلیدهای جهت حرکت بین روزها را انجام می‌دهند.,راهنمای زمینه‌ای؛ متن ایمنی کنار عمل بماند,پیشگیری از خطای ورود یا توضیح تکمیلی,متوسط
+index.html,109,body#. / div#.shell / div#.workspace / footer#.,سیستم مطالعه من,انتقال به راهنما,محدوده یا هویت محصول,کم
+index.html,109,div#.shell / div#.workspace / footer#. / span#.,ذخیرهٔ محلی · ثبت و ادامهٔ مطالعه,انتقال به راهنما,محدوده یا هویت محصول,کم
+index.html,112,body#. / dialog#calendar. / div#.dialog-head / h2#calendarTitle.,انتخاب تاریخ شمسی,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,112,button#calendarClose.@aria-label,بستن تقویم,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,112,button#previousMonth.@aria-label,ماه قبل,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,112,body#. / dialog#calendar. / div#.calendar-controls / button#previousMonth.,ماه قبل,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,112,body#. / dialog#calendar. / div#.calendar-controls / label#.,ماه,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,112,body#. / dialog#calendar. / div#.calendar-controls / label#.,سال,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,112,button#nextMonth.@aria-label,ماه بعد,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,112,body#. / dialog#calendar. / div#.calendar-controls / button#nextMonth.,ماه بعد,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,112,body#. / dialog#calendar. / div#.weekdays / span#.,ش,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,112,body#. / dialog#calendar. / div#.weekdays / span#.,ی,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,112,body#. / dialog#calendar. / div#.weekdays / span#.,د,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,112,body#. / dialog#calendar. / div#.weekdays / span#.,س,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,112,body#. / dialog#calendar. / div#.weekdays / span#.,چ,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,112,body#. / dialog#calendar. / div#.weekdays / span#.,پ,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,112,body#. / dialog#calendar. / div#.weekdays / span#.,ج,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,112,div#calendarDays.calendar-days@aria-label,روزهای ماه,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,112,body#. / dialog#calendar. / div#calendarTime.calendar-time / label#.,ساعت تهران,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,112,body#. / dialog#calendar. / div#calendarTime.calendar-time / label#.sr-only,دقیقه,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,112,body#. / dialog#calendar. / div#.actions / button#calendarApply.primary,انتخاب تاریخ,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,112,body#. / dialog#calendar. / div#.actions / button#calendarToday.,امروز,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,112,html#. / body#. / dialog#calendar. / p#.hint,بازهٔ نمونه: ۱۳۹۰ تا ۱۴۵۰. زمان با منطقهٔ تهران ذخیره می‌شود.,راهنمای زمینه‌ای؛ متن ایمنی کنار عمل بماند,پیشگیری از خطای ورود یا توضیح تکمیلی,متوسط
+index.html,113,html#. / body#. / dialog#confirmDialog. / h2#confirmTitle.,بررسی پیش از ادامه,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,113,body#. / dialog#confirmDialog. / div#.actions / button#confirmAccept.primary,ادامه,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,113,body#. / dialog#confirmDialog. / div#.actions / button#confirmCancel.,انصراف,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,114,html#. / body#. / dialog#latestDialog. / h2#latestTitle.,آخرین نسخهٔ ذخیره‌شده,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,114,html#. / body#. / dialog#latestDialog. / p#.,نوشتهٔ شما در فرم اصلی حفظ شده است؛ می‌توانید آن را به‌عنوان نسخهٔ جدا ذخیره کنید.,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+index.html,114,html#. / body#. / dialog#latestDialog. / button#closeLatest.,برگشت به نوشتهٔ من,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,14,رشته یا قالب تولیدشده,عمل انجام نشد.,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,17,رشته یا قالب تولیدشده,ارتباط با برنامه برقرار نیست. نوشته را نگه دارید و برنامه را دوباره باز کنید.,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,18,رشته یا قالب تولیدشده,تغییرات ذخیره نشده,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,18,رشته یا قالب تولیدشده, نویسه,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,19,رشته یا قالب تولیدشده,انتخاب تاریخ شمسی,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,19,رشته یا قالب تولیدشده,انتخاب تاریخ و ساعت,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,20,رشته یا قالب تولیدشده,ارتباط برقرار نشد؛ دوباره تلاش کنید.,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,28,رشته یا قالب تولیدشده,بدون تاریخ,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,29,رشته یا قالب تولیدشده,هنوز یادداشتی ذخیره نشده است.,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,30,رشته یا قالب تولیدشده,صفحهٔ ,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,30,رشته یا قالب تولیدشده,ابتدا جای مطالعهٔ تغییرکرده را ثبت کنید.,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,34,رشته یا قالب تولیدشده,نویسنده ثبت نشده,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,34,رشته یا قالب تولیدشده,نقل‌قول از منبع · ,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,34,رشته یا قالب تولیدشده,برنامهٔ مرور گزیده,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,34,رشته یا قالب تولیدشده,هنوز گزیده‌ای از این کتاب ثبت نشده است.,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,44,رشته یا قالب تولیدشده,ادامه,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,45,رشته یا قالب تولیدشده,این فرم نوشتهٔ ذخیره‌نشده دارد. برای کنارگذاشتن آن و بازکردن یادداشت دیگر تأیید کنید.,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,45,رشته یا قالب تولیدشده,کنار گذاشتن تغییرات,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,46,رشته یا قالب تولیدشده,نسخهٔ ذخیره‌شده,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,46,رشته یا قالب تولیدشده, نویسه,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,47,رشته یا قالب تولیدشده,نوشتهٔ ذخیره‌نشدهٔ فعلی کنار گذاشته می‌شود. ادامه می‌دهید؟,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,47,رشته یا قالب تولیدشده,کنار گذاشتن تغییرات,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,47,رشته یا قالب تولیدشده,یادداشت تازه,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,47,رشته یا قالب تولیدشده,۰ نویسه,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,53,رشته یا قالب تولیدشده,در حال ذخیره…,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,57,رشته یا قالب تولیدشده,ذخیره شد,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,57,رشته یا قالب تولیدشده,متن قبلی ذخیره شد؛ تغییرات تازه هنوز ذخیره نشده,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,57,رشته یا قالب تولیدشده,یادداشت روی این رایانه ذخیره شد.,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,58,رشته یا قالب تولیدشده,ذخیره انجام نشد,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,58,رشته یا قالب تولیدشده,ارتباط قطع شد؛ متن را نگه دارید و دوباره ذخیره کنید.,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,66,رشته یا قالب تولیدشده,این یادداشت در دادهٔ فعلی پیدا نشد.,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,68,رشته یا قالب تولیدشده,ثبت نشده,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,70,رشته یا قالب تولیدشده,جای قبلی ثبت شد؛ تغییر تازه را ثبت کنید,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,70,رشته یا قالب تولیدشده,جای مطالعه ثبت شد,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,71,رشته یا قالب تولیدشده,جای ثبت‌شده: صفحهٔ ,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,71,رشته یا قالب تولیدشده,، فصل ,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,71,رشته یا قالب تولیدشده,. تغییر ثبت‌نشدهٔ این تب کنار گذاشته شود؟,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,71,رشته یا قالب تولیدشده,استفاده از جای ثبت‌شده,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,72,رشته یا قالب تولیدشده,عبارت را در متن همین منبع انتخاب کنید.,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,72,رشته یا قالب تولیدشده,صفحهٔ ,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,77,رشته یا قالب تولیدشده,یادم نبود,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,77,رشته یا قالب تولیدشده,ناقص یادم بود,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,77,رشته یا قالب تولیدشده,توانستم توضیح بدهم,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,78,رشته یا قالب تولیدشده,فعال,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,78,رشته یا قالب تولیدشده,متوقف,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,78,رشته یا قالب تولیدشده,پایان چرخه,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,78,رشته یا قالب تولیدشده,پایان‌یافته,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,87,رشته یا قالب تولیدشده,مرورهای ثبت‌شدهٔ امروز: ,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,87,رشته یا قالب تولیدشده, از ,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,87,رشته یا قالب تولیدشده, · آمادهٔ مرور: ,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,87,رشته یا قالب تولیدشده, · در انتظار: ,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,88,رشته یا قالب تولیدشده, مطلب برای مرور امروز,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,92,رشته یا قالب تولیدشده,یادداشت ,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,92,رشته یا قالب تولیدشده,گزیده ,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,94,رشته یا قالب تولیدشده,از این مطلب چه چیزی به یاد داری؟,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,95,رشته یا قالب تولیدشده,مرور نوبت ,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,95,رشته یا قالب تولیدشده, · مرحلهٔ ,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,95,رشته یا قالب تولیدشده, از ۶ · ,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,95,رشته یا قالب تولیدشده, · موعد ,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,111,رشته یا قالب تولیدشده,پیش‌نویس پاسخ ذخیره شد.,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,116,رشته یا قالب تولیدشده,برداشت ثبت‌نشده کنار گذاشته شود؟,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,125,رشته یا قالب تولیدشده,ابتدا یادداشت را ذخیره کنید.,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,128,رشته یا قالب تولیدشده,مرور دوباره امروز ثبت شود؟,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,128,رشته یا قالب تولیدشده,تأیید امروز,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,129,رشته یا قالب تولیدشده,به برنامهٔ مرور اضافه شد.,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,132,رشته یا قالب تولیدشده,مرور زودهنگام است. ثبت نتیجه موعد بعدی را تغییر می‌دهد.,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,132,رشته یا قالب تولیدشده,پاسخ شفاهی هم کافی است.,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,138,رشته یا قالب تولیدشده,یادآوری قبلی · ,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,138,رشته یا قالب تولیدشده, (برگشت‌خورده),نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,141,رشته یا قالب تولیدشده,پایان چرخه,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,141,رشته یا قالب تولیدشده,بازگشت به مرحلهٔ اول,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,141,رشته یا قالب تولیدشده,تکرار همین مرحله,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,141,رشته یا قالب تولیدشده,رفتن به مرحلهٔ بعد,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,141,رشته یا قالب تولیدشده,آخرین مرحله,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,142,رشته یا قالب تولیدشده, · مرحلهٔ ,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,142,رشته یا قالب تولیدشده,پایان چرخه,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,149,رشته یا قالب تولیدشده,ابتدا نتیجه را انتخاب کنید.,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,149,رشته یا قالب تولیدشده, · موعد انتخابی ,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,150,رشته یا قالب تولیدشده,نتیجه را انتخاب کنید.,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,150,رشته یا قالب تولیدشده,نتیجه ثبت شد.,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,151,رشته یا قالب تولیدشده,برداشت جداگانه ثبت شد.,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,152,رشته یا قالب تولیدشده, انجام شود؟,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,152,رشته یا قالب تولیدشده,برنامهٔ مرور به‌روز شد.,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,153,رشته یا قالب تولیدشده,موعد ثبت شد.,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,154,رشته یا قالب تولیدشده,وضعیت تازه دریافت شد. پاسخ خود را بررسی کنید.,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,156,رشته یا قالب تولیدشده,در حال جست‌وجو…,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,156,رشته یا قالب تولیدشده, نتیجه پیدا شد,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,156,رشته یا قالب تولیدشده,نتیجه‌ای پیدا نشد؛ عبارت کوتاه‌تر یا شکل دیگری از کلمه را امتحان کنید.,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,156,رشته یا قالب تولیدشده,گزیده از منبع,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,156,رشته یا قالب تولیدشده,خواندن موضوع,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,156,رشته یا قالب تولیدشده,بازکردن یادداشت,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,156,رشته یا قالب تولیدشده,خواندن منبع,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,157,رشته یا قالب تولیدشده,حالت روشن,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,157,رشته یا قالب تولیدشده,حالت تاریک,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,159,رشته یا قالب تولیدشده,باز کردن منو,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,159,رشته یا قالب تولیدشده,جمع کردن منو,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,161,رشته یا قالب تولیدشده,نوشته یا جای مطالعهٔ ذخیره‌نشده دارید. ابتدا در همان صفحه ذخیره کنید.,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,161,رشته یا قالب تولیدشده,برنامهٔ محلی بسته می‌شود. برای اجرای دوباره فایل MyStudySystem.exe را باز کنید.,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,161,رشته یا قالب تولیدشده,خروج کامل,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,161,رشته یا قالب تولیدشده,برنامه کامل بسته شد. اکنون می‌توانید این تب را ببندید.,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,176,رشته یا قالب تولیدشده,متن کتاب از یادداشت مستقل است.,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,176,رشته یا قالب تولیدشده,این کتاب بایگانی یا حذف شده؛ ارجاع حفظ شده است.,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,176,رشته یا قالب تولیدشده,این یادداشت بدون کتاب هم ذخیره می‌شود.,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,180,رشته یا قالب تولیدشده,پیش‌نویس روی رایانه ثبت شد,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,180,رشته یا قالب تولیدشده,پیش‌نویس ثبت نشد؛ این تب را نبندید.,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,185,رشته یا قالب تولیدشده,نسخه‌ای از پیش‌نویس باقی ماند؛ از فهرست پیش‌نویس‌ها بررسی کنید.,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,190,رشته یا قالب تولیدشده,پیش‌نویس بدون عنوان,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,190,رشته یا قالب تولیدشده,پیش‌نویس فعلی کنار گذاشته شود؟,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,190,رشته یا قالب تولیدشده,پیش‌نویس باز شد؛ پس از بررسی ذخیره کنید,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,190,رشته یا قالب تولیدشده,پیش‌نویس روی رایانه ثبت شده,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,191,رشته یا قالب تولیدشده,پیش‌نویس ناتمامی ندارید.,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,194,رشته یا قالب تولیدشده,بدون کتاب,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,194,رشته یا قالب تولیدشده, · در دسترس نیست,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,196,رشته یا قالب تولیدشده,کتاب,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,197,رشته یا قالب تولیدشده,کتابی در این فهرست ندارید.,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,199,رشته یا قالب تولیدشده,متن ویرایش‌شدهٔ کتاب هنوز ذخیره نشده است. کنار گذاشته شود؟,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,199,رشته یا قالب تولیدشده,تاریخ دسترسی,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,199,رشته یا قالب تولیدشده,نسخهٔ ذخیره‌شده,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,199,رشته یا قالب تولیدشده,کتاب تازه,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,203,رشته یا قالب تولیدشده,تاریخ دسترسی,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,205,رشته یا قالب تولیدشده,در حال ذخیره…,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,205,رشته یا قالب تولیدشده,متن قبلی ذخیره شد؛ تغییر تازه را ذخیره کنید,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,205,رشته یا قالب تولیدشده,کتاب ذخیره شد,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,205,رشته یا قالب تولیدشده,ذخیره انجام نشد,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,206,رشته یا قالب تولیدشده,ابتدا جای مطالعهٔ تغییرکرده را ثبت کنید.,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,207,رشته یا قالب تولیدشده,تغییرات ذخیره نشده,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,210,رشته یا قالب تولیدشده,کتاب بایگانی شده است.,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,211,رشته یا قالب تولیدشده,کتاب پیدا نشد.,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,212,رشته یا قالب تولیدشده,کتاب از فهرست حذف می‌شود. متن و ارجاع‌ها می‌مانند؛ بازیابی حذف‌شده‌ها هنوز در دسترس نیست.,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,212,رشته یا قالب تولیدشده,کتاب از فهرست در دست مطالعه به بایگانی منتقل می‌شود.,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,212,رشته یا قالب تولیدشده,حذف از فهرست,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,212,رشته یا قالب تولیدشده,بایگانی,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,215,رشته یا قالب تولیدشده,صفحهٔ ,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,218,رشته یا قالب تولیدشده,ابتدا یادداشت را ذخیره کنید.,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,219,رشته یا قالب تولیدشده,ابتدا منبع را ذخیره کنید.,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+ui.js,221,رشته یا قالب تولیدشده,آماده · نوشته‌ها روی همین رایانه ذخیره می‌شوند.,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+catalog.js,1,رشته یا قالب تولیدشده,کتاب,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+catalog.js,1,رشته یا قالب تولیدشده,وب‌سایت,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+catalog.js,1,رشته یا قالب تولیدشده,مقاله,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+catalog.js,1,رشته یا قالب تولیدشده,ویدئو,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+catalog.js,1,رشته یا قالب تولیدشده,دوره,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+catalog.js,1,رشته یا قالب تولیدشده,گفت‌وگو,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+catalog.js,1,رشته یا قالب تولیدشده,تجربهٔ شخصی,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+catalog.js,1,رشته یا قالب تولیدشده,سایر,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+catalog.js,2,رشته یا قالب تولیدشده,پیشنهادی,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+catalog.js,2,رشته یا قالب تولیدشده,بعداً,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+catalog.js,2,رشته یا قالب تولیدشده,در حال مطالعه,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+catalog.js,2,رشته یا قالب تولیدشده,تکمیل,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+catalog.js,2,رشته یا قالب تولیدشده,کنارگذاشته,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+catalog.js,3,رشته یا قالب تولیدشده,ی,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+catalog.js,3,رشته یا قالب تولیدشده,ک,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+catalog.js,12,رشته یا قالب تولیدشده,همه,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+catalog.js,13,رشته یا قالب تولیدشده,همه,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+catalog.js,17,رشته یا قالب تولیدشده,در حال ذخیره…,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+catalog.js,17,رشته یا قالب تولیدشده,تغییرات ذخیره شد.,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+catalog.js,18,رشته یا قالب تولیدشده,از «,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+catalog.js,18,رشته یا قالب تولیدشده,بدون ریشه,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+catalog.js,18,رشته یا قالب تولیدشده,» به «,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+catalog.js,18,رشته یا قالب تولیدشده,». مسیرهای فایل مرتبط: ,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+catalog.js,18,رشته یا قالب تولیدشده,؛ پوشه روی دیسک منتقل می‌شود.,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+catalog.js,18,رشته یا قالب تولیدشده,؛ فایل‌های روی دیسک منتقل نمی‌شوند.,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+catalog.js,18,رشته یا قالب تولیدشده,تأیید تغییر,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+catalog.js,21,رشته یا قالب تولیدشده,بازکردن ,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+catalog.js,21,رشته یا قالب تولیدشده, · فایل یافت نشد,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+catalog.js,22,رشته یا قالب تولیدشده,منبع در دسترس نیست,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+catalog.js,26,رشته یا قالب تولیدشده,گزیده · ,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+catalog.js,36,رشته یا قالب تولیدشده,برداشت شخصی,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+catalog.js,36,رشته یا قالب تولیدشده,خلاصه,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+catalog.js,36,رشته یا قالب تولیدشده,کاربرد,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+catalog.js,38,رشته یا قالب تولیدشده,لنگر نیازمند بررسی است؛ متن مبدأ تغییر کرده است.,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+catalog.js,39,رشته یا قالب تولیدشده,موعد مرور: ,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+catalog.js,40,رشته یا قالب تولیدشده,دسته‌بندی و ارجاع‌ها,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+catalog.js,46,رشته یا قالب تولیدشده,موردی در این درخت وجود ندارد.,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+catalog.js,50,رشته یا قالب تولیدشده,مطالعهٔ موضوعی,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+catalog.js,52,رشته یا قالب تولیدشده,برای خواندن، موضوع را انتخاب کنید و یادداشت یا گزیده‌ای را به آن وصل کنید.,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+catalog.js,55,رشته یا قالب تولیدشده,هنوز پوشهٔ مادر انتخاب نشده است.,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+catalog.js,71,رشته یا قالب تولیدشده,فعال,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+catalog.js,71,رشته یا قالب تولیدشده,متوقف,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+catalog.js,71,رشته یا قالب تولیدشده,پایان,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+catalog.js,71,رشته یا قالب تولیدشده,پایان,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+catalog.js,71,رشته یا قالب تولیدشده,بدون مرور,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+catalog.js,72,رشته یا قالب تولیدشده,بدون دسته,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+catalog.js,72,رشته یا قالب تولیدشده,بدون دسته,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+catalog.js,77,رشته یا قالب تولیدشده,مطلبی با این فیلتر پیدا نشد.,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+catalog.js,78,رشته یا قالب تولیدشده,قطع ,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+catalog.js,80,رشته یا قالب تولیدشده,برچسب ,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+catalog.js,82,رشته یا قالب تولیدشده,پیوند ,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+catalog.js,82,رشته یا قالب تولیدشده,در Explorer: ,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+catalog.js,85,رشته یا قالب تولیدشده,بعداً,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+catalog.js,85,رشته یا قالب تولیدشده,تاریخ شروع پیشنهادی,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+catalog.js,86,رشته یا قالب تولیدشده,اولویت ,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+catalog.js,86,رشته یا قالب تولیدشده,ویرایش در فهرست,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+catalog.js,86,رشته یا قالب تولیدشده,منبعی با این وضعیت ثبت نشده است.,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+catalog.js,88,رشته یا قالب تولیدشده,همه,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+catalog.js,88,رشته یا قالب تولیدشده,سطح اول,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+catalog.js,89,رشته یا قالب تولیدشده,زیر پوشهٔ مادر,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+catalog.js,89,رشته یا قالب تولیدشده,بدون پوشه,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+catalog.js,90,رشته یا قالب تولیدشده,همهٔ منابع,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+catalog.js,94,رشته یا قالب تولیدشده,روز ثبت,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+catalog.js,97,رشته یا قالب تولیدشده,موضوع از درخت حذف شود؟ نوشته‌ها و منابع حفظ می‌شوند.,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+catalog.js,100,رشته یا قالب تولیدشده,پوشه از درخت بایگانی شود؟ فایل‌ها حفظ می‌شوند.,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+catalog.js,100,رشته یا قالب تولیدشده,مسیرها نیاز به بررسی دستی دارند.,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+catalog.js,100,رشته یا قالب تولیدشده,وضعیت انتقال بررسی شد.,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+catalog.js,103,رشته یا قالب تولیدشده,پوشهٔ بالاتر,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+catalog.js,103,رشته یا قالب تولیدشده,پوشه · ,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+catalog.js,103,رشته یا قالب تولیدشده,فایل پشتیبانی‌شده‌ای پیدا نشد.,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+catalog.js,105,رشته یا قالب تولیدشده,عبارت را در متن همین مطلب انتخاب کنید.,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+catalog.js,106,رشته یا قالب تولیدشده,یادداشت از فهرست فعال خارج و مرور آن متوقف شود؟,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+catalog.js,107,رشته یا قالب تولیدشده,تاریخ شروع پیشنهادی,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+catalog.js,111,رشته یا قالب تولیدشده,روز ثبت,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+calendar.js,4,رشته یا قالب تولیدشده,فروردین,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+calendar.js,4,رشته یا قالب تولیدشده,اردیبهشت,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+calendar.js,4,رشته یا قالب تولیدشده,خرداد,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+calendar.js,4,رشته یا قالب تولیدشده,تیر,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+calendar.js,4,رشته یا قالب تولیدشده,مرداد,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+calendar.js,4,رشته یا قالب تولیدشده,شهریور,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+calendar.js,4,رشته یا قالب تولیدشده,مهر,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+calendar.js,4,رشته یا قالب تولیدشده,آبان,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+calendar.js,4,رشته یا قالب تولیدشده,آذر,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+calendar.js,4,رشته یا قالب تولیدشده,دی,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+calendar.js,4,رشته یا قالب تولیدشده,بهمن,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+calendar.js,4,رشته یا قالب تولیدشده,اسفند,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+calendar.js,19,رشته یا قالب تولیدشده,تاریخ بیرون از بازهٔ نمونه است.,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+calendar.js,30,رشته یا قالب تولیدشده,ساعت بین ۰ تا ۲۳ و دقیقه بین ۰ تا ۵۹ باشد.,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+calendar.js,40,رشته یا قالب تولیدشده,این ساعت در تغییر ساعت رسمی وجود ندارد؛ ساعت دیگری انتخاب کنید.,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+calendar.js,66,رشته یا قالب تولیدشده,انتخاب تاریخ و ساعت شمسی,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+calendar.js,66,رشته یا قالب تولیدشده,انتخاب تاریخ شمسی,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط
+calendar.js,83,رشته یا قالب تولیدشده,انتخاب شده: ,نگه‌داشتن,نام‌گذاری، انتخاب، راهنمایی یا بازخورد عملیات,متوسط

@@ -10,7 +10,7 @@ import uuid
 from contextlib import contextmanager, closing
 from datetime import datetime, timezone
 
-SCHEMA = 5
+SCHEMA = 6
 
 
 class Problem(Exception):
@@ -83,7 +83,7 @@ class BaseStore:
         try:
             with closing(sqlite3.connect(Path(path).resolve().as_uri() + '?mode=ro', uri=True)) as c:
                 version = c.execute('PRAGMA user_version').fetchone()[0]
-                if version not in (2, 3, 4, SCHEMA):
+                if version not in (2, 3, 4, 5, SCHEMA):
                     raise Problem(f'نسخهٔ داده {version} پشتیبانی نمی‌شود؛ برنامهٔ سازگار لازم است. داده جایگزین نشد.')
                 if c.execute('PRAGMA integrity_check').fetchone()[0] != 'ok':
                     raise Problem('پایگاه داده آسیب دیده است؛ فایل موجود حفظ شد.')
@@ -126,6 +126,10 @@ class Store(BaseStore):
             if c.execute("PRAGMA user_version").fetchone()[0] == 4:
                 from catalog import install
                 if not c.in_transaction: c.execute("BEGIN IMMEDIATE")
+                install(c)
+            if c.execute("PRAGMA user_version").fetchone()[0] == 5:
+                from daily import install
+                if not c.in_transaction:c.execute("BEGIN IMMEDIATE")
                 install(c)
             for table in ('note_sections', 'note_sources', 'source_details', 'reading_progress', 'drafts'):
                 c.execute(f'SELECT * FROM {table} LIMIT 1')
@@ -188,7 +192,7 @@ class Store(BaseStore):
             drafts = [dict(r) for r in c.execute('SELECT * FROM drafts ORDER BY updated_at DESC')]
             for d in drafts:
                 d['payload'] = json.loads(d['payload'])
-            return dict(notes=notes, sources=sources, highlights=[dict(r) for r in c.execute('SELECT * FROM highlights')], drafts=drafts, settings=self.settings(), data_path=str(self.data), schema=SCHEMA, version='M2-r1', catalog=__import__('catalog').snapshot(self,c), review=__import__('review').summary(c,__import__('review').day()))
+            return dict(notes=notes, sources=sources, highlights=[dict(r) for r in c.execute('SELECT * FROM highlights')], drafts=drafts, settings=self.settings(), data_path=str(self.data), schema=SCHEMA, version='M3-r1',daily=__import__('daily').snapshot(c), catalog=__import__('catalog').snapshot(self,c), review=__import__('review').summary(c,__import__('daily').clock_day(c)))
 
     def save(self, request):
         ident = text_field(request, 'id', 100, True)
@@ -222,6 +226,13 @@ class Store(BaseStore):
             if source_id:
                 c.execute('INSERT INTO note_sources VALUES(?,?,?,?) ON CONFLICT(note_id) DO UPDATE SET source_id=excluded.source_id,locator=excluded.locator', (str(uuid.uuid4()),ident,source_id,locator))
             else: c.execute('DELETE FROM note_sources WHERE note_id=?', (ident,))
+            if not old:
+                folder=__import__('daily').config(c)['initial_folder']
+                if folder and c.execute('SELECT 1 FROM folders WHERE id=? AND archived=0',(folder,)).fetchone():
+                    c.execute('INSERT OR IGNORE INTO placements VALUES(?,?)',('note:'+ident,folder))
+            for kind,direction in request.get('directions',{}).items():
+                if direction not in ('auto','rtl','ltr'):raise Problem('جهت بخش معتبر نیست.')
+                c.execute('INSERT OR REPLACE INTO section_direction SELECT id,? FROM note_sections WHERE note_id=? AND kind=?',(direction,ident,kind))
             if not old and request.get('initial_topics'):
                 topics=request['initial_topics']
                 if not isinstance(topics,list) or len(topics)>100:raise Problem('فهرست موضوع‌ها معتبر نیست.')
@@ -280,6 +291,8 @@ class Store(BaseStore):
         ident = text_field(request, 'id', 100, True)
         with self.connect() as c:
             c.execute("UPDATE reading_progress SET last_read_at=? WHERE source_id=? AND EXISTS(SELECT 1 FROM source_details WHERE source_id=? AND status='active')", (now(),ident,ident))
+            if c.execute('SELECT changes()').fetchone()[0]:
+                c.execute("INSERT INTO activities VALUES(?,?,?,NULL,NULL,'opened')",(str(uuid.uuid4()),'source:'+ident,now()))
         return {'ok':True}
 
     def draft(self, request):

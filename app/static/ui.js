@@ -1,5 +1,6 @@
+import {dailyUI} from './daily.js';
 import {catalogUI} from './catalog.js';
-import {Calendar,fa,dateLabel,timeLabel,todayISO,addDays} from './calendar.js';
+import {Calendar,fa,dateLabel,timeLabel,todayISO,addDays,configureDates,selectedZone,locale} from './calendar.js';
 const $=id=>document.getElementById(id);
 const calendar=new Calendar();
 let state,csrf,route='home',noteId=crypto.randomUUID(),revision=0,due='',atUTC='',dirty=false,busy=false,pending=null,sourceId='book-1',pageDirty=false,stopped=false;
@@ -8,18 +9,18 @@ let sourceEditId=crypto.randomUUID(),sourceRevision=0,sourceDirty=false,sourceBu
 let autosaveTimer,draftTimer,draftId=crypto.randomUUID(),draftRevision=0,draftQueue=Promise.resolve(),draftFailure=false,draftPending=null,autoBlocked=false;
 let progressRevision=0,progressPending=null,navigationEpoch=0;
 
-const status=(text,error=false)=>{$('globalStatus').textContent=text;$('globalStatus').classList.toggle('problem',error);};
+const status=(text,error=false,quiet=false)=>{$('globalStatus').classList.toggle('visually-quiet',quiet);$('globalStatus').textContent=text;$('globalStatus').classList.toggle('problem',error);};
 async function api(path,body) {
   const response=await fetch('/api/'+path,body===undefined?{}:{method:'POST',headers:{'Content-Type':'application/json','X-CSRF':csrf},body:JSON.stringify(body)});
   const data=await response.json();if(!response.ok){const error=new Error(data.error||'عمل انجام نشد.');error.status=response.status;throw error;}return data;
 }
 const hasDraft=()=>dirty||pageDirty||busy||sourceDirty||sourceBusy||rvDirty||rvWorking||!!$('rvReflection').value.trim();
 async function heartbeat(){if(!csrf||stopped)return;try{await api('heartbeat',{tab,dirty:hasDraft()});}catch{status('ارتباط با برنامه برقرار نیست. نوشته را نگه دارید و برنامه را دوباره باز کنید.',true);}}
-function changed(){dirty=true;autoBlocked=false;$('saveStatus').textContent='تغییرات ذخیره نشده';$('charCount').textContent=fa($('noteBody').value.length)+' نویسه';heartbeat();clearTimeout(draftTimer);draftTimer=setTimeout(()=>persistDraft(),250);clearTimeout(autosaveTimer);autosaveTimer=setTimeout(()=>{if(dirty&&!autoBlocked&&$('noteTitle').value.trim()&&$('noteBody').value.trim())saveNote();},1100);}
+function changed(){dirty=true;autoBlocked=false;$('saveStatus').textContent='تغییرات ذخیره نشده';$('charCount').textContent=fa($('noteBody').value.length)+' نویسه';heartbeat();clearTimeout(draftTimer);draftTimer=setTimeout(()=>persistDraft(),250);clearTimeout(autosaveTimer);autosaveTimer=setTimeout(()=>{if(state.daily.config.autosave&&dirty&&!autoBlocked&&$('noteTitle').value.trim()&&$('noteBody').value.trim())saveNote();},1100);}
 function dateButtons(){$('duePicker').textContent=dateLabel(due)||'انتخاب تاریخ شمسی';$('timePicker').textContent=timeLabel(atUTC)||'انتخاب تاریخ و ساعت';}
 function errorMessage(error){status(error.message||'ارتباط برقرار نشد؛ دوباره تلاش کنید.',true);}
 async function run(task){try{await task();}catch(e){errorMessage(e);}}
-async function refresh(){state=await api('state');csrf=state.csrf;renderLists();return state;}
+async function refresh(){state=await api('state');csrf=state.csrf;configureDates(state.daily.config);renderLists();daily.render();dateButtons();return state;}
 function renderLists(){
   desk.render();$('newNoteTopics').hidden=!!revision;renderLibrary();renderDrafts();const active=state.sources.filter(s=>s.status==='active');const hasSource=active.length>0;$('welcome').hidden=hasSource;$('homeContent').hidden=!hasSource;
   $('studyEmpty').hidden=hasSource;$('studyContent').hidden=!hasSource;$('dataPath').value=state.data_path;
@@ -27,23 +28,23 @@ function renderLists(){
   $('noteList').replaceChildren();
   for(const n of state.notes){const b=document.createElement('button');b.className='note-item';b.textContent=n.title;const small=document.createElement('small');small.textContent=n.due?dateLabel(n.due):'بدون تاریخ';b.append(small);b.onclick=()=>run(()=>openNote(n));$('noteList').append(b);}
   if(!state.notes.length)$('noteList').textContent='هنوز یادداشتی ذخیره نشده است.';
-  $('sourceList').replaceChildren();for(const src of active){const b=document.createElement('button');b.className='note-item';b.textContent=src.title;const small=document.createElement('small');small.textContent='صفحهٔ '+fa(src.page);b.append(small);b.onclick=()=>run(async()=>{if(pageDirty){status('ابتدا جای مطالعهٔ تغییرکرده را ثبت کنید.',true);return;}sourceId=src.id;await api('read-source',{id:sourceId});renderStudy();});$('sourceList').append(b);}
+  $('sourceList').replaceChildren();for(const src of active){const b=document.createElement('button');b.className='note-item';b.textContent=src.title;const small=document.createElement('small');small.textContent='صفحهٔ '+fa(src.page);b.append(small);b.onclick=()=>run(async()=>{if(pageDirty){status('ابتدا جای مطالعهٔ تغییرکرده را ثبت کنید.',true);return;}await readSource(src.id);});$('sourceList').append(b);}
   renderReview();
   if(!pageDirty)renderStudy();
 }
 function renderStudy(){const src=state.sources.find(s=>s.id===sourceId&&s.status==='active')||state.sources.find(s=>s.status==='active');if(!src)return;sourceId=src.id;desk.files('source:'+src.id,$('studyFiles'));$('bookTitle').textContent=src.title;if($('bookBody').textContent!==src.body)$('bookBody').textContent=src.body;$('bookPage').value=src.page;$('bookChapter').value=src.chapter;progressRevision=src.progress_revision;$('studyTopic').textContent=src.creator||'نویسنده ثبت نشده';$('highlightList').replaceChildren();for(const h of state.highlights.filter(h=>h.source===src.id)){const q=document.createElement('blockquote');q.textContent=h.body;const small=document.createElement('small');small.textContent='نقل‌قول از منبع · '+h.location;q.append(small);const add=document.createElement('button');add.textContent='برنامهٔ مرور گزیده';add.onclick=()=>beginEnroll('highlight:'+h.id,add);q.append(add);$('highlightList').append(q);}if(!$('highlightList').children.length)$('highlightList').textContent='هنوز گزیده‌ای از این کتاب ثبت نشده است.';}
 function go(next){
-  if(!['home','capture','library','study','review','search','help','organize'].includes(next))return;
+  if(!['home','capture','library','study','review','search','help','organize','settings'].includes(next))return;
   if(route==='review'&&next!=='review')clearAnswer();
   navigationEpoch++;route=next;for(const s of document.querySelectorAll('main>section'))s.hidden=s.id!==next;
   for(const b of document.querySelectorAll('nav [data-route]')){if(b.dataset.route===next)b.setAttribute('aria-current','page');else b.removeAttribute('aria-current');}
-  if(next==='review')renderReview();
+  if(next==='review')renderReview();if(next==='capture')daily.noteActions();
   $('main').focus();window.scrollTo(0,0);
 }
 for(const b of document.querySelectorAll('[data-route]'))b.onclick=()=>go(b.dataset.route);
 function confirm(text,label='ادامه') {return new Promise(resolve=>{const dialog=$('confirmDialog'),opener=document.activeElement;$('confirmText').textContent=text;$('confirmAccept').textContent=label;let result=false;$('confirmAccept').onclick=()=>{result=true;dialog.close();};$('confirmCancel').onclick=()=>dialog.close();dialog.addEventListener('close',()=>{opener?.focus();resolve(result);},{once:true});dialog.showModal();$('confirmCancel').focus();});}
 async function openNote(n){if(busy)return;if(dirty&&!await confirm('این فرم نوشتهٔ ذخیره‌نشده دارد. برای کنارگذاشتن آن و بازکردن یادداشت دیگر تأیید کنید.','کنار گذاشتن تغییرات'))return;
-  await abandonDraft();noteId=n.id;revision=n.revision;setNoteExtras(n);due=n.due;atUTC=n.at_utc;$('noteTitle').value=n.title;$('noteBody').value=n.body;dirty=false;pending=null;dateButtons();$('saveError').hidden=true;$('conflictActions').hidden=true;$('saveStatus').textContent='نسخهٔ ذخیره‌شده';$('charCount').textContent=fa(n.body.length)+' نویسه';go('capture');$('noteTitle').focus();heartbeat();}
+  await abandonDraft();noteId=n.id;revision=n.revision;setNoteExtras(n);due=n.due;atUTC=n.at_utc;$('noteTitle').value=n.title;$('noteBody').value=n.body;dirty=false;pending=null;dateButtons();$('saveError').hidden=true;$('conflictActions').hidden=true;$('saveStatus').textContent='نسخهٔ ذخیره‌شده';$('charCount').textContent=fa(n.body.length)+' نویسه';go('capture');$('noteTitle').focus();heartbeat();await daily.opened('note:'+n.id);}
 async function newNote(){if(busy)return;if(dirty&&!await confirm('نوشتهٔ ذخیره‌نشدهٔ فعلی کنار گذاشته می‌شود. ادامه می‌دهید؟','کنار گذاشتن تغییرات'))return;await abandonDraft();noteId=crypto.randomUUID();revision=0;setNoteExtras({});due='';atUTC='';$('noteTitle').value='';$('noteBody').value='';dirty=false;pending=null;dateButtons();$('saveError').hidden=true;$('conflictActions').hidden=true;$('saveStatus').textContent='یادداشت تازه';$('charCount').textContent='۰ نویسه';$('noteTitle').focus();heartbeat();}
 async function saveNote(separate=false){
   if(busy)return;if(!$('noteForm').reportValidity())return;clearTimeout(autosaveTimer);busy=true;await persistDraft();
@@ -54,12 +55,12 @@ async function saveNote(separate=false){
   try{
     const result=await api('save',sent);revision=result.revision;
     const unchanged=JSON.stringify({...noteSnapshot(),revision:sent.revision})===JSON.stringify(Object.fromEntries(Object.entries(sent).filter(([k])=>k!=='operation_id')));
-    dirty=!unchanged;pending=null;if(unchanged)await abandonDraft();else {await persistDraft();clearTimeout(autosaveTimer);autosaveTimer=setTimeout(()=>saveNote(),1100);}$('saveStatus').textContent=unchanged?'ذخیره شد':'متن قبلی ذخیره شد؛ تغییرات تازه هنوز ذخیره نشده';$('conflictActions').hidden=true;await refresh();status('یادداشت روی این رایانه ذخیره شد.');
+    dirty=!unchanged;pending=null;if(unchanged)await abandonDraft();else {await persistDraft();clearTimeout(autosaveTimer);if(state.daily.config.autosave)autosaveTimer=setTimeout(()=>saveNote(),1100);}$('saveStatus').textContent=unchanged?'ذخیره شد':'متن قبلی ذخیره شد؛ تغییرات تازه هنوز ذخیره نشده';$('conflictActions').hidden=true;await refresh();status('یادداشت روی این رایانه ذخیره شد.');
   }catch(e){dirty=true;autoBlocked=true;$('saveStatus').textContent='ذخیره انجام نشد';$('saveError').textContent=e.message||'ارتباط قطع شد؛ متن را نگه دارید و دوباره ذخیره کنید.';$('saveError').hidden=false;$('conflictActions').hidden=e.status!==409;}
   finally{busy=false;$('saveNote').disabled=false;await heartbeat();}
 }
 $('noteForm').onsubmit=e=>{e.preventDefault();saveNote();};$('noteTitle').oninput=changed;$('noteBody').oninput=changed;for(const id of ['noteSummary','notePersonal','noteApplication','noteLocator'])$(id).oninput=changed;$('noteSource').onchange=()=>{changed();noteSourceHint();};
-$('newNote').onclick=()=>run(newNote);$('direction').onchange=()=>{$('noteBody').dir=$('direction').value;};
+$('newNote').onclick=()=>run(newNote);for(const [i,id] of ['direction','dirSummary','dirPersonal','dirApplication'].entries())$(id).onchange=()=>{$(['noteBody','noteSummary','notePersonal','noteApplication'][i]).dir=$(id).value;changed();};
 $('duePicker').onclick=()=>calendar.open(due,false,$('duePicker'),v=>{due=v;dateButtons();changed();});
 $('timePicker').onclick=()=>calendar.open(atUTC,true,$('timePicker'),v=>{atUTC=v;dateButtons();changed();});
 $('clearDue').onclick=()=>{due='';dateButtons();changed();};$('clearTime').onclick=()=>{atUTC='';dateButtons();changed();};
@@ -89,10 +90,10 @@ function renderReview(){
   $('rvQueue').disabled=!v.queue.length;
   $('rvEmpty').hidden=!!v.rows.length;$('rvPanel').hidden=!v.rows.length;
   if(!rvRow())rvKey=v.queue[0]||v.rows[0]?.target||'';
-  $('rvSelect').replaceChildren(...v.rows.map((r,i)=>new Option((r.target.startsWith('note:')?'یادداشت ':'گزیده ')+fa(i+1)+' · '+(r.cue||rvStatuses[r.status]),r.target)));
+  $('rvSelect').replaceChildren(...v.rows.map((r,i)=>new Option((r.target.startsWith('note:')?'یادداشت ':'گزیده ')+fa(i+1)+' · '+((state.daily.config.cues&&r.cue)||rvStatuses[r.status]),r.target)));
   $('rvSelect').value=rvKey;const r=rvRow();if(!r)return;
-  $('rvCue').textContent=r.cue||'از این مطلب چه چیزی به یاد داری؟';
-  $('rvInfo').textContent='مرور نوبت '+fa(r.turn)+' · مرحلهٔ '+fa(r.step)+' از ۶ · '+rvStatuses[r.status]+(r.due?' · موعد '+dateLabel(r.due):'');
+  $('rvCue').textContent=(state.daily.config.cues&&r.cue)||'از این مطلب چه چیزی به یاد داری؟';
+  $('rvInfo').textContent='مرور نوبت '+fa(r.turn)+' · مرحلهٔ '+fa(r.step)+' از '+fa(r.stages)+' · '+rvStatuses[r.status]+(r.due?' · موعد '+dateLabel(r.due):'');
   $('rvUndo').disabled=!r.undo;$('rvPause').disabled=r.status!=='active';$('rvResume').disabled=r.status!=='paused';$('rvStart').disabled=r.status!=='active'||v.used>=v.cap;
   $('rvSnooze').disabled=$('rvReschedule').disabled=r.status!=='active';$('rvCancel').disabled=!['active','paused'].includes(r.status);
 }
@@ -120,7 +121,7 @@ function beginEnroll(key,opener){
   if(rvWorking)return;
   const row=state.review.rows.find(r=>r.target===key);
   if(row&&['active','paused'].includes(row.status)){run(async()=>{if(await chooseReview(key))go('review');});return;}
-  rvEnrollKey=key;$('rvRepeat').checked=false;rvOpener=opener;rvEnrollDue=state.review.first;$('rvCueInput').value='';$('rvEnrollMsg').textContent='';$('rvEnrollDate').textContent=dateLabel(rvEnrollDue);$('rvEnroll').showModal();
+  rvEnrollKey=key;$('rvRepeat').checked=state.daily.policy.repeat_last;$('rvFirstHint').textContent='پیشنهاد اولین مرور: '+dateLabel(state.review.first);rvOpener=opener;rvEnrollDue=state.review.first;$('rvCueInput').value='';$('rvEnrollMsg').textContent='';$('rvEnrollDate').textContent=dateLabel(rvEnrollDue);$('rvEnroll').showModal();
 }
 $('rvAddNote').onclick=()=>{if(dirty||!revision){status('ابتدا یادداشت را ذخیره کنید.',true);return;}beginEnroll('note:'+noteId,$('rvAddNote'));};
 $('rvEnrollClose').onclick=()=>$('rvEnroll').close();$('rvEnroll').onclose=()=>rvOpener?.focus();
@@ -138,7 +139,7 @@ async function revealReview(isAttempt){
   clearAnswer();$('answerArea').hidden=false;$('answerBody').textContent=data.body;$('rvHistory').textContent=data.history.filter(h=>h.answer).map(h=>'یادآوری قبلی · '+dateLabel(h.day)+(h.status==='undone'?' (برگشت‌خورده)':'')+'\n'+h.answer).join('\n\n');
   $('rvResult').hidden=!isAttempt;
   if(isAttempt)for(const [grade,label] of Object.entries(rvLabels)){
-    const button=document.createElement('button'),p=rvRow().choices[grade];button.textContent=label+' · '+(p.due?dateLabel(p.due):'پایان چرخه');const why=document.createElement('small');why.textContent=grade==='again'?'بازگشت به مرحلهٔ اول':grade==='partial'?'تکرار همین مرحله':rvRow().step<6?'رفتن به مرحلهٔ بعد':'آخرین مرحله';button.append(why);
+    const button=document.createElement('button'),p=rvRow().choices[grade];button.textContent=label+' · '+(p.due?dateLabel(p.due):'پایان چرخه');const why=document.createElement('small');why.textContent=grade==='again'?'بازگشت به مرحلهٔ اول':grade==='partial'?'تکرار همین مرحله':rvRow().step<rvRow().stages?'رفتن به مرحلهٔ بعد':'آخرین مرحله';button.append(why);
     button.onclick=()=>{rvGrade=grade;rvDue=p.due;$('rvChoice').textContent=label+' · مرحلهٔ '+fa(p.step)+' · '+(rvDue?dateLabel(rvDue):'پایان چرخه');for(const b of $('gradeButtons').children)b.setAttribute('aria-pressed',String(b===button));};$('gradeButtons').append(button);
   }
   $('answerHeading').focus();
@@ -147,13 +148,12 @@ $('rvRead').onclick=()=>rvRun(async()=>{await persistRecall();resetAttempt();awa
 $('reveal').onclick=()=>rvRun(()=>revealReview(true));
 $('hideAnswer').onclick=()=>{clearAnswer();(rvAttempt?$('reveal'):$('rvRead')).focus();};
 $('rvDate').onclick=()=>{if(!rvGrade){rvNotify('ابتدا نتیجه را انتخاب کنید.');return;}calendar.open(rvDue||state.review.first,false,$('rvDate'),v=>{rvDue=v;$('rvChoice').textContent=rvLabels[rvGrade]+' · موعد انتخابی '+dateLabel(v);});};
-$('rvCommit').onclick=()=>rvRun(async()=>{if(!rvGrade||!rvAttempt){rvNotify('نتیجه را انتخاب کنید.');return;}if(!await confirmToday(rvDue))return;clearTimeout(rvTimer);const answer=$('recallBody').value;$('recallBody').readOnly=true;try{await rvCommand('grade',{attempt:rvAttempt.id,draft_revision:rvAttempt.rev,grade:rvGrade,due:rvDue,answer,confirm_today:true},rvKey,rvAttempt.schedule);}finally{$('recallBody').readOnly=false;}resetAttempt();await refresh();rvNotify('نتیجه ثبت شد.');$('rvInfo').setAttribute('tabindex','-1');$('rvInfo').focus();});
+$('rvCommit').onclick=()=>rvRun(async()=>{if(!rvGrade||!rvAttempt){rvNotify('نتیجه را انتخاب کنید.');return;}if(!await confirmToday(rvDue))return;clearTimeout(rvTimer);const answer=$('recallBody').value;$('recallBody').readOnly=true;try{await rvCommand('grade',{expected_day:state.review.today,attempt:rvAttempt.id,draft_revision:rvAttempt.rev,grade:rvGrade,due:rvDue,answer,confirm_today:true},rvKey,rvAttempt.schedule);}finally{$('recallBody').readOnly=false;}resetAttempt();await refresh();rvNotify('نتیجه ثبت شد.');$('rvInfo').setAttribute('tabindex','-1');$('rvInfo').focus();});
 $('rvReflect').onclick=()=>rvRun(async()=>{const answer=$('rvReflection').value;await rvCommand('reflect',{answer});if($('rvReflection').value===answer)$('rvReflection').value='';await refresh();rvNotify('برداشت جداگانه ثبت شد.');});
 for(const [id,cmd] of [['rvPause','pause'],['rvCancel','cancel'],['rvUndo','undo']])$(id).onclick=()=>rvRun(async()=>{if(!await confirm($(id).textContent+' انجام شود؟'))return;await persistRecall();await rvCommand(cmd);resetAttempt();await refresh();rvNotify('برنامهٔ مرور به‌روز شد.');});
 for(const [id,cmd] of [['rvSnooze','snooze'],['rvReschedule','reschedule'],['rvResume','resume']])$(id).onclick=()=>calendar.open(cmd==='resume'&&rvRow().due>=state.review.today?rvRow().due:cmd==='resume'?state.review.today:state.review.first,false,$(id),v=>rvRun(async()=>{if(!await confirmToday(v))return;await persistRecall();await rvCommand(cmd,{due:v,confirm_today:true});resetAttempt();await refresh();rvNotify('موعد ثبت شد.');}));
 $('rvReload').onclick=()=>rvRun(async()=>{await refresh();$('rvReload').hidden=true;if(rvAttempt){const current=await rvCommand('start');rvAttempt={...current,schedule:rvRow().rev};rvDirty=true;clearAnswer();}rvNotify('وضعیت تازه دریافت شد. پاسخ خود را بررسی کنید.');});
 
-$('searchForm').onsubmit=e=>{e.preventDefault();run(async()=>{$('searchStatus').textContent='در حال جست‌وجو…';const {results}=await api('search?q='+encodeURIComponent($('query').value));$('results').replaceChildren();$('searchStatus').textContent=results.length?fa(results.length)+' نتیجه پیدا شد':'نتیجه‌ای پیدا نشد؛ عبارت کوتاه‌تر یا شکل دیگری از کلمه را امتحان کنید.';for(const n of results){const d=document.createElement('article');d.className='result';const h=document.createElement('h2');h.textContent=n.title||'گزیده از منبع';const p=document.createElement('p');p.dir='auto';p.textContent=n.body;d.append(h,p);if(n.kind!=='highlights'){const b=document.createElement('button');b.textContent=n.kind==='topics'?'خواندن موضوع':n.kind==='notes'?'بازکردن یادداشت':'خواندن منبع';b.onclick=()=>n.kind==='topics'?desk.openTopic(n.id):n.kind==='notes'?run(()=>openNote(n)):(sourceId=n.id,renderStudy(),go('study'));d.append(b);}$('results').append(d);}});};
 function setTheme(value){document.documentElement.dataset.theme=value;$('theme').textContent=value==='dark'?'حالت روشن':'حالت تاریک';}
 $('theme').onclick=()=>run(async()=>{const theme=document.documentElement.dataset.theme==='dark'?'light':'dark';setTheme(theme);await api('preferences',{theme});});
 function collapse(value){document.querySelector('.shell').classList.toggle('collapsed',value);$('collapse').setAttribute('aria-expanded',String(!value));$('collapse').querySelector('.nav-text').textContent=value?'باز کردن منو':'جمع کردن منو';}
@@ -170,9 +170,9 @@ for(const dialog of document.querySelectorAll('dialog'))dialog.addEventListener(
   if(e.shiftKey&&document.activeElement===first){e.preventDefault();last?.focus();}
   else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first?.focus();}
 });
-function clock(){$('clock').textContent=new Intl.DateTimeFormat('fa-IR',{dateStyle:'full',timeStyle:'short',timeZone:'Asia/Tehran'}).format(new Date());}
-function noteSnapshot(){return {initial_topics:[...$('captureTopics').selectedOptions].map(o=>o.value),id:noteId,revision,title:$('noteTitle').value,body:$('noteBody').value,due,at_utc:atUTC,sections:{summary:$('noteSummary').value,personal:$('notePersonal').value,application:$('noteApplication').value},source_id:$('noteSource').value,locator:$('noteLocator').value};}
-function setNoteExtras(n){$('newNoteTopics').hidden=!!revision;for(const o of $('captureTopics').options)o.selected=(n.initial_topics||[]).includes(o.value);for(const [id,key] of [['noteSummary','summary'],['notePersonal','personal'],['noteApplication','application']])$(id).value=n.sections?.[key]||'';$('noteSource').value=n.source_id||'';$('noteLocator').value=n.locator||'';noteSourceHint();}
+function clock(){$('clock').textContent=new Intl.DateTimeFormat(locale(),{dateStyle:'full',timeStyle:'short',timeZone:selectedZone()}).format(new Date());}
+function noteSnapshot(){return {directions:Object.fromEntries(['body','summary','personal','application'].map((k,i)=>[k,$(['direction','dirSummary','dirPersonal','dirApplication'][i]).value])),initial_topics:[...$('captureTopics').selectedOptions].map(o=>o.value),id:noteId,revision,title:$('noteTitle').value,body:$('noteBody').value,due,at_utc:atUTC,sections:{summary:$('noteSummary').value,personal:$('notePersonal').value,application:$('noteApplication').value},source_id:$('noteSource').value,locator:$('noteLocator').value};}
+function setNoteExtras(n){for(const [i,k] of ['body','summary','personal','application'].entries()){const id=n.section_records?.find(s=>s.kind===k)?.id,dir=n.directions?.[k]||state?.daily.directions[id]||'auto';$(['direction','dirSummary','dirPersonal','dirApplication'][i]).value=dir;$(['noteBody','noteSummary','notePersonal','noteApplication'][i]).dir=dir;}$('newNoteTopics').hidden=!!revision;for(const o of $('captureTopics').options)o.selected=(n.initial_topics||[]).includes(o.value);for(const [id,key] of [['noteSummary','summary'],['notePersonal','personal'],['noteApplication','application']])$(id).value=n.sections?.[key]||'';$('noteSource').value=n.source_id||'';$('noteLocator').value=n.locator||'';noteSourceHint();}
 function noteSourceHint(){const src=state?.sources.find(s=>s.id===$('noteSource').value);$('sourceHint').textContent=src?(src.status==='active'?'متن کتاب از یادداشت مستقل است.':'این کتاب بایگانی یا حذف شده؛ ارجاع حفظ شده است.'):'این یادداشت بدون کتاب هم ذخیره می‌شود.';$('openNoteSource').disabled=!src||src.status!=='active';}
 function persistDraft(){
   clearTimeout(draftTimer);if(!dirty)return draftQueue;
@@ -217,5 +217,6 @@ $('openNoteSource').onclick=()=>run(()=>readSource($('noteSource').value));
 const desk=catalogUI({$,api,refresh,go,confirm,calendar,fa,dateLabel,beginEnroll,getState:()=>state,renderLibrary,openNote,readSource,status});
 $('orgNote').onclick=()=>{if(!revision||dirty)return status('ابتدا یادداشت را ذخیره کنید.',true);desk.open('note:'+noteId);};
 $('orgSource').onclick=()=>{if(!sourceRevision||sourceDirty)return status('ابتدا منبع را ذخیره کنید.',true);desk.open('source:'+sourceEditId);};
-clock();setInterval(clock,30000);const heartbeatTimer=setInterval(heartbeat,3000);
-run(async()=>{await refresh();setTheme(state.settings.theme||'light');collapse(!!state.settings.collapsed);status('آماده · نوشته‌ها روی همین رایانه ذخیره می‌شوند.');await heartbeat();});
+const daily=dailyUI({$,api,refresh,state:()=>state,go,calendar,fa,dateLabel,addDays,openNote,readSource,openItem:desk.open,openTopic:desk.openTopic,openReview:async k=>{if(await chooseReview(k))go('review');},noteContext:()=>({id:noteId,saved:revision>0&&!dirty}),status,configureDates,clock});
+clock();setInterval(async()=>{clock();if(state&&!stopped){try{const d=await api('day');if(state.review.today!==d.today){await refresh();status('روز مطالعه تغییر کرد؛ موعدهای امروز به‌روز شد.');}}catch{ /* heartbeat reports connection failures */ } }},30000);const heartbeatTimer=setInterval(heartbeat,3000);
+run(async()=>{await refresh();setTheme(state.settings.theme||'light');collapse(!!state.settings.collapsed);status('آماده · نوشته‌ها روی همین رایانه ذخیره می‌شوند.',false,true);await heartbeat();});

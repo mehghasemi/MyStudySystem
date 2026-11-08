@@ -37,6 +37,9 @@ class Application:
 
     def _action(self, route, obj):
         s = self.store
+        if route == 'daily':
+            from daily import command
+            return command(s,obj)
         if route == 'catalog':
             from catalog import command
             return command(s,obj)
@@ -161,14 +164,14 @@ class Handler(BaseHTTPRequestHandler):
                     self.send_headers(200,mime,os.fstat(stream.fileno()).st_size)
                     import shutil
                     shutil.copyfileobj(stream,self.wfile,128*1024)
+            elif url.path == '/api/day':
+                from daily import clock_day
+                with self.app.store.connect() as c:self.respond({'today':clock_day(c)})
             elif url.path == '/api/search':
-                phrase = normalized(query.get('q', [''])[0])
-                state = self.app.store.state()
-                found=[dict(id=t['id'],title=t['label'],body='موضوع',kind='topics') for t in state['catalog']['topics'] if t['status']=='active' and phrase in normalized(t['label'])]
-                found.extend({**n,'kind':kind} for kind in ('notes','sources','highlights') for n in state[kind] if n.get('status','active')=='active' and phrase in normalized(n.get('title','')+' '+n['body']))
-                self.respond({'results':found[:100]})
+                from daily import search
+                self.respond({'results':search(self.app.store,{k:v[0] for k,v in query.items()})})
             else:
-                files = {'/': 'index.html', '/style.css': 'style.css', '/ui.js': 'ui.js', '/catalog.js':'catalog.js', '/calendar.js': 'calendar.js', '/Vazirmatn.ttf': 'Vazirmatn.ttf'}
+                files = {'/': 'index.html', '/style.css': 'style.css', '/ui.js': 'ui.js', '/catalog.js':'catalog.js','/daily.js':'daily.js', '/calendar.js': 'calendar.js', '/Vazirmatn.ttf': 'Vazirmatn.ttf'}
                 if url.path not in files:
                     raise Problem('صفحه پیدا نشد.', 404)
                 self.serve_file(ASSETS / files[url.path])

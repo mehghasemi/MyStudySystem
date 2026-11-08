@@ -22,12 +22,14 @@ def install(c):
     c.execute("CREATE TABLE reflections(note_id TEXT PRIMARY KEY,target TEXT NOT NULL)")
     c.execute("PRAGMA user_version=4")
 
-def proposals(step,today,repeat_last=False):
+def proposals(step,today,repeat_last=False,intervals=INTERVALS):
     return {k:{'step':s,'due':plus(today,n) if n else ''} for k,s,n in (
-        ('again',1,INTERVALS[0]),('partial',step,INTERVALS[0]),
-        ('good',min(step+1,len(INTERVALS)),INTERVALS[step] if step<len(INTERVALS) else (INTERVALS[-1] if repeat_last else 0)))}
+        ('again',1,intervals[0]),('partial',step,intervals[0]),
+        ('good',min(step+1,len(intervals)),intervals[step] if step<len(intervals) else (intervals[-1] if repeat_last else 0)))}
 
 def summary(c,today):
+    from daily import config,policy
+    cap=config(c)["cap"]
     used=c.execute("SELECT count(*) FROM attempts WHERE day=? AND status='completed'",(today,)).fetchone()[0]
     rows=[]
     for s in c.execute("SELECT * FROM schedules ORDER BY due,target"):
@@ -35,18 +37,22 @@ def summary(c,today):
         row['turn']=1+c.execute("SELECT count(*) FROM attempts WHERE target=? AND status='completed'",(s['target'],)).fetchone()[0]
         event=c.execute('SELECT command FROM review_events WHERE target=? ORDER BY id DESC LIMIT 1',(s['target'],)).fetchone()
         row['undo']=bool(event and event[0]=='grade')
-        row['choices']=proposals(s['step'],today,s['repeat_last'])
+        intervals=policy(c,s['target'])['intervals'];row['stages']=len(intervals)
+        row['choices']=proposals(s['step'],today,s['repeat_last'],intervals)
         rows.append(row)
-    queue=[s['target'] for s in rows if s['status']=='active' and s['due']<=today]
-    return dict(today=today,first=plus(today,1),used=used,cap=CAP,rows=rows,queue=queue[:max(0,CAP-used)],backlog=max(0,len(queue)-max(0,CAP-used)))
+    completed_today={r[0] for r in c.execute("SELECT DISTINCT target FROM attempts WHERE day=? AND status='completed'",(today,))}
+    queue=[s['target'] for s in rows if s['status']=='active' and s['due']<=today and s['target'] not in completed_today]
+    return dict(today=today,first=plus(today,policy(c)["intervals"][0]),used=used,cap=cap,rows=rows,queue=queue[:max(0,cap-used)],backlog=max(0,len(queue)-max(0,cap-used)))
 
-def command(store,q):
+def command(store,q,*,enroll_connection=None):
     key=q.get('target','')
     kind,sep,ident=key.partition(':')
     if kind not in ('note','highlight') or not sep or not ident:raise Problem('مطلب معتبر انتخاب کنید.')
     action=q.get('command')
     def apply(c):
-        today=day()
+        from daily import config,policy,clock_day
+        today=clock_day(c);cfg=config(c);rule=policy(c,None if action=='enroll' else key)
+        if q.get('expected_day',today)!=today:raise Problem('روز مطالعه عوض شده است. وضعیت و تاریخ را دوباره بررسی کنید.',409)
         content=c.execute("SELECT content_text FROM note_sections WHERE note_id=? AND kind='body'" if kind=='note' else 'SELECT body FROM highlights WHERE id=?',(ident,)).fetchone()
         if kind=='note' and action not in ('reveal',):
             header=c.execute('SELECT status FROM notes WHERE id=?',(ident,)).fetchone()
@@ -69,7 +75,8 @@ def command(store,q):
         aid=q.get('attempt','')
         if action=='enroll':
             if old and old['status'] not in ('ended','cancelled'):raise Problem('این مطلب برنامهٔ مرور دارد.',409)
-            s.update(step=1,status='active',due=chosen(plus(today,1)),cue=str(q.get('cue',''))[:250],repeat_last=int(q.get('repeat_last') is True))
+            s.update(step=1,status='active',due=chosen(plus(today,rule['intervals'][0])),cue=str(q.get('cue',''))[:250],repeat_last=int(q.get('repeat_last',rule['repeat_last']) is True))
+            c.execute('INSERT OR REPLACE INTO target_policy VALUES(?,?)',(key,rule['id']))
         elif not old:raise Problem('ابتدا مطلب را به مرور اضافه کنید.')
         elif action in ('start','draft','grade'):
             if s['status']!='active':raise Problem('برنامهٔ مرور فعال نیست.',409)
@@ -85,10 +92,10 @@ def command(store,q):
             if action=='draft':
                 c.execute('UPDATE attempts SET answer=?,rev=rev+1 WHERE id=?',(answer,aid))
                 return dict(rev=draft['rev']+1)
-            if c.execute("SELECT count(*) FROM attempts WHERE day=? AND status='completed'",(today,)).fetchone()[0]>=CAP:raise Problem('سهمیهٔ مرور امروز کامل شده است.')
+            if c.execute("SELECT count(*) FROM attempts WHERE day=? AND status='completed'",(today,)).fetchone()[0]>=cfg['cap']:raise Problem('سهمیهٔ مرور امروز کامل شده است.')
             grade=q.get('grade')
             if grade not in ('again','partial','good'):raise Problem('یکی از سه نتیجه را انتخاب کنید.')
-            proposal=proposals(s['step'],today,s['repeat_last'])[grade]
+            proposal=proposals(s['step'],today,s['repeat_last'],rule['intervals'])[grade]
             due=chosen(proposal['due']) if q.get('due',proposal['due']) else ''
             if not due and proposal['due']:raise Problem('موعد مرور لازم است.')
             s.update(step=proposal['step'],due=due,status='active' if due else 'ended')
@@ -117,8 +124,11 @@ def command(store,q):
         else:raise Problem('این عمل در وضعیت فعلی امکان ندارد.')
         s['rev']=rev+1
         c.execute('INSERT OR REPLACE INTO schedules VALUES(:target,:step,:due,:status,:rev,:cue,:repeat_last)',s)
-        c.execute('INSERT INTO review_events(target,command,old_state,new_state,attempt,day) VALUES(?,?,?,?,?,?)',(key,action,json.dumps(old),json.dumps(s),aid,today))
+        c.execute('INSERT INTO review_events(target,command,old_state,new_state,attempt,day,policy_id) VALUES(?,?,?,?,?,?,?)',(key,action,json.dumps(old),json.dumps(s),aid,today,rule["id"]))
         return dict(revision=s['rev'],due=s['due'])
+    if enroll_connection is not None:
+        if action!='enroll':raise ValueError('enrollment transaction only')
+        return apply(enroll_connection)
     if action=='reveal':
         with store.connect() as c:return apply(c)
     return store.transaction(q,'review',apply)

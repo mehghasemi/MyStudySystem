@@ -1,0 +1,29 @@
+{
+  "notes": 5000,
+  "sources": 10000,
+  "highlights": 20000,
+  "seconds": [
+    1.4942,
+    1.0486,
+    1.03,
+    1.1973,
+    1.0081,
+    1.03,
+    1.0169,
+    1.5185,
+    1.1611,
+    1.0063,
+    1.063,
+    1.0557,
+    0.9958,
+    1.4201,
+    1.2618,
+    1.1882,
+    1.0886,
+    0.9726,
+    1.107,
+    0.9168
+  ],
+  "p95": 1.4942,
+  "method": "daily.search, including database reads and ranking; excludes browser rendering"
+}

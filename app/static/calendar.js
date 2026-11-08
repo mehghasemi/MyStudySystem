@@ -1,17 +1,21 @@
+let prefs={zone:'local',digits:'fa',week:6,display:'persian'};
+export function configureDates(config){prefs=config;}
+export function selectedZone(){return prefs.zone==='local'?Intl.DateTimeFormat().resolvedOptions().timeZone:prefs.zone;}
+export function locale(){return 'fa-IR-u-ca-'+prefs.display+'-nu-'+(prefs.digits==='fa'?'arabext':'latn');}
 const DAY = 86400000;
 const fmt = new Intl.DateTimeFormat('en-US-u-ca-persian', {year:'numeric',month:'numeric',day:'numeric',timeZone:'UTC'});
-export const fa = n => new Intl.NumberFormat('fa-IR',{useGrouping:false}).format(n);
+export const fa = n => new Intl.NumberFormat(locale(),{useGrouping:false}).format(n);
 export const months = ['فروردین','اردیبهشت','خرداد','تیر','مرداد','شهریور','مهر','آبان','آذر','دی','بهمن','اسفند'];
 export function persian(iso) {
   const values = Object.fromEntries(fmt.formatToParts(new Date(iso+'T12:00:00Z')).map(x=>[x.type,x.value]));
   return {year:+values.year,month:+values.month,day:+values.day};
 }
 export function todayISO(now=new Date()) {
-  const p=Object.fromEntries(new Intl.DateTimeFormat('en-US',{timeZone:'Asia/Tehran',year:'numeric',month:'2-digit',day:'2-digit'}).formatToParts(now).map(x=>[x.type,x.value]));
+  const p=Object.fromEntries(new Intl.DateTimeFormat('en-US',{timeZone:selectedZone(),year:'numeric',month:'2-digit',day:'2-digit'}).formatToParts(now).map(x=>[x.type,x.value]));
   return `${p.year}-${p.month}-${p.day}`;
 }
 export function addDays(iso, n) {return new Date(new Date(iso+'T12:00:00Z').getTime()+n*DAY).toISOString().slice(0,10);}
-export function dateLabel(iso) {if(!iso)return ''; const p=persian(iso);return `${fa(p.day)} ${months[p.month-1]} ${fa(p.year)}`;}
+export function dateLabel(iso) {if(!iso)return ''; if(prefs.display==='gregory')return new Intl.DateTimeFormat(locale(),{timeZone:'UTC',dateStyle:'medium'}).format(new Date(iso+'T12:00:00Z'));const p=persian(iso);return `${fa(p.day)} ${months[p.month-1]} ${fa(p.year)}`;}
 const cache = new Map();
 export function monthDates(year, month) {
   const key=`${year}-${month}`;
@@ -30,7 +34,7 @@ export function tehranInstant(iso, hour, minute) {
   if(!Number.isInteger(hour)||hour<0||hour>23||!Number.isInteger(minute)||minute<0||minute>59)throw new Error('ساعت بین ۰ تا ۲۳ و دقیقه بین ۰ تا ۵۹ باشد.');
   const target=Date.parse(`${iso}T${String(hour).padStart(2,'0')}:${String(minute).padStart(2,'0')}:00Z`);
   let guess=target;
-  const tf=new Intl.DateTimeFormat('en-US',{timeZone:'Asia/Tehran',year:'numeric',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit',second:'2-digit',hourCycle:'h23'});
+  const tf=new Intl.DateTimeFormat('en-US',{timeZone:selectedZone(),year:'numeric',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit',second:'2-digit',hourCycle:'h23'});
   for(let n=0;n<4;n++) {
     const p=Object.fromEntries(tf.formatToParts(new Date(guess)).map(x=>[x.type,x.value]));
     const actual=Date.parse(`${p.year}-${p.month}-${p.day}T${p.hour}:${p.minute}:${p.second}Z`);
@@ -39,7 +43,7 @@ export function tehranInstant(iso, hour, minute) {
   }
   throw new Error('این ساعت در تغییر ساعت رسمی وجود ندارد؛ ساعت دیگری انتخاب کنید.');
 }
-export function timeLabel(instant) {return instant?new Intl.DateTimeFormat('fa-IR',{dateStyle:'medium',timeStyle:'short',timeZone:'Asia/Tehran'}).format(new Date(instant)):'';}
+export function timeLabel(instant) {return instant?new Intl.DateTimeFormat(locale(),{dateStyle:'medium',timeStyle:'short',timeZone:selectedZone()}).format(new Date(instant)):'';}
 
 export class Calendar {
   constructor() {
@@ -62,7 +66,7 @@ export class Calendar {
   open(value, withTime, opener, callback) {
     this.withTime=withTime;this.onSelect=callback;this.opener=opener;
     this.selected=value?(withTime?todayISO(new Date(value)):value):todayISO();
-    if(withTime&&value){const p=Object.fromEntries(new Intl.DateTimeFormat('en-US',{timeZone:'Asia/Tehran',hour:'numeric',minute:'numeric',hourCycle:'h23'}).formatToParts(new Date(value)).map(x=>[x.type,x.value]));this.$('hour').value=p.hour;this.$('minute').value=p.minute;}
+    if(withTime&&value){const p=Object.fromEntries(new Intl.DateTimeFormat('en-US',{timeZone:selectedZone(),hour:'numeric',minute:'numeric',hourCycle:'h23'}).formatToParts(new Date(value)).map(x=>[x.type,x.value]));this.$('hour').value=p.hour;this.$('minute').value=p.minute;}
     this.$('calendarTime').hidden=!withTime;this.$('calendarTitle').textContent=withTime?'انتخاب تاریخ و ساعت شمسی':'انتخاب تاریخ شمسی';this.$('calendarError').hidden=true;
     this.render();this.el.showModal();this.$('calendarDays').querySelector('.selected')?.focus();
   }
@@ -71,7 +75,9 @@ export class Calendar {
   render(focus=false) {
     const p=persian(this.selected),dates=monthDates(p.year,p.month),container=this.$('calendarDays');
     this.$('calendarMonth').value=p.month;this.$('calendarYear').value=p.year;container.replaceChildren();
-    const offset=(new Date(dates[0]+'T12:00:00Z').getUTCDay()+1)%7;
+    const offset=(new Date(dates[0]+'T12:00:00Z').getUTCDay()-prefs.week+7)%7;
+    const weekdays=['ی','د','س','چ','پ','ج','ش'];this.el.querySelector('.weekdays').replaceChildren(...Array.from({length:7},(_,i)=>{const span=document.createElement('span');span.textContent=weekdays[(prefs.week+i)%7];return span;}));
+    for(const o of this.$('calendarYear').options)o.textContent=fa(Number(o.value));
     for(let i=0;i<offset;i++){const blank=document.createElement('span');blank.setAttribute('aria-hidden','true');container.append(blank);}
     for(const iso of dates){
       const b=document.createElement('button');b.type='button';b.textContent=fa(persian(iso).day);b.dataset.iso=iso;b.setAttribute('aria-label',dateLabel(iso));

@@ -1,0 +1,4457 @@
+{
+  "browser": "157.0.8103.38",
+  "version": "M2-r1",
+  "metrics": [
+    {
+      "theme": "light",
+      "w": 768,
+      "mode": "topics",
+      "view": "organize",
+      "main": [
+        0,
+        52,
+        632,
+        754
+      ],
+      "content": 584,
+      "heading": 68,
+      "side": [
+        632,
+        0,
+        136,
+        867
+      ],
+      "head": [
+        0,
+        0,
+        632,
+        52
+      ],
+      "status": [
+        632,
+        51,
+        1,
+        1
+      ],
+      "card": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "navCount": 8,
+      "navScroll": 0,
+      "overflow": 0,
+      "overlaps": [],
+      "viewportHeight": 768,
+      "firstAction": 109,
+      "shortControls": [],
+      "font": "22px",
+      "base": "16px",
+      "leading": "28.8px",
+      "dir": "rtl"
+    },
+    {
+      "theme": "light",
+      "w": 768,
+      "mode": "folders",
+      "view": "organize",
+      "main": [
+        0,
+        52,
+        632,
+        605
+      ],
+      "content": 584,
+      "heading": 68,
+      "side": [
+        632,
+        0,
+        136,
+        768
+      ],
+      "head": [
+        0,
+        0,
+        632,
+        52
+      ],
+      "status": [
+        632,
+        51,
+        1,
+        1
+      ],
+      "card": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "navCount": 8,
+      "navScroll": 0,
+      "overflow": 0,
+      "overlaps": [],
+      "viewportHeight": 768,
+      "firstAction": 109,
+      "shortControls": [],
+      "font": "22px",
+      "base": "16px",
+      "leading": "28.8px",
+      "dir": "rtl"
+    },
+    {
+      "theme": "light",
+      "w": 768,
+      "mode": "items",
+      "view": "organize",
+      "main": [
+        0,
+        52,
+        632,
+        1605
+      ],
+      "content": 584,
+      "heading": 68,
+      "side": [
+        632,
+        0,
+        136,
+        1718
+      ],
+      "head": [
+        0,
+        0,
+        632,
+        52
+      ],
+      "status": [
+        632,
+        51,
+        1,
+        1
+      ],
+      "card": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "navCount": 8,
+      "navScroll": 0,
+      "overflow": 0,
+      "overlaps": [],
+      "viewportHeight": 768,
+      "firstAction": 109,
+      "shortControls": [],
+      "font": "22px",
+      "base": "16px",
+      "leading": "28.8px",
+      "dir": "rtl"
+    },
+    {
+      "theme": "light",
+      "w": 768,
+      "mode": "queue",
+      "view": "organize",
+      "main": [
+        0,
+        52,
+        632,
+        584
+      ],
+      "content": 584,
+      "heading": 68,
+      "side": [
+        632,
+        0,
+        136,
+        768
+      ],
+      "head": [
+        0,
+        0,
+        632,
+        52
+      ],
+      "status": [
+        632,
+        51,
+        1,
+        1
+      ],
+      "card": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "navCount": 8,
+      "navScroll": 0,
+      "overflow": 0,
+      "overlaps": [],
+      "viewportHeight": 768,
+      "firstAction": 109,
+      "shortControls": [],
+      "font": "22px",
+      "base": "16px",
+      "leading": "28.8px",
+      "dir": "rtl"
+    },
+    {
+      "theme": "light",
+      "w": 1024,
+      "mode": "topics",
+      "view": "organize",
+      "main": [
+        0,
+        52,
+        816,
+        754
+      ],
+      "content": 768,
+      "heading": 68,
+      "side": [
+        816,
+        0,
+        208,
+        867
+      ],
+      "head": [
+        0,
+        0,
+        816,
+        52
+      ],
+      "status": [
+        816,
+        51,
+        1,
+        1
+      ],
+      "card": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "navCount": 8,
+      "navScroll": 0,
+      "overflow": 0,
+      "overlaps": [],
+      "viewportHeight": 720,
+      "firstAction": 109,
+      "shortControls": [],
+      "font": "22px",
+      "base": "16px",
+      "leading": "28.8px",
+      "dir": "rtl"
+    },
+    {
+      "theme": "light",
+      "w": 1024,
+      "mode": "folders",
+      "view": "organize",
+      "main": [
+        0,
+        52,
+        816,
+        605
+      ],
+      "content": 768,
+      "heading": 68,
+      "side": [
+        816,
+        0,
+        208,
+        720
+      ],
+      "head": [
+        0,
+        0,
+        816,
+        52
+      ],
+      "status": [
+        816,
+        51,
+        1,
+        1
+      ],
+      "card": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "navCount": 8,
+      "navScroll": 0,
+      "overflow": 0,
+      "overlaps": [],
+      "viewportHeight": 720,
+      "firstAction": 109,
+      "shortControls": [],
+      "font": "22px",
+      "base": "16px",
+      "leading": "28.8px",
+      "dir": "rtl"
+    },
+    {
+      "theme": "light",
+      "w": 1024,
+      "mode": "items",
+      "view": "organize",
+      "main": [
+        0,
+        52,
+        816,
+        1605
+      ],
+      "content": 768,
+      "heading": 68,
+      "side": [
+        816,
+        0,
+        208,
+        1718
+      ],
+      "head": [
+        0,
+        0,
+        816,
+        52
+      ],
+      "status": [
+        816,
+        51,
+        1,
+        1
+      ],
+      "card": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "navCount": 8,
+      "navScroll": 0,
+      "overflow": 0,
+      "overlaps": [],
+      "viewportHeight": 720,
+      "firstAction": 109,
+      "shortControls": [],
+      "font": "22px",
+      "base": "16px",
+      "leading": "28.8px",
+      "dir": "rtl"
+    },
+    {
+      "theme": "light",
+      "w": 1024,
+      "mode": "queue",
+      "view": "organize",
+      "main": [
+        0,
+        52,
+        816,
+        547
+      ],
+      "content": 768,
+      "heading": 68,
+      "side": [
+        816,
+        0,
+        208,
+        720
+      ],
+      "head": [
+        0,
+        0,
+        816,
+        52
+      ],
+      "status": [
+        816,
+        51,
+        1,
+        1
+      ],
+      "card": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "navCount": 8,
+      "navScroll": 0,
+      "overflow": 0,
+      "overlaps": [],
+      "viewportHeight": 720,
+      "firstAction": 109,
+      "shortControls": [],
+      "font": "22px",
+      "base": "16px",
+      "leading": "28.8px",
+      "dir": "rtl"
+    },
+    {
+      "theme": "light",
+      "w": 1280,
+      "mode": "topics",
+      "view": "organize",
+      "main": [
+        0,
+        52,
+        1072,
+        567
+      ],
+      "content": 1024,
+      "heading": 68,
+      "side": [
+        1072,
+        0,
+        208,
+        720
+      ],
+      "head": [
+        0,
+        0,
+        1072,
+        52
+      ],
+      "status": [
+        1072,
+        51,
+        1,
+        1
+      ],
+      "card": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "navCount": 8,
+      "navScroll": 0,
+      "overflow": 0,
+      "overlaps": [],
+      "viewportHeight": 720,
+      "firstAction": 109,
+      "shortControls": [],
+      "font": "22px",
+      "base": "16px",
+      "leading": "28.8px",
+      "dir": "rtl"
+    },
+    {
+      "theme": "light",
+      "w": 1280,
+      "mode": "folders",
+      "view": "organize",
+      "main": [
+        0,
+        52,
+        1072,
+        547
+      ],
+      "content": 1024,
+      "heading": 68,
+      "side": [
+        1072,
+        0,
+        208,
+        720
+      ],
+      "head": [
+        0,
+        0,
+        1072,
+        52
+      ],
+      "status": [
+        1072,
+        51,
+        1,
+        1
+      ],
+      "card": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "navCount": 8,
+      "navScroll": 0,
+      "overflow": 0,
+      "overlaps": [],
+      "viewportHeight": 720,
+      "firstAction": 109,
+      "shortControls": [],
+      "font": "22px",
+      "base": "16px",
+      "leading": "28.8px",
+      "dir": "rtl"
+    },
+    {
+      "theme": "light",
+      "w": 1280,
+      "mode": "items",
+      "view": "organize",
+      "main": [
+        0,
+        52,
+        1072,
+        1605
+      ],
+      "content": 1024,
+      "heading": 68,
+      "side": [
+        1072,
+        0,
+        208,
+        1718
+      ],
+      "head": [
+        0,
+        0,
+        1072,
+        52
+      ],
+      "status": [
+        1072,
+        51,
+        1,
+        1
+      ],
+      "card": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "navCount": 8,
+      "navScroll": 0,
+      "overflow": 0,
+      "overlaps": [],
+      "viewportHeight": 720,
+      "firstAction": 109,
+      "shortControls": [],
+      "font": "22px",
+      "base": "16px",
+      "leading": "28.8px",
+      "dir": "rtl"
+    },
+    {
+      "theme": "light",
+      "w": 1280,
+      "mode": "queue",
+      "view": "organize",
+      "main": [
+        0,
+        52,
+        1072,
+        547
+      ],
+      "content": 1024,
+      "heading": 68,
+      "side": [
+        1072,
+        0,
+        208,
+        720
+      ],
+      "head": [
+        0,
+        0,
+        1072,
+        52
+      ],
+      "status": [
+        1072,
+        51,
+        1,
+        1
+      ],
+      "card": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "navCount": 8,
+      "navScroll": 0,
+      "overflow": 0,
+      "overlaps": [],
+      "viewportHeight": 720,
+      "firstAction": 109,
+      "shortControls": [],
+      "font": "22px",
+      "base": "16px",
+      "leading": "28.8px",
+      "dir": "rtl"
+    },
+    {
+      "theme": "light",
+      "w": 1366,
+      "mode": "topics",
+      "view": "organize",
+      "main": [
+        0,
+        52,
+        1158,
+        567
+      ],
+      "content": 1110,
+      "heading": 68,
+      "side": [
+        1158,
+        0,
+        208,
+        720
+      ],
+      "head": [
+        0,
+        0,
+        1158,
+        52
+      ],
+      "status": [
+        1158,
+        51,
+        1,
+        1
+      ],
+      "card": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "navCount": 8,
+      "navScroll": 0,
+      "overflow": 0,
+      "overlaps": [],
+      "viewportHeight": 720,
+      "firstAction": 109,
+      "shortControls": [],
+      "font": "22px",
+      "base": "16px",
+      "leading": "28.8px",
+      "dir": "rtl"
+    },
+    {
+      "theme": "light",
+      "w": 1366,
+      "mode": "folders",
+      "view": "organize",
+      "main": [
+        0,
+        52,
+        1158,
+        547
+      ],
+      "content": 1110,
+      "heading": 68,
+      "side": [
+        1158,
+        0,
+        208,
+        720
+      ],
+      "head": [
+        0,
+        0,
+        1158,
+        52
+      ],
+      "status": [
+        1158,
+        51,
+        1,
+        1
+      ],
+      "card": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "navCount": 8,
+      "navScroll": 0,
+      "overflow": 0,
+      "overlaps": [],
+      "viewportHeight": 720,
+      "firstAction": 109,
+      "shortControls": [],
+      "font": "22px",
+      "base": "16px",
+      "leading": "28.8px",
+      "dir": "rtl"
+    },
+    {
+      "theme": "light",
+      "w": 1366,
+      "mode": "items",
+      "view": "organize",
+      "main": [
+        0,
+        52,
+        1158,
+        1605
+      ],
+      "content": 1110,
+      "heading": 68,
+      "side": [
+        1158,
+        0,
+        208,
+        1718
+      ],
+      "head": [
+        0,
+        0,
+        1158,
+        52
+      ],
+      "status": [
+        1158,
+        51,
+        1,
+        1
+      ],
+      "card": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "navCount": 8,
+      "navScroll": 0,
+      "overflow": 0,
+      "overlaps": [],
+      "viewportHeight": 720,
+      "firstAction": 109,
+      "shortControls": [],
+      "font": "22px",
+      "base": "16px",
+      "leading": "28.8px",
+      "dir": "rtl"
+    },
+    {
+      "theme": "light",
+      "w": 1366,
+      "mode": "queue",
+      "view": "organize",
+      "main": [
+        0,
+        52,
+        1158,
+        547
+      ],
+      "content": 1110,
+      "heading": 68,
+      "side": [
+        1158,
+        0,
+        208,
+        720
+      ],
+      "head": [
+        0,
+        0,
+        1158,
+        52
+      ],
+      "status": [
+        1158,
+        51,
+        1,
+        1
+      ],
+      "card": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "navCount": 8,
+      "navScroll": 0,
+      "overflow": 0,
+      "overlaps": [],
+      "viewportHeight": 720,
+      "firstAction": 109,
+      "shortControls": [],
+      "font": "22px",
+      "base": "16px",
+      "leading": "28.8px",
+      "dir": "rtl"
+    },
+    {
+      "theme": "light",
+      "w": 1440,
+      "mode": "topics",
+      "view": "organize",
+      "main": [
+        0,
+        52,
+        1232,
+        567
+      ],
+      "content": 1184,
+      "heading": 68,
+      "side": [
+        1232,
+        0,
+        208,
+        720
+      ],
+      "head": [
+        0,
+        0,
+        1232,
+        52
+      ],
+      "status": [
+        1232,
+        51,
+        1,
+        1
+      ],
+      "card": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "navCount": 8,
+      "navScroll": 0,
+      "overflow": 0,
+      "overlaps": [],
+      "viewportHeight": 720,
+      "firstAction": 109,
+      "shortControls": [],
+      "font": "22px",
+      "base": "16px",
+      "leading": "28.8px",
+      "dir": "rtl"
+    },
+    {
+      "theme": "light",
+      "w": 1440,
+      "mode": "folders",
+      "view": "organize",
+      "main": [
+        0,
+        52,
+        1232,
+        547
+      ],
+      "content": 1184,
+      "heading": 68,
+      "side": [
+        1232,
+        0,
+        208,
+        720
+      ],
+      "head": [
+        0,
+        0,
+        1232,
+        52
+      ],
+      "status": [
+        1232,
+        51,
+        1,
+        1
+      ],
+      "card": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "navCount": 8,
+      "navScroll": 0,
+      "overflow": 0,
+      "overlaps": [],
+      "viewportHeight": 720,
+      "firstAction": 109,
+      "shortControls": [],
+      "font": "22px",
+      "base": "16px",
+      "leading": "28.8px",
+      "dir": "rtl"
+    },
+    {
+      "theme": "light",
+      "w": 1440,
+      "mode": "items",
+      "view": "organize",
+      "main": [
+        0,
+        52,
+        1232,
+        1605
+      ],
+      "content": 1184,
+      "heading": 68,
+      "side": [
+        1232,
+        0,
+        208,
+        1718
+      ],
+      "head": [
+        0,
+        0,
+        1232,
+        52
+      ],
+      "status": [
+        1232,
+        51,
+        1,
+        1
+      ],
+      "card": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "navCount": 8,
+      "navScroll": 0,
+      "overflow": 0,
+      "overlaps": [],
+      "viewportHeight": 720,
+      "firstAction": 109,
+      "shortControls": [],
+      "font": "22px",
+      "base": "16px",
+      "leading": "28.8px",
+      "dir": "rtl"
+    },
+    {
+      "theme": "light",
+      "w": 1440,
+      "mode": "queue",
+      "view": "organize",
+      "main": [
+        0,
+        52,
+        1232,
+        547
+      ],
+      "content": 1184,
+      "heading": 68,
+      "side": [
+        1232,
+        0,
+        208,
+        720
+      ],
+      "head": [
+        0,
+        0,
+        1232,
+        52
+      ],
+      "status": [
+        1232,
+        51,
+        1,
+        1
+      ],
+      "card": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "navCount": 8,
+      "navScroll": 0,
+      "overflow": 0,
+      "overlaps": [],
+      "viewportHeight": 720,
+      "firstAction": 109,
+      "shortControls": [],
+      "font": "22px",
+      "base": "16px",
+      "leading": "28.8px",
+      "dir": "rtl"
+    },
+    {
+      "theme": "light",
+      "w": 1536,
+      "mode": "topics",
+      "view": "organize",
+      "main": [
+        0,
+        52,
+        1328,
+        657
+      ],
+      "content": 1280,
+      "heading": 68,
+      "side": [
+        1328,
+        0,
+        208,
+        864
+      ],
+      "head": [
+        0,
+        0,
+        1328,
+        52
+      ],
+      "status": [
+        1328,
+        51,
+        1,
+        1
+      ],
+      "card": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "navCount": 8,
+      "navScroll": 0,
+      "overflow": 0,
+      "overlaps": [],
+      "viewportHeight": 864,
+      "firstAction": 109,
+      "shortControls": [],
+      "font": "22px",
+      "base": "16px",
+      "leading": "28.8px",
+      "dir": "rtl"
+    },
+    {
+      "theme": "light",
+      "w": 1536,
+      "mode": "folders",
+      "view": "organize",
+      "main": [
+        0,
+        52,
+        1328,
+        657
+      ],
+      "content": 1280,
+      "heading": 68,
+      "side": [
+        1328,
+        0,
+        208,
+        864
+      ],
+      "head": [
+        0,
+        0,
+        1328,
+        52
+      ],
+      "status": [
+        1328,
+        51,
+        1,
+        1
+      ],
+      "card": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "navCount": 8,
+      "navScroll": 0,
+      "overflow": 0,
+      "overlaps": [],
+      "viewportHeight": 864,
+      "firstAction": 109,
+      "shortControls": [],
+      "font": "22px",
+      "base": "16px",
+      "leading": "28.8px",
+      "dir": "rtl"
+    },
+    {
+      "theme": "light",
+      "w": 1536,
+      "mode": "items",
+      "view": "organize",
+      "main": [
+        0,
+        52,
+        1328,
+        1605
+      ],
+      "content": 1280,
+      "heading": 68,
+      "side": [
+        1328,
+        0,
+        208,
+        1718
+      ],
+      "head": [
+        0,
+        0,
+        1328,
+        52
+      ],
+      "status": [
+        1328,
+        51,
+        1,
+        1
+      ],
+      "card": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "navCount": 8,
+      "navScroll": 0,
+      "overflow": 0,
+      "overlaps": [],
+      "viewportHeight": 864,
+      "firstAction": 109,
+      "shortControls": [],
+      "font": "22px",
+      "base": "16px",
+      "leading": "28.8px",
+      "dir": "rtl"
+    },
+    {
+      "theme": "light",
+      "w": 1536,
+      "mode": "queue",
+      "view": "organize",
+      "main": [
+        0,
+        52,
+        1328,
+        657
+      ],
+      "content": 1280,
+      "heading": 68,
+      "side": [
+        1328,
+        0,
+        208,
+        864
+      ],
+      "head": [
+        0,
+        0,
+        1328,
+        52
+      ],
+      "status": [
+        1328,
+        51,
+        1,
+        1
+      ],
+      "card": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "navCount": 8,
+      "navScroll": 0,
+      "overflow": 0,
+      "overlaps": [],
+      "viewportHeight": 864,
+      "firstAction": 109,
+      "shortControls": [],
+      "font": "22px",
+      "base": "16px",
+      "leading": "28.8px",
+      "dir": "rtl"
+    },
+    {
+      "theme": "light",
+      "w": 1645,
+      "mode": "topics",
+      "view": "organize",
+      "main": [
+        0,
+        52,
+        1437,
+        821
+      ],
+      "content": 1389,
+      "heading": 68,
+      "side": [
+        1437,
+        0,
+        208,
+        1080
+      ],
+      "head": [
+        0,
+        0,
+        1437,
+        52
+      ],
+      "status": [
+        1437,
+        51,
+        1,
+        1
+      ],
+      "card": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "navCount": 8,
+      "navScroll": 0,
+      "overflow": 0,
+      "overlaps": [],
+      "viewportHeight": 1080,
+      "firstAction": 109,
+      "shortControls": [],
+      "font": "22px",
+      "base": "16px",
+      "leading": "28.8px",
+      "dir": "rtl"
+    },
+    {
+      "theme": "light",
+      "w": 1645,
+      "mode": "folders",
+      "view": "organize",
+      "main": [
+        0,
+        52,
+        1437,
+        821
+      ],
+      "content": 1389,
+      "heading": 68,
+      "side": [
+        1437,
+        0,
+        208,
+        1080
+      ],
+      "head": [
+        0,
+        0,
+        1437,
+        52
+      ],
+      "status": [
+        1437,
+        51,
+        1,
+        1
+      ],
+      "card": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "navCount": 8,
+      "navScroll": 0,
+      "overflow": 0,
+      "overlaps": [],
+      "viewportHeight": 1080,
+      "firstAction": 109,
+      "shortControls": [],
+      "font": "22px",
+      "base": "16px",
+      "leading": "28.8px",
+      "dir": "rtl"
+    },
+    {
+      "theme": "light",
+      "w": 1645,
+      "mode": "items",
+      "view": "organize",
+      "main": [
+        0,
+        52,
+        1437,
+        1605
+      ],
+      "content": 1389,
+      "heading": 68,
+      "side": [
+        1437,
+        0,
+        208,
+        1718
+      ],
+      "head": [
+        0,
+        0,
+        1437,
+        52
+      ],
+      "status": [
+        1437,
+        51,
+        1,
+        1
+      ],
+      "card": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "navCount": 8,
+      "navScroll": 0,
+      "overflow": 0,
+      "overlaps": [],
+      "viewportHeight": 1080,
+      "firstAction": 109,
+      "shortControls": [],
+      "font": "22px",
+      "base": "16px",
+      "leading": "28.8px",
+      "dir": "rtl"
+    },
+    {
+      "theme": "light",
+      "w": 1645,
+      "mode": "queue",
+      "view": "organize",
+      "main": [
+        0,
+        52,
+        1437,
+        821
+      ],
+      "content": 1389,
+      "heading": 68,
+      "side": [
+        1437,
+        0,
+        208,
+        1080
+      ],
+      "head": [
+        0,
+        0,
+        1437,
+        52
+      ],
+      "status": [
+        1437,
+        51,
+        1,
+        1
+      ],
+      "card": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "navCount": 8,
+      "navScroll": 0,
+      "overflow": 0,
+      "overlaps": [],
+      "viewportHeight": 1080,
+      "firstAction": 109,
+      "shortControls": [],
+      "font": "22px",
+      "base": "16px",
+      "leading": "28.8px",
+      "dir": "rtl"
+    },
+    {
+      "theme": "light",
+      "w": 1920,
+      "mode": "topics",
+      "view": "organize",
+      "main": [
+        0,
+        52,
+        1712,
+        821
+      ],
+      "content": 1664,
+      "heading": 68,
+      "side": [
+        1712,
+        0,
+        208,
+        1080
+      ],
+      "head": [
+        0,
+        0,
+        1712,
+        52
+      ],
+      "status": [
+        1712,
+        51,
+        1,
+        1
+      ],
+      "card": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "navCount": 8,
+      "navScroll": 0,
+      "overflow": 0,
+      "overlaps": [],
+      "viewportHeight": 1080,
+      "firstAction": 109,
+      "shortControls": [],
+      "font": "22px",
+      "base": "16px",
+      "leading": "28.8px",
+      "dir": "rtl"
+    },
+    {
+      "theme": "light",
+      "w": 1920,
+      "mode": "folders",
+      "view": "organize",
+      "main": [
+        0,
+        52,
+        1712,
+        821
+      ],
+      "content": 1664,
+      "heading": 68,
+      "side": [
+        1712,
+        0,
+        208,
+        1080
+      ],
+      "head": [
+        0,
+        0,
+        1712,
+        52
+      ],
+      "status": [
+        1712,
+        51,
+        1,
+        1
+      ],
+      "card": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "navCount": 8,
+      "navScroll": 0,
+      "overflow": 0,
+      "overlaps": [],
+      "viewportHeight": 1080,
+      "firstAction": 109,
+      "shortControls": [],
+      "font": "22px",
+      "base": "16px",
+      "leading": "28.8px",
+      "dir": "rtl"
+    },
+    {
+      "theme": "light",
+      "w": 1920,
+      "mode": "items",
+      "view": "organize",
+      "main": [
+        0,
+        52,
+        1712,
+        1605
+      ],
+      "content": 1664,
+      "heading": 68,
+      "side": [
+        1712,
+        0,
+        208,
+        1718
+      ],
+      "head": [
+        0,
+        0,
+        1712,
+        52
+      ],
+      "status": [
+        1712,
+        51,
+        1,
+        1
+      ],
+      "card": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "navCount": 8,
+      "navScroll": 0,
+      "overflow": 0,
+      "overlaps": [],
+      "viewportHeight": 1080,
+      "firstAction": 109,
+      "shortControls": [],
+      "font": "22px",
+      "base": "16px",
+      "leading": "28.8px",
+      "dir": "rtl"
+    },
+    {
+      "theme": "light",
+      "w": 1920,
+      "mode": "queue",
+      "view": "organize",
+      "main": [
+        0,
+        52,
+        1712,
+        821
+      ],
+      "content": 1664,
+      "heading": 68,
+      "side": [
+        1712,
+        0,
+        208,
+        1080
+      ],
+      "head": [
+        0,
+        0,
+        1712,
+        52
+      ],
+      "status": [
+        1712,
+        51,
+        1,
+        1
+      ],
+      "card": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "navCount": 8,
+      "navScroll": 0,
+      "overflow": 0,
+      "overlaps": [],
+      "viewportHeight": 1080,
+      "firstAction": 109,
+      "shortControls": [],
+      "font": "22px",
+      "base": "16px",
+      "leading": "28.8px",
+      "dir": "rtl"
+    },
+    {
+      "theme": "light",
+      "w": 2560,
+      "mode": "topics",
+      "view": "organize",
+      "main": [
+        0,
+        52,
+        2352,
+        1094
+      ],
+      "content": 2304,
+      "heading": 68,
+      "side": [
+        2352,
+        0,
+        208,
+        1440
+      ],
+      "head": [
+        0,
+        0,
+        2352,
+        52
+      ],
+      "status": [
+        2352,
+        51,
+        1,
+        1
+      ],
+      "card": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "navCount": 8,
+      "navScroll": 0,
+      "overflow": 0,
+      "overlaps": [],
+      "viewportHeight": 1440,
+      "firstAction": 109,
+      "shortControls": [],
+      "font": "22px",
+      "base": "16px",
+      "leading": "28.8px",
+      "dir": "rtl"
+    },
+    {
+      "theme": "light",
+      "w": 2560,
+      "mode": "folders",
+      "view": "organize",
+      "main": [
+        0,
+        52,
+        2352,
+        1094
+      ],
+      "content": 2304,
+      "heading": 68,
+      "side": [
+        2352,
+        0,
+        208,
+        1440
+      ],
+      "head": [
+        0,
+        0,
+        2352,
+        52
+      ],
+      "status": [
+        2352,
+        51,
+        1,
+        1
+      ],
+      "card": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "navCount": 8,
+      "navScroll": 0,
+      "overflow": 0,
+      "overlaps": [],
+      "viewportHeight": 1440,
+      "firstAction": 109,
+      "shortControls": [],
+      "font": "22px",
+      "base": "16px",
+      "leading": "28.8px",
+      "dir": "rtl"
+    },
+    {
+      "theme": "light",
+      "w": 2560,
+      "mode": "items",
+      "view": "organize",
+      "main": [
+        0,
+        52,
+        2352,
+        1605
+      ],
+      "content": 2304,
+      "heading": 68,
+      "side": [
+        2352,
+        0,
+        208,
+        1718
+      ],
+      "head": [
+        0,
+        0,
+        2352,
+        52
+      ],
+      "status": [
+        2352,
+        51,
+        1,
+        1
+      ],
+      "card": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "navCount": 8,
+      "navScroll": 0,
+      "overflow": 0,
+      "overlaps": [],
+      "viewportHeight": 1440,
+      "firstAction": 109,
+      "shortControls": [],
+      "font": "22px",
+      "base": "16px",
+      "leading": "28.8px",
+      "dir": "rtl"
+    },
+    {
+      "theme": "light",
+      "w": 2560,
+      "mode": "queue",
+      "view": "organize",
+      "main": [
+        0,
+        52,
+        2352,
+        1094
+      ],
+      "content": 2304,
+      "heading": 68,
+      "side": [
+        2352,
+        0,
+        208,
+        1440
+      ],
+      "head": [
+        0,
+        0,
+        2352,
+        52
+      ],
+      "status": [
+        2352,
+        51,
+        1,
+        1
+      ],
+      "card": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "navCount": 8,
+      "navScroll": 0,
+      "overflow": 0,
+      "overlaps": [],
+      "viewportHeight": 1440,
+      "firstAction": 109,
+      "shortControls": [],
+      "font": "22px",
+      "base": "16px",
+      "leading": "28.8px",
+      "dir": "rtl"
+    },
+    {
+      "theme": "dark",
+      "w": 768,
+      "mode": "topics",
+      "view": "organize",
+      "main": [
+        0,
+        52,
+        632,
+        754
+      ],
+      "content": 584,
+      "heading": 68,
+      "side": [
+        632,
+        0,
+        136,
+        867
+      ],
+      "head": [
+        0,
+        0,
+        632,
+        52
+      ],
+      "status": [
+        632,
+        51,
+        1,
+        1
+      ],
+      "card": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "navCount": 8,
+      "navScroll": 0,
+      "overflow": 0,
+      "overlaps": [],
+      "viewportHeight": 768,
+      "firstAction": 109,
+      "shortControls": [],
+      "font": "22px",
+      "base": "16px",
+      "leading": "28.8px",
+      "dir": "rtl"
+    },
+    {
+      "theme": "dark",
+      "w": 768,
+      "mode": "folders",
+      "view": "organize",
+      "main": [
+        0,
+        52,
+        632,
+        605
+      ],
+      "content": 584,
+      "heading": 68,
+      "side": [
+        632,
+        0,
+        136,
+        768
+      ],
+      "head": [
+        0,
+        0,
+        632,
+        52
+      ],
+      "status": [
+        632,
+        51,
+        1,
+        1
+      ],
+      "card": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "navCount": 8,
+      "navScroll": 0,
+      "overflow": 0,
+      "overlaps": [],
+      "viewportHeight": 768,
+      "firstAction": 109,
+      "shortControls": [],
+      "font": "22px",
+      "base": "16px",
+      "leading": "28.8px",
+      "dir": "rtl"
+    },
+    {
+      "theme": "dark",
+      "w": 768,
+      "mode": "items",
+      "view": "organize",
+      "main": [
+        0,
+        52,
+        632,
+        1605
+      ],
+      "content": 584,
+      "heading": 68,
+      "side": [
+        632,
+        0,
+        136,
+        1718
+      ],
+      "head": [
+        0,
+        0,
+        632,
+        52
+      ],
+      "status": [
+        632,
+        51,
+        1,
+        1
+      ],
+      "card": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "navCount": 8,
+      "navScroll": 0,
+      "overflow": 0,
+      "overlaps": [],
+      "viewportHeight": 768,
+      "firstAction": 109,
+      "shortControls": [],
+      "font": "22px",
+      "base": "16px",
+      "leading": "28.8px",
+      "dir": "rtl"
+    },
+    {
+      "theme": "dark",
+      "w": 768,
+      "mode": "queue",
+      "view": "organize",
+      "main": [
+        0,
+        52,
+        632,
+        584
+      ],
+      "content": 584,
+      "heading": 68,
+      "side": [
+        632,
+        0,
+        136,
+        768
+      ],
+      "head": [
+        0,
+        0,
+        632,
+        52
+      ],
+      "status": [
+        632,
+        51,
+        1,
+        1
+      ],
+      "card": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "navCount": 8,
+      "navScroll": 0,
+      "overflow": 0,
+      "overlaps": [],
+      "viewportHeight": 768,
+      "firstAction": 109,
+      "shortControls": [],
+      "font": "22px",
+      "base": "16px",
+      "leading": "28.8px",
+      "dir": "rtl"
+    },
+    {
+      "theme": "dark",
+      "w": 1024,
+      "mode": "topics",
+      "view": "organize",
+      "main": [
+        0,
+        52,
+        816,
+        754
+      ],
+      "content": 768,
+      "heading": 68,
+      "side": [
+        816,
+        0,
+        208,
+        867
+      ],
+      "head": [
+        0,
+        0,
+        816,
+        52
+      ],
+      "status": [
+        816,
+        51,
+        1,
+        1
+      ],
+      "card": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "navCount": 8,
+      "navScroll": 0,
+      "overflow": 0,
+      "overlaps": [],
+      "viewportHeight": 720,
+      "firstAction": 109,
+      "shortControls": [],
+      "font": "22px",
+      "base": "16px",
+      "leading": "28.8px",
+      "dir": "rtl"
+    },
+    {
+      "theme": "dark",
+      "w": 1024,
+      "mode": "folders",
+      "view": "organize",
+      "main": [
+        0,
+        52,
+        816,
+        605
+      ],
+      "content": 768,
+      "heading": 68,
+      "side": [
+        816,
+        0,
+        208,
+        720
+      ],
+      "head": [
+        0,
+        0,
+        816,
+        52
+      ],
+      "status": [
+        816,
+        51,
+        1,
+        1
+      ],
+      "card": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "navCount": 8,
+      "navScroll": 0,
+      "overflow": 0,
+      "overlaps": [],
+      "viewportHeight": 720,
+      "firstAction": 109,
+      "shortControls": [],
+      "font": "22px",
+      "base": "16px",
+      "leading": "28.8px",
+      "dir": "rtl"
+    },
+    {
+      "theme": "dark",
+      "w": 1024,
+      "mode": "items",
+      "view": "organize",
+      "main": [
+        0,
+        52,
+        816,
+        1605
+      ],
+      "content": 768,
+      "heading": 68,
+      "side": [
+        816,
+        0,
+        208,
+        1718
+      ],
+      "head": [
+        0,
+        0,
+        816,
+        52
+      ],
+      "status": [
+        816,
+        51,
+        1,
+        1
+      ],
+      "card": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "navCount": 8,
+      "navScroll": 0,
+      "overflow": 0,
+      "overlaps": [],
+      "viewportHeight": 720,
+      "firstAction": 109,
+      "shortControls": [],
+      "font": "22px",
+      "base": "16px",
+      "leading": "28.8px",
+      "dir": "rtl"
+    },
+    {
+      "theme": "dark",
+      "w": 1024,
+      "mode": "queue",
+      "view": "organize",
+      "main": [
+        0,
+        52,
+        816,
+        547
+      ],
+      "content": 768,
+      "heading": 68,
+      "side": [
+        816,
+        0,
+        208,
+        720
+      ],
+      "head": [
+        0,
+        0,
+        816,
+        52
+      ],
+      "status": [
+        816,
+        51,
+        1,
+        1
+      ],
+      "card": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "navCount": 8,
+      "navScroll": 0,
+      "overflow": 0,
+      "overlaps": [],
+      "viewportHeight": 720,
+      "firstAction": 109,
+      "shortControls": [],
+      "font": "22px",
+      "base": "16px",
+      "leading": "28.8px",
+      "dir": "rtl"
+    },
+    {
+      "theme": "dark",
+      "w": 1280,
+      "mode": "topics",
+      "view": "organize",
+      "main": [
+        0,
+        52,
+        1072,
+        567
+      ],
+      "content": 1024,
+      "heading": 68,
+      "side": [
+        1072,
+        0,
+        208,
+        720
+      ],
+      "head": [
+        0,
+        0,
+        1072,
+        52
+      ],
+      "status": [
+        1072,
+        51,
+        1,
+        1
+      ],
+      "card": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "navCount": 8,
+      "navScroll": 0,
+      "overflow": 0,
+      "overlaps": [],
+      "viewportHeight": 720,
+      "firstAction": 109,
+      "shortControls": [],
+      "font": "22px",
+      "base": "16px",
+      "leading": "28.8px",
+      "dir": "rtl"
+    },
+    {
+      "theme": "dark",
+      "w": 1280,
+      "mode": "folders",
+      "view": "organize",
+      "main": [
+        0,
+        52,
+        1072,
+        547
+      ],
+      "content": 1024,
+      "heading": 68,
+      "side": [
+        1072,
+        0,
+        208,
+        720
+      ],
+      "head": [
+        0,
+        0,
+        1072,
+        52
+      ],
+      "status": [
+        1072,
+        51,
+        1,
+        1
+      ],
+      "card": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "navCount": 8,
+      "navScroll": 0,
+      "overflow": 0,
+      "overlaps": [],
+      "viewportHeight": 720,
+      "firstAction": 109,
+      "shortControls": [],
+      "font": "22px",
+      "base": "16px",
+      "leading": "28.8px",
+      "dir": "rtl"
+    },
+    {
+      "theme": "dark",
+      "w": 1280,
+      "mode": "items",
+      "view": "organize",
+      "main": [
+        0,
+        52,
+        1072,
+        1605
+      ],
+      "content": 1024,
+      "heading": 68,
+      "side": [
+        1072,
+        0,
+        208,
+        1718
+      ],
+      "head": [
+        0,
+        0,
+        1072,
+        52
+      ],
+      "status": [
+        1072,
+        51,
+        1,
+        1
+      ],
+      "card": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "navCount": 8,
+      "navScroll": 0,
+      "overflow": 0,
+      "overlaps": [],
+      "viewportHeight": 720,
+      "firstAction": 109,
+      "shortControls": [],
+      "font": "22px",
+      "base": "16px",
+      "leading": "28.8px",
+      "dir": "rtl"
+    },
+    {
+      "theme": "dark",
+      "w": 1280,
+      "mode": "queue",
+      "view": "organize",
+      "main": [
+        0,
+        52,
+        1072,
+        547
+      ],
+      "content": 1024,
+      "heading": 68,
+      "side": [
+        1072,
+        0,
+        208,
+        720
+      ],
+      "head": [
+        0,
+        0,
+        1072,
+        52
+      ],
+      "status": [
+        1072,
+        51,
+        1,
+        1
+      ],
+      "card": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "navCount": 8,
+      "navScroll": 0,
+      "overflow": 0,
+      "overlaps": [],
+      "viewportHeight": 720,
+      "firstAction": 109,
+      "shortControls": [],
+      "font": "22px",
+      "base": "16px",
+      "leading": "28.8px",
+      "dir": "rtl"
+    },
+    {
+      "theme": "dark",
+      "w": 1366,
+      "mode": "topics",
+      "view": "organize",
+      "main": [
+        0,
+        52,
+        1158,
+        567
+      ],
+      "content": 1110,
+      "heading": 68,
+      "side": [
+        1158,
+        0,
+        208,
+        720
+      ],
+      "head": [
+        0,
+        0,
+        1158,
+        52
+      ],
+      "status": [
+        1158,
+        51,
+        1,
+        1
+      ],
+      "card": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "navCount": 8,
+      "navScroll": 0,
+      "overflow": 0,
+      "overlaps": [],
+      "viewportHeight": 720,
+      "firstAction": 109,
+      "shortControls": [],
+      "font": "22px",
+      "base": "16px",
+      "leading": "28.8px",
+      "dir": "rtl"
+    },
+    {
+      "theme": "dark",
+      "w": 1366,
+      "mode": "folders",
+      "view": "organize",
+      "main": [
+        0,
+        52,
+        1158,
+        547
+      ],
+      "content": 1110,
+      "heading": 68,
+      "side": [
+        1158,
+        0,
+        208,
+        720
+      ],
+      "head": [
+        0,
+        0,
+        1158,
+        52
+      ],
+      "status": [
+        1158,
+        51,
+        1,
+        1
+      ],
+      "card": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "navCount": 8,
+      "navScroll": 0,
+      "overflow": 0,
+      "overlaps": [],
+      "viewportHeight": 720,
+      "firstAction": 109,
+      "shortControls": [],
+      "font": "22px",
+      "base": "16px",
+      "leading": "28.8px",
+      "dir": "rtl"
+    },
+    {
+      "theme": "dark",
+      "w": 1366,
+      "mode": "items",
+      "view": "organize",
+      "main": [
+        0,
+        52,
+        1158,
+        1605
+      ],
+      "content": 1110,
+      "heading": 68,
+      "side": [
+        1158,
+        0,
+        208,
+        1718
+      ],
+      "head": [
+        0,
+        0,
+        1158,
+        52
+      ],
+      "status": [
+        1158,
+        51,
+        1,
+        1
+      ],
+      "card": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "navCount": 8,
+      "navScroll": 0,
+      "overflow": 0,
+      "overlaps": [],
+      "viewportHeight": 720,
+      "firstAction": 109,
+      "shortControls": [],
+      "font": "22px",
+      "base": "16px",
+      "leading": "28.8px",
+      "dir": "rtl"
+    },
+    {
+      "theme": "dark",
+      "w": 1366,
+      "mode": "queue",
+      "view": "organize",
+      "main": [
+        0,
+        52,
+        1158,
+        547
+      ],
+      "content": 1110,
+      "heading": 68,
+      "side": [
+        1158,
+        0,
+        208,
+        720
+      ],
+      "head": [
+        0,
+        0,
+        1158,
+        52
+      ],
+      "status": [
+        1158,
+        51,
+        1,
+        1
+      ],
+      "card": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "navCount": 8,
+      "navScroll": 0,
+      "overflow": 0,
+      "overlaps": [],
+      "viewportHeight": 720,
+      "firstAction": 109,
+      "shortControls": [],
+      "font": "22px",
+      "base": "16px",
+      "leading": "28.8px",
+      "dir": "rtl"
+    },
+    {
+      "theme": "dark",
+      "w": 1440,
+      "mode": "topics",
+      "view": "organize",
+      "main": [
+        0,
+        52,
+        1232,
+        567
+      ],
+      "content": 1184,
+      "heading": 68,
+      "side": [
+        1232,
+        0,
+        208,
+        720
+      ],
+      "head": [
+        0,
+        0,
+        1232,
+        52
+      ],
+      "status": [
+        1232,
+        51,
+        1,
+        1
+      ],
+      "card": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "navCount": 8,
+      "navScroll": 0,
+      "overflow": 0,
+      "overlaps": [],
+      "viewportHeight": 720,
+      "firstAction": 109,
+      "shortControls": [],
+      "font": "22px",
+      "base": "16px",
+      "leading": "28.8px",
+      "dir": "rtl"
+    },
+    {
+      "theme": "dark",
+      "w": 1440,
+      "mode": "folders",
+      "view": "organize",
+      "main": [
+        0,
+        52,
+        1232,
+        547
+      ],
+      "content": 1184,
+      "heading": 68,
+      "side": [
+        1232,
+        0,
+        208,
+        720
+      ],
+      "head": [
+        0,
+        0,
+        1232,
+        52
+      ],
+      "status": [
+        1232,
+        51,
+        1,
+        1
+      ],
+      "card": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "navCount": 8,
+      "navScroll": 0,
+      "overflow": 0,
+      "overlaps": [],
+      "viewportHeight": 720,
+      "firstAction": 109,
+      "shortControls": [],
+      "font": "22px",
+      "base": "16px",
+      "leading": "28.8px",
+      "dir": "rtl"
+    },
+    {
+      "theme": "dark",
+      "w": 1440,
+      "mode": "items",
+      "view": "organize",
+      "main": [
+        0,
+        52,
+        1232,
+        1605
+      ],
+      "content": 1184,
+      "heading": 68,
+      "side": [
+        1232,
+        0,
+        208,
+        1718
+      ],
+      "head": [
+        0,
+        0,
+        1232,
+        52
+      ],
+      "status": [
+        1232,
+        51,
+        1,
+        1
+      ],
+      "card": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "navCount": 8,
+      "navScroll": 0,
+      "overflow": 0,
+      "overlaps": [],
+      "viewportHeight": 720,
+      "firstAction": 109,
+      "shortControls": [],
+      "font": "22px",
+      "base": "16px",
+      "leading": "28.8px",
+      "dir": "rtl"
+    },
+    {
+      "theme": "dark",
+      "w": 1440,
+      "mode": "queue",
+      "view": "organize",
+      "main": [
+        0,
+        52,
+        1232,
+        547
+      ],
+      "content": 1184,
+      "heading": 68,
+      "side": [
+        1232,
+        0,
+        208,
+        720
+      ],
+      "head": [
+        0,
+        0,
+        1232,
+        52
+      ],
+      "status": [
+        1232,
+        51,
+        1,
+        1
+      ],
+      "card": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "navCount": 8,
+      "navScroll": 0,
+      "overflow": 0,
+      "overlaps": [],
+      "viewportHeight": 720,
+      "firstAction": 109,
+      "shortControls": [],
+      "font": "22px",
+      "base": "16px",
+      "leading": "28.8px",
+      "dir": "rtl"
+    },
+    {
+      "theme": "dark",
+      "w": 1536,
+      "mode": "topics",
+      "view": "organize",
+      "main": [
+        0,
+        52,
+        1328,
+        657
+      ],
+      "content": 1280,
+      "heading": 68,
+      "side": [
+        1328,
+        0,
+        208,
+        864
+      ],
+      "head": [
+        0,
+        0,
+        1328,
+        52
+      ],
+      "status": [
+        1328,
+        51,
+        1,
+        1
+      ],
+      "card": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "navCount": 8,
+      "navScroll": 0,
+      "overflow": 0,
+      "overlaps": [],
+      "viewportHeight": 864,
+      "firstAction": 109,
+      "shortControls": [],
+      "font": "22px",
+      "base": "16px",
+      "leading": "28.8px",
+      "dir": "rtl"
+    },
+    {
+      "theme": "dark",
+      "w": 1536,
+      "mode": "folders",
+      "view": "organize",
+      "main": [
+        0,
+        52,
+        1328,
+        657
+      ],
+      "content": 1280,
+      "heading": 68,
+      "side": [
+        1328,
+        0,
+        208,
+        864
+      ],
+      "head": [
+        0,
+        0,
+        1328,
+        52
+      ],
+      "status": [
+        1328,
+        51,
+        1,
+        1
+      ],
+      "card": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "navCount": 8,
+      "navScroll": 0,
+      "overflow": 0,
+      "overlaps": [],
+      "viewportHeight": 864,
+      "firstAction": 109,
+      "shortControls": [],
+      "font": "22px",
+      "base": "16px",
+      "leading": "28.8px",
+      "dir": "rtl"
+    },
+    {
+      "theme": "dark",
+      "w": 1536,
+      "mode": "items",
+      "view": "organize",
+      "main": [
+        0,
+        52,
+        1328,
+        1605
+      ],
+      "content": 1280,
+      "heading": 68,
+      "side": [
+        1328,
+        0,
+        208,
+        1718
+      ],
+      "head": [
+        0,
+        0,
+        1328,
+        52
+      ],
+      "status": [
+        1328,
+        51,
+        1,
+        1
+      ],
+      "card": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "navCount": 8,
+      "navScroll": 0,
+      "overflow": 0,
+      "overlaps": [],
+      "viewportHeight": 864,
+      "firstAction": 109,
+      "shortControls": [],
+      "font": "22px",
+      "base": "16px",
+      "leading": "28.8px",
+      "dir": "rtl"
+    },
+    {
+      "theme": "dark",
+      "w": 1536,
+      "mode": "queue",
+      "view": "organize",
+      "main": [
+        0,
+        52,
+        1328,
+        657
+      ],
+      "content": 1280,
+      "heading": 68,
+      "side": [
+        1328,
+        0,
+        208,
+        864
+      ],
+      "head": [
+        0,
+        0,
+        1328,
+        52
+      ],
+      "status": [
+        1328,
+        51,
+        1,
+        1
+      ],
+      "card": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "navCount": 8,
+      "navScroll": 0,
+      "overflow": 0,
+      "overlaps": [],
+      "viewportHeight": 864,
+      "firstAction": 109,
+      "shortControls": [],
+      "font": "22px",
+      "base": "16px",
+      "leading": "28.8px",
+      "dir": "rtl"
+    },
+    {
+      "theme": "dark",
+      "w": 1645,
+      "mode": "topics",
+      "view": "organize",
+      "main": [
+        0,
+        52,
+        1437,
+        821
+      ],
+      "content": 1389,
+      "heading": 68,
+      "side": [
+        1437,
+        0,
+        208,
+        1080
+      ],
+      "head": [
+        0,
+        0,
+        1437,
+        52
+      ],
+      "status": [
+        1437,
+        51,
+        1,
+        1
+      ],
+      "card": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "navCount": 8,
+      "navScroll": 0,
+      "overflow": 0,
+      "overlaps": [],
+      "viewportHeight": 1080,
+      "firstAction": 109,
+      "shortControls": [],
+      "font": "22px",
+      "base": "16px",
+      "leading": "28.8px",
+      "dir": "rtl"
+    },
+    {
+      "theme": "dark",
+      "w": 1645,
+      "mode": "folders",
+      "view": "organize",
+      "main": [
+        0,
+        52,
+        1437,
+        821
+      ],
+      "content": 1389,
+      "heading": 68,
+      "side": [
+        1437,
+        0,
+        208,
+        1080
+      ],
+      "head": [
+        0,
+        0,
+        1437,
+        52
+      ],
+      "status": [
+        1437,
+        51,
+        1,
+        1
+      ],
+      "card": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "navCount": 8,
+      "navScroll": 0,
+      "overflow": 0,
+      "overlaps": [],
+      "viewportHeight": 1080,
+      "firstAction": 109,
+      "shortControls": [],
+      "font": "22px",
+      "base": "16px",
+      "leading": "28.8px",
+      "dir": "rtl"
+    },
+    {
+      "theme": "dark",
+      "w": 1645,
+      "mode": "items",
+      "view": "organize",
+      "main": [
+        0,
+        52,
+        1437,
+        1605
+      ],
+      "content": 1389,
+      "heading": 68,
+      "side": [
+        1437,
+        0,
+        208,
+        1718
+      ],
+      "head": [
+        0,
+        0,
+        1437,
+        52
+      ],
+      "status": [
+        1437,
+        51,
+        1,
+        1
+      ],
+      "card": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "navCount": 8,
+      "navScroll": 0,
+      "overflow": 0,
+      "overlaps": [],
+      "viewportHeight": 1080,
+      "firstAction": 109,
+      "shortControls": [],
+      "font": "22px",
+      "base": "16px",
+      "leading": "28.8px",
+      "dir": "rtl"
+    },
+    {
+      "theme": "dark",
+      "w": 1645,
+      "mode": "queue",
+      "view": "organize",
+      "main": [
+        0,
+        52,
+        1437,
+        821
+      ],
+      "content": 1389,
+      "heading": 68,
+      "side": [
+        1437,
+        0,
+        208,
+        1080
+      ],
+      "head": [
+        0,
+        0,
+        1437,
+        52
+      ],
+      "status": [
+        1437,
+        51,
+        1,
+        1
+      ],
+      "card": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "navCount": 8,
+      "navScroll": 0,
+      "overflow": 0,
+      "overlaps": [],
+      "viewportHeight": 1080,
+      "firstAction": 109,
+      "shortControls": [],
+      "font": "22px",
+      "base": "16px",
+      "leading": "28.8px",
+      "dir": "rtl"
+    },
+    {
+      "theme": "dark",
+      "w": 1920,
+      "mode": "topics",
+      "view": "organize",
+      "main": [
+        0,
+        52,
+        1712,
+        821
+      ],
+      "content": 1664,
+      "heading": 68,
+      "side": [
+        1712,
+        0,
+        208,
+        1080
+      ],
+      "head": [
+        0,
+        0,
+        1712,
+        52
+      ],
+      "status": [
+        1712,
+        51,
+        1,
+        1
+      ],
+      "card": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "navCount": 8,
+      "navScroll": 0,
+      "overflow": 0,
+      "overlaps": [],
+      "viewportHeight": 1080,
+      "firstAction": 109,
+      "shortControls": [],
+      "font": "22px",
+      "base": "16px",
+      "leading": "28.8px",
+      "dir": "rtl"
+    },
+    {
+      "theme": "dark",
+      "w": 1920,
+      "mode": "folders",
+      "view": "organize",
+      "main": [
+        0,
+        52,
+        1712,
+        821
+      ],
+      "content": 1664,
+      "heading": 68,
+      "side": [
+        1712,
+        0,
+        208,
+        1080
+      ],
+      "head": [
+        0,
+        0,
+        1712,
+        52
+      ],
+      "status": [
+        1712,
+        51,
+        1,
+        1
+      ],
+      "card": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "navCount": 8,
+      "navScroll": 0,
+      "overflow": 0,
+      "overlaps": [],
+      "viewportHeight": 1080,
+      "firstAction": 109,
+      "shortControls": [],
+      "font": "22px",
+      "base": "16px",
+      "leading": "28.8px",
+      "dir": "rtl"
+    },
+    {
+      "theme": "dark",
+      "w": 1920,
+      "mode": "items",
+      "view": "organize",
+      "main": [
+        0,
+        52,
+        1712,
+        1605
+      ],
+      "content": 1664,
+      "heading": 68,
+      "side": [
+        1712,
+        0,
+        208,
+        1718
+      ],
+      "head": [
+        0,
+        0,
+        1712,
+        52
+      ],
+      "status": [
+        1712,
+        51,
+        1,
+        1
+      ],
+      "card": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "navCount": 8,
+      "navScroll": 0,
+      "overflow": 0,
+      "overlaps": [],
+      "viewportHeight": 1080,
+      "firstAction": 109,
+      "shortControls": [],
+      "font": "22px",
+      "base": "16px",
+      "leading": "28.8px",
+      "dir": "rtl"
+    },
+    {
+      "theme": "dark",
+      "w": 1920,
+      "mode": "queue",
+      "view": "organize",
+      "main": [
+        0,
+        52,
+        1712,
+        821
+      ],
+      "content": 1664,
+      "heading": 68,
+      "side": [
+        1712,
+        0,
+        208,
+        1080
+      ],
+      "head": [
+        0,
+        0,
+        1712,
+        52
+      ],
+      "status": [
+        1712,
+        51,
+        1,
+        1
+      ],
+      "card": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "navCount": 8,
+      "navScroll": 0,
+      "overflow": 0,
+      "overlaps": [],
+      "viewportHeight": 1080,
+      "firstAction": 109,
+      "shortControls": [],
+      "font": "22px",
+      "base": "16px",
+      "leading": "28.8px",
+      "dir": "rtl"
+    },
+    {
+      "theme": "dark",
+      "w": 2560,
+      "mode": "topics",
+      "view": "organize",
+      "main": [
+        0,
+        52,
+        2352,
+        1094
+      ],
+      "content": 2304,
+      "heading": 68,
+      "side": [
+        2352,
+        0,
+        208,
+        1440
+      ],
+      "head": [
+        0,
+        0,
+        2352,
+        52
+      ],
+      "status": [
+        2352,
+        51,
+        1,
+        1
+      ],
+      "card": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "navCount": 8,
+      "navScroll": 0,
+      "overflow": 0,
+      "overlaps": [],
+      "viewportHeight": 1440,
+      "firstAction": 109,
+      "shortControls": [],
+      "font": "22px",
+      "base": "16px",
+      "leading": "28.8px",
+      "dir": "rtl"
+    },
+    {
+      "theme": "dark",
+      "w": 2560,
+      "mode": "folders",
+      "view": "organize",
+      "main": [
+        0,
+        52,
+        2352,
+        1094
+      ],
+      "content": 2304,
+      "heading": 68,
+      "side": [
+        2352,
+        0,
+        208,
+        1440
+      ],
+      "head": [
+        0,
+        0,
+        2352,
+        52
+      ],
+      "status": [
+        2352,
+        51,
+        1,
+        1
+      ],
+      "card": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "navCount": 8,
+      "navScroll": 0,
+      "overflow": 0,
+      "overlaps": [],
+      "viewportHeight": 1440,
+      "firstAction": 109,
+      "shortControls": [],
+      "font": "22px",
+      "base": "16px",
+      "leading": "28.8px",
+      "dir": "rtl"
+    },
+    {
+      "theme": "dark",
+      "w": 2560,
+      "mode": "items",
+      "view": "organize",
+      "main": [
+        0,
+        52,
+        2352,
+        1605
+      ],
+      "content": 2304,
+      "heading": 68,
+      "side": [
+        2352,
+        0,
+        208,
+        1718
+      ],
+      "head": [
+        0,
+        0,
+        2352,
+        52
+      ],
+      "status": [
+        2352,
+        51,
+        1,
+        1
+      ],
+      "card": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "navCount": 8,
+      "navScroll": 0,
+      "overflow": 0,
+      "overlaps": [],
+      "viewportHeight": 1440,
+      "firstAction": 109,
+      "shortControls": [],
+      "font": "22px",
+      "base": "16px",
+      "leading": "28.8px",
+      "dir": "rtl"
+    },
+    {
+      "theme": "dark",
+      "w": 2560,
+      "mode": "queue",
+      "view": "organize",
+      "main": [
+        0,
+        52,
+        2352,
+        1094
+      ],
+      "content": 2304,
+      "heading": 68,
+      "side": [
+        2352,
+        0,
+        208,
+        1440
+      ],
+      "head": [
+        0,
+        0,
+        2352,
+        52
+      ],
+      "status": [
+        2352,
+        51,
+        1,
+        1
+      ],
+      "card": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "navCount": 8,
+      "navScroll": 0,
+      "overflow": 0,
+      "overlaps": [],
+      "viewportHeight": 1440,
+      "firstAction": 109,
+      "shortControls": [],
+      "font": "22px",
+      "base": "16px",
+      "leading": "28.8px",
+      "dir": "rtl"
+    }
+  ],
+  "dialogs": [
+    {
+      "theme": "light",
+      "w": 768,
+      "id": "calendar",
+      "width": 560,
+      "height": 653.171875,
+      "out": false,
+      "internalOverflow": 0,
+      "closed": true
+    },
+    {
+      "theme": "light",
+      "w": 768,
+      "id": "rvEnroll",
+      "width": 560,
+      "height": 370.453125,
+      "out": false,
+      "internalOverflow": 0,
+      "closed": true
+    },
+    {
+      "theme": "light",
+      "w": 768,
+      "id": "confirmDialog",
+      "width": 560,
+      "height": 149.859375,
+      "out": false,
+      "internalOverflow": 0,
+      "closed": true
+    },
+    {
+      "theme": "light",
+      "w": 768,
+      "id": "latestDialog",
+      "width": 560,
+      "height": 241.046875,
+      "out": false,
+      "internalOverflow": 0,
+      "closed": true
+    },
+    {
+      "theme": "light",
+      "w": 1024,
+      "id": "calendar",
+      "width": 560,
+      "height": 648,
+      "out": false,
+      "internalOverflow": 5,
+      "closed": true
+    },
+    {
+      "theme": "light",
+      "w": 1024,
+      "id": "rvEnroll",
+      "width": 560,
+      "height": 370.453125,
+      "out": false,
+      "internalOverflow": 0,
+      "closed": true
+    },
+    {
+      "theme": "light",
+      "w": 1024,
+      "id": "confirmDialog",
+      "width": 560,
+      "height": 149.859375,
+      "out": false,
+      "internalOverflow": 0,
+      "closed": true
+    },
+    {
+      "theme": "light",
+      "w": 1024,
+      "id": "latestDialog",
+      "width": 560,
+      "height": 241.046875,
+      "out": false,
+      "internalOverflow": 0,
+      "closed": true
+    },
+    {
+      "theme": "light",
+      "w": 1280,
+      "id": "calendar",
+      "width": 560,
+      "height": 648,
+      "out": false,
+      "internalOverflow": 5,
+      "closed": true
+    },
+    {
+      "theme": "light",
+      "w": 1280,
+      "id": "rvEnroll",
+      "width": 560,
+      "height": 370.453125,
+      "out": false,
+      "internalOverflow": 0,
+      "closed": true
+    },
+    {
+      "theme": "light",
+      "w": 1280,
+      "id": "confirmDialog",
+      "width": 560,
+      "height": 149.859375,
+      "out": false,
+      "internalOverflow": 0,
+      "closed": true
+    },
+    {
+      "theme": "light",
+      "w": 1280,
+      "id": "latestDialog",
+      "width": 560,
+      "height": 241.046875,
+      "out": false,
+      "internalOverflow": 0,
+      "closed": true
+    },
+    {
+      "theme": "light",
+      "w": 1366,
+      "id": "calendar",
+      "width": 560,
+      "height": 648,
+      "out": false,
+      "internalOverflow": 5,
+      "closed": true
+    },
+    {
+      "theme": "light",
+      "w": 1366,
+      "id": "rvEnroll",
+      "width": 560,
+      "height": 370.453125,
+      "out": false,
+      "internalOverflow": 0,
+      "closed": true
+    },
+    {
+      "theme": "light",
+      "w": 1366,
+      "id": "confirmDialog",
+      "width": 560,
+      "height": 149.859375,
+      "out": false,
+      "internalOverflow": 0,
+      "closed": true
+    },
+    {
+      "theme": "light",
+      "w": 1366,
+      "id": "latestDialog",
+      "width": 560,
+      "height": 241.046875,
+      "out": false,
+      "internalOverflow": 0,
+      "closed": true
+    },
+    {
+      "theme": "light",
+      "w": 1440,
+      "id": "calendar",
+      "width": 560,
+      "height": 648,
+      "out": false,
+      "internalOverflow": 5,
+      "closed": true
+    },
+    {
+      "theme": "light",
+      "w": 1440,
+      "id": "rvEnroll",
+      "width": 560,
+      "height": 370.453125,
+      "out": false,
+      "internalOverflow": 0,
+      "closed": true
+    },
+    {
+      "theme": "light",
+      "w": 1440,
+      "id": "confirmDialog",
+      "width": 560,
+      "height": 149.859375,
+      "out": false,
+      "internalOverflow": 0,
+      "closed": true
+    },
+    {
+      "theme": "light",
+      "w": 1440,
+      "id": "latestDialog",
+      "width": 560,
+      "height": 241.046875,
+      "out": false,
+      "internalOverflow": 0,
+      "closed": true
+    },
+    {
+      "theme": "light",
+      "w": 1536,
+      "id": "calendar",
+      "width": 560,
+      "height": 653.171875,
+      "out": false,
+      "internalOverflow": 0,
+      "closed": true
+    },
+    {
+      "theme": "light",
+      "w": 1536,
+      "id": "rvEnroll",
+      "width": 560,
+      "height": 370.453125,
+      "out": false,
+      "internalOverflow": 0,
+      "closed": true
+    },
+    {
+      "theme": "light",
+      "w": 1536,
+      "id": "confirmDialog",
+      "width": 560,
+      "height": 149.859375,
+      "out": false,
+      "internalOverflow": 0,
+      "closed": true
+    },
+    {
+      "theme": "light",
+      "w": 1536,
+      "id": "latestDialog",
+      "width": 560,
+      "height": 241.046875,
+      "out": false,
+      "internalOverflow": 0,
+      "closed": true
+    },
+    {
+      "theme": "light",
+      "w": 1645,
+      "id": "calendar",
+      "width": 560,
+      "height": 653.171875,
+      "out": false,
+      "internalOverflow": 0,
+      "closed": true
+    },
+    {
+      "theme": "light",
+      "w": 1645,
+      "id": "rvEnroll",
+      "width": 560,
+      "height": 370.453125,
+      "out": false,
+      "internalOverflow": 0,
+      "closed": true
+    },
+    {
+      "theme": "light",
+      "w": 1645,
+      "id": "confirmDialog",
+      "width": 560,
+      "height": 149.859375,
+      "out": false,
+      "internalOverflow": 0,
+      "closed": true
+    },
+    {
+      "theme": "light",
+      "w": 1645,
+      "id": "latestDialog",
+      "width": 560,
+      "height": 241.046875,
+      "out": false,
+      "internalOverflow": 0,
+      "closed": true
+    },
+    {
+      "theme": "light",
+      "w": 1920,
+      "id": "calendar",
+      "width": 560,
+      "height": 653.171875,
+      "out": false,
+      "internalOverflow": 0,
+      "closed": true
+    },
+    {
+      "theme": "light",
+      "w": 1920,
+      "id": "rvEnroll",
+      "width": 560,
+      "height": 370.453125,
+      "out": false,
+      "internalOverflow": 0,
+      "closed": true
+    },
+    {
+      "theme": "light",
+      "w": 1920,
+      "id": "confirmDialog",
+      "width": 560,
+      "height": 149.859375,
+      "out": false,
+      "internalOverflow": 0,
+      "closed": true
+    },
+    {
+      "theme": "light",
+      "w": 1920,
+      "id": "latestDialog",
+      "width": 560,
+      "height": 241.046875,
+      "out": false,
+      "internalOverflow": 0,
+      "closed": true
+    },
+    {
+      "theme": "light",
+      "w": 2560,
+      "id": "calendar",
+      "width": 560,
+      "height": 653.171875,
+      "out": false,
+      "internalOverflow": 0,
+      "closed": true
+    },
+    {
+      "theme": "light",
+      "w": 2560,
+      "id": "rvEnroll",
+      "width": 560,
+      "height": 370.453125,
+      "out": false,
+      "internalOverflow": 0,
+      "closed": true
+    },
+    {
+      "theme": "light",
+      "w": 2560,
+      "id": "confirmDialog",
+      "width": 560,
+      "height": 149.859375,
+      "out": false,
+      "internalOverflow": 0,
+      "closed": true
+    },
+    {
+      "theme": "light",
+      "w": 2560,
+      "id": "latestDialog",
+      "width": 560,
+      "height": 241.046875,
+      "out": false,
+      "internalOverflow": 0,
+      "closed": true
+    },
+    {
+      "theme": "dark",
+      "w": 768,
+      "id": "calendar",
+      "width": 560,
+      "height": 653.171875,
+      "out": false,
+      "internalOverflow": 0,
+      "closed": true
+    },
+    {
+      "theme": "dark",
+      "w": 768,
+      "id": "rvEnroll",
+      "width": 560,
+      "height": 370.453125,
+      "out": false,
+      "internalOverflow": 0,
+      "closed": true
+    },
+    {
+      "theme": "dark",
+      "w": 768,
+      "id": "confirmDialog",
+      "width": 560,
+      "height": 149.859375,
+      "out": false,
+      "internalOverflow": 0,
+      "closed": true
+    },
+    {
+      "theme": "dark",
+      "w": 768,
+      "id": "latestDialog",
+      "width": 560,
+      "height": 241.046875,
+      "out": false,
+      "internalOverflow": 0,
+      "closed": true
+    },
+    {
+      "theme": "dark",
+      "w": 1024,
+      "id": "calendar",
+      "width": 560,
+      "height": 648,
+      "out": false,
+      "internalOverflow": 5,
+      "closed": true
+    },
+    {
+      "theme": "dark",
+      "w": 1024,
+      "id": "rvEnroll",
+      "width": 560,
+      "height": 370.453125,
+      "out": false,
+      "internalOverflow": 0,
+      "closed": true
+    },
+    {
+      "theme": "dark",
+      "w": 1024,
+      "id": "confirmDialog",
+      "width": 560,
+      "height": 149.859375,
+      "out": false,
+      "internalOverflow": 0,
+      "closed": true
+    },
+    {
+      "theme": "dark",
+      "w": 1024,
+      "id": "latestDialog",
+      "width": 560,
+      "height": 241.046875,
+      "out": false,
+      "internalOverflow": 0,
+      "closed": true
+    },
+    {
+      "theme": "dark",
+      "w": 1280,
+      "id": "calendar",
+      "width": 560,
+      "height": 648,
+      "out": false,
+      "internalOverflow": 5,
+      "closed": true
+    },
+    {
+      "theme": "dark",
+      "w": 1280,
+      "id": "rvEnroll",
+      "width": 560,
+      "height": 370.453125,
+      "out": false,
+      "internalOverflow": 0,
+      "closed": true
+    },
+    {
+      "theme": "dark",
+      "w": 1280,
+      "id": "confirmDialog",
+      "width": 560,
+      "height": 149.859375,
+      "out": false,
+      "internalOverflow": 0,
+      "closed": true
+    },
+    {
+      "theme": "dark",
+      "w": 1280,
+      "id": "latestDialog",
+      "width": 560,
+      "height": 241.046875,
+      "out": false,
+      "internalOverflow": 0,
+      "closed": true
+    },
+    {
+      "theme": "dark",
+      "w": 1366,
+      "id": "calendar",
+      "width": 560,
+      "height": 648,
+      "out": false,
+      "internalOverflow": 5,
+      "closed": true
+    },
+    {
+      "theme": "dark",
+      "w": 1366,
+      "id": "rvEnroll",
+      "width": 560,
+      "height": 370.453125,
+      "out": false,
+      "internalOverflow": 0,
+      "closed": true
+    },
+    {
+      "theme": "dark",
+      "w": 1366,
+      "id": "confirmDialog",
+      "width": 560,
+      "height": 149.859375,
+      "out": false,
+      "internalOverflow": 0,
+      "closed": true
+    },
+    {
+      "theme": "dark",
+      "w": 1366,
+      "id": "latestDialog",
+      "width": 560,
+      "height": 241.046875,
+      "out": false,
+      "internalOverflow": 0,
+      "closed": true
+    },
+    {
+      "theme": "dark",
+      "w": 1440,
+      "id": "calendar",
+      "width": 560,
+      "height": 648,
+      "out": false,
+      "internalOverflow": 5,
+      "closed": true
+    },
+    {
+      "theme": "dark",
+      "w": 1440,
+      "id": "rvEnroll",
+      "width": 560,
+      "height": 370.453125,
+      "out": false,
+      "internalOverflow": 0,
+      "closed": true
+    },
+    {
+      "theme": "dark",
+      "w": 1440,
+      "id": "confirmDialog",
+      "width": 560,
+      "height": 149.859375,
+      "out": false,
+      "internalOverflow": 0,
+      "closed": true
+    },
+    {
+      "theme": "dark",
+      "w": 1440,
+      "id": "latestDialog",
+      "width": 560,
+      "height": 241.046875,
+      "out": false,
+      "internalOverflow": 0,
+      "closed": true
+    },
+    {
+      "theme": "dark",
+      "w": 1536,
+      "id": "calendar",
+      "width": 560,
+      "height": 653.171875,
+      "out": false,
+      "internalOverflow": 0,
+      "closed": true
+    },
+    {
+      "theme": "dark",
+      "w": 1536,
+      "id": "rvEnroll",
+      "width": 560,
+      "height": 370.453125,
+      "out": false,
+      "internalOverflow": 0,
+      "closed": true
+    },
+    {
+      "theme": "dark",
+      "w": 1536,
+      "id": "confirmDialog",
+      "width": 560,
+      "height": 149.859375,
+      "out": false,
+      "internalOverflow": 0,
+      "closed": true
+    },
+    {
+      "theme": "dark",
+      "w": 1536,
+      "id": "latestDialog",
+      "width": 560,
+      "height": 241.046875,
+      "out": false,
+      "internalOverflow": 0,
+      "closed": true
+    },
+    {
+      "theme": "dark",
+      "w": 1645,
+      "id": "calendar",
+      "width": 560,
+      "height": 653.171875,
+      "out": false,
+      "internalOverflow": 0,
+      "closed": true
+    },
+    {
+      "theme": "dark",
+      "w": 1645,
+      "id": "rvEnroll",
+      "width": 560,
+      "height": 370.453125,
+      "out": false,
+      "internalOverflow": 0,
+      "closed": true
+    },
+    {
+      "theme": "dark",
+      "w": 1645,
+      "id": "confirmDialog",
+      "width": 560,
+      "height": 149.859375,
+      "out": false,
+      "internalOverflow": 0,
+      "closed": true
+    },
+    {
+      "theme": "dark",
+      "w": 1645,
+      "id": "latestDialog",
+      "width": 560,
+      "height": 241.046875,
+      "out": false,
+      "internalOverflow": 0,
+      "closed": true
+    },
+    {
+      "theme": "dark",
+      "w": 1920,
+      "id": "calendar",
+      "width": 560,
+      "height": 653.171875,
+      "out": false,
+      "internalOverflow": 0,
+      "closed": true
+    },
+    {
+      "theme": "dark",
+      "w": 1920,
+      "id": "rvEnroll",
+      "width": 560,
+      "height": 370.453125,
+      "out": false,
+      "internalOverflow": 0,
+      "closed": true
+    },
+    {
+      "theme": "dark",
+      "w": 1920,
+      "id": "confirmDialog",
+      "width": 560,
+      "height": 149.859375,
+      "out": false,
+      "internalOverflow": 0,
+      "closed": true
+    },
+    {
+      "theme": "dark",
+      "w": 1920,
+      "id": "latestDialog",
+      "width": 560,
+      "height": 241.046875,
+      "out": false,
+      "internalOverflow": 0,
+      "closed": true
+    },
+    {
+      "theme": "dark",
+      "w": 2560,
+      "id": "calendar",
+      "width": 560,
+      "height": 653.171875,
+      "out": false,
+      "internalOverflow": 0,
+      "closed": true
+    },
+    {
+      "theme": "dark",
+      "w": 2560,
+      "id": "rvEnroll",
+      "width": 560,
+      "height": 370.453125,
+      "out": false,
+      "internalOverflow": 0,
+      "closed": true
+    },
+    {
+      "theme": "dark",
+      "w": 2560,
+      "id": "confirmDialog",
+      "width": 560,
+      "height": 149.859375,
+      "out": false,
+      "internalOverflow": 0,
+      "closed": true
+    },
+    {
+      "theme": "dark",
+      "w": 2560,
+      "id": "latestDialog",
+      "width": 560,
+      "height": 241.046875,
+      "out": false,
+      "internalOverflow": 0,
+      "closed": true
+    }
+  ],
+  "special": [
+    {
+      "collapsed": true,
+      "view": "organize",
+      "main": [
+        0,
+        52,
+        1585,
+        684
+      ],
+      "content": 1537,
+      "heading": 68,
+      "side": [
+        1585,
+        0,
+        60,
+        900
+      ],
+      "head": [
+        0,
+        0,
+        1585,
+        52
+      ],
+      "status": [
+        1585,
+        51,
+        1,
+        1
+      ],
+      "card": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "navCount": 8,
+      "navScroll": 0,
+      "overflow": 0,
+      "overlaps": [],
+      "viewportHeight": 900,
+      "firstAction": 109,
+      "shortControls": [],
+      "font": "22px",
+      "base": "16px",
+      "leading": "28.8px",
+      "dir": "rtl"
+    },
+    {
+      "collapsed": false,
+      "view": "organize",
+      "main": [
+        0,
+        52,
+        1437,
+        684
+      ],
+      "content": 1389,
+      "heading": 68,
+      "side": [
+        1437,
+        0,
+        208,
+        900
+      ],
+      "head": [
+        0,
+        0,
+        1437,
+        52
+      ],
+      "status": [
+        1437,
+        51,
+        1,
+        1
+      ],
+      "card": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "navCount": 8,
+      "navScroll": 0,
+      "overflow": 0,
+      "overlaps": [],
+      "viewportHeight": 900,
+      "firstAction": 109,
+      "shortControls": [],
+      "font": "22px",
+      "base": "16px",
+      "leading": "28.8px",
+      "dir": "rtl"
+    },
+    {
+      "zoom2": {
+        "view": "organize",
+        "main": [
+          0,
+          128,
+          752,
+          1806
+        ],
+        "content": 704,
+        "heading": 160,
+        "side": [
+          752,
+          0,
+          272,
+          2043
+        ],
+        "head": [
+          0,
+          0,
+          752,
+          128
+        ],
+        "status": [
+          752,
+          126,
+          2,
+          2
+        ],
+        "card": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "navCount": 8,
+        "navScroll": 0,
+        "overflow": 0,
+        "overlaps": [],
+        "viewportHeight": 720,
+        "firstAction": 242,
+        "shortControls": [],
+        "font": "22px",
+        "base": "16px",
+        "leading": "28.8px",
+        "dir": "rtl"
+      }
+    },
+    {
+      "topicText": "وقتی خشمگین می‌شوم، اولین قدم چیست؟\nپیش از واکنش، مکث می‌کنم؛ احساس را نام می‌برم و یک نفس آرام می‌کشم.\nPause → Name → Choose\n\nموعد مرور: ۱۸ آبان ۱۴۰۵\n\nدسته‌بندی و ارجاع‌ها",
+      "focus": "BODY"
+    },
+    {
+      "remembered": true
+    },
+    {
+      "calendar540": {
+        "x": 360,
+        "y": 27,
+        "width": 560,
+        "height": 486
+      },
+      "days": 30
+    },
+    {
+      "answerBefore": ""
+    },
+    {
+      "revealedFocus": "answerHeading"
+    },
+    {
+      "websiteVisible": true
+    }
+  ],
+  "errors": [],
+  "axe": "unavailable",
+  "fonts": [
+    {
+      "familyName": "Vazirmatn",
+      "postScriptName": "Vazirmatn-Regular",
+      "isCustomFont": true,
+      "glyphCount": 19
+    }
+  ],
+  "shifts": [
+    {
+      "value": 0.001208417055507501,
+      "input": false
+    },
+    {
+      "value": 0.24529780137042204,
+      "input": false
+    },
+    {
+      "value": 0.2,
+      "input": true
+    },
+    {
+      "value": 0.011031522115071616,
+      "input": true
+    },
+    {
+      "value": 0.0836481297634266,
+      "input": true
+    }
+  ]
+}
